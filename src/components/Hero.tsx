@@ -11,7 +11,7 @@ export default function Hero() {
       <div className="max-w-[1200px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-14 items-center relative z-10">
         <div>
           <p className="inline-flex items-center gap-2 bg-[rgba(37,211,102,0.15)] border border-[rgba(37,211,102,0.3)] text-[#6ee7b7] px-3.5 py-1.5 rounded-full text-xs font-semibold tracking-wider uppercase mb-5 opacity-0 animate-fade-up" style={{ animationDelay: '0.1s' }}>
-            Atención Integral en Ortopedia · Torre Medical, El Poblado
+            Atención Integral en Ortopedia y Traumatología · Torre Medical
           </p>
           <h1 className="font-extrabold text-white leading-tight mb-5 text-xl sm:text-2xl md:text-4xl opacity-0 animate-cascade" style={{ animationDelay: '0.3s' }}>
             Deja de buscar. Aquí encuentras el apoyo integral que tu familia y tú necesitan para recuperar la salud de sus articulaciones.
