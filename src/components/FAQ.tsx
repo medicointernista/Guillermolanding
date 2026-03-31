@@ -6,16 +6,36 @@ export default function FAQ() {
 
   const faqs = [
     {
-      q: '¿Cuándo debo consultar a un ortopedista?',
-      a: 'Cuando tienes dolor persistente en una articulación, limitación de movimiento, dificultad para caminar, o después de cualquier trauma — deportivo o del día a día. No esperes a que empeore.'
+      q: '¿Cuándo debo consultar a un ortopedista en Medellín?',
+      a: 'Consulta cuando tienes dolor persistente en articulaciones, limitación de movimiento o después de trauma deportivo. No esperes a que empeore. En Torre Medical atendemos urgencias y casos crónicos.'
     },
     {
-      q: '¿Qué tratamientos ofrece la ortopedia?',
-      a: 'Desde infiltraciones y terapias biológicas hasta cirugía — siempre buscando primero la opción menos invasiva. El objetivo es recuperar tu movilidad y calidad de vida.'
+      q: '¿Qué tratamientos ofrece la medicina regenerativa ortopédica?',
+      a: 'PRP (plasma rico en plaquetas), ácido hialurónico, células mesenquimales. Opciones biológicas menos invasivas que la cirugía. Ideales para artrosis, lesiones deportivas y degeneración articular.'
     },
     {
       q: '¿La ortopedia es solo para fracturas?',
-      a: 'No. También tratamos artrosis, lesiones deportivas, dolor crónico, enfermedades articulares y mucho más. Las fracturas son solo una parte de lo que hacemos.'
+      a: 'No. Tratamos artrosis, lesiones deportivas, dolor crónico, manguito rotador, síndrome del túnel del carpo, lesiones tendinosas y enfermedades articulares. Las fracturas son solo una parte.'
+    },
+    {
+      q: '¿Cuál es el costo de una consulta de ortopedia con diagnóstico ecográfico?',
+      a: 'Consultas desde $120,000 COP. Incluye evaluación completa, examen físico y diagnóstico ecográfico en tiempo real. Disponible presencial en Torre Medical o telemedicina.'
+    },
+    {
+      q: '¿Cuánto cuesta un tratamiento de PRP en Medellín?',
+      a: 'Infiltración con PRP desde $800,000 COP. Incluye análisis de sangre, preparación en centrífuga de última generación y aplicación ecoguiada en articulación afectada.'
+    },
+    {
+      q: '¿Qué diferencia hay entre PRP y ácido hialurónico?',
+      a: 'PRP regenera tejido usando tus propios factores de crecimiento. Ácido hialurónico lubrica y protege el cartílago. PRP es más efectivo en lesiones tempranas; hialurónico en artrosis moderada.'
+    },
+    {
+      q: '¿Cuánto tiempo tarda en verse resultado con medicina regenerativa?',
+      a: 'Primeras mejoras en 2-4 semanas. Máximo efecto a los 3-6 meses. El seguimiento continuo asegura adaptación del tratamiento según tu evolución.'
+    },
+    {
+      q: '¿Necesito referencia de mi médico general para consultar ortopedia?',
+      a: 'No es obligatorio. Puedes agendar directamente al +573244081281 o por WhatsApp. Traer estudios previos acelera el diagnóstico en tu primera cita.'
     }
   ];
 

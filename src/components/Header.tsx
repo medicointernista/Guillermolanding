@@ -13,8 +13,10 @@ export default function Header() {
           <a href="#inicio" className="flex items-center gap-2.5 no-underline flex-shrink-0 min-w-0">
             <img
               src="/manejo-del-dolor-ortopedico-en-medellin.png"
-              alt="Dr. Guillermo Rodríguez Restrepo – Ortopedia con Calidad Humana"
+              alt="Logo Dr. Guillermo Rodríguez – Ortopedista especialista en Medellín"
               className="h-14 sm:h-16 md:h-20 w-auto rounded-lg"
+              loading="lazy"
+              decoding="async"
             />
           </a>
 

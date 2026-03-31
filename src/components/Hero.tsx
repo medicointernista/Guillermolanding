@@ -14,13 +14,13 @@ export default function Hero() {
             Atención Integral en Ortopedia y Traumatología · Torre Medical
           </p>
           <h1 className="font-extrabold text-white leading-tight mb-5 text-xl sm:text-2xl md:text-4xl opacity-0 animate-cascade" style={{ animationDelay: '0.3s' }}>
-            Ortopedia y Traumatología en Medellín · Dr. Guillermo Rodríguez
+            Ortopedia y Traumatología en Medellín: Diagnóstico Ecográfico + Medicina Regenerativa
           </h1>
           <p className="font-bold text-white/95 leading-tight mb-4 text-lg sm:text-xl md:text-2xl opacity-0 animate-cascade" style={{ animationDelay: '0.35s' }}>
-            Apoyo integral para tu familia: diagnóstico preciso y tratamiento personalizado para <span className="text-[#25D366]">recuperar la salud</span> de tus articulaciones
+            Dr. Guillermo Rodríguez. Recupera movilidad sin cirugía: <span className="text-[#25D366]">PRP, ácido hialurónico y medicina regenerativa</span> en Torre Medical, Medellín
           </p>
           <p className="text-sm sm:text-base md:text-[17px] text-white/80 leading-relaxed mb-5 sm:mb-7 opacity-0 animate-cascade" style={{ animationDelay: '0.5s' }}>
-            Desde la primera visita: evaluación completa de tus necesidades, revisión de todos tus estudios y un plan de tratamiento personalizado — basado en ciencia y construido contigo, no para ti.
+            Especialista con 30+ años de experiencia. Primera consulta: evaluación clínica + diagnóstico ecográfico en tiempo real. Plan de tratamiento basado en evidencia, personalizado para ti. Presencial en Torre Medical o telemedicina.
           </p>
           <div className="flex flex-col gap-4">
             <div className="flex flex-col gap-2 opacity-0 animate-spring" style={{ animationDelay: '0.7s' }}>
@@ -52,8 +52,10 @@ export default function Hero() {
           <div className="w-full h-64 sm:h-80 md:h-96 overflow-hidden">
             <img
               src="/Evaluacion-medica-especializada.jpg"
-              alt="Dr. Guillermo Rodríguez Restrepo explicando diagnóstico a paciente"
+              alt="Dr. Guillermo Rodríguez Restrepo realizando diagnóstico ecográfico especializado"
               className="w-full h-full object-cover object-center"
+              loading="lazy"
+              decoding="async"
             />
           </div>
           <div className="absolute bottom-5 left-5 right-5 bg-white/95 rounded-2xl p-3.5 flex items-center gap-3.5 shadow-[0_4px_24px_rgba(0,0,0,0.2)] opacity-0 animate-fade-up" style={{ animationDelay: '1.2s' }}>

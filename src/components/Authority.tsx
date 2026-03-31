@@ -30,9 +30,10 @@ export default function Authority() {
             <div className="relative bg-gradient-to-br from-[#1a365d] to-[#2a4a7f] rounded-3xl aspect-[3/4] flex flex-col items-center justify-center overflow-hidden shadow-lg">
               <img
                 src="/Dr-Guillermo-rodriguez.jpg"
-                alt="Dr. Guillermo Rodríguez Restrepo – Especialista en Ortopedia y Traumatología"
+                alt="Dr. Guillermo Rodríguez Restrepo – Especialista en Ortopedia, Traumatología y Medicina Regenerativa con 30+ años"
                 className="w-full h-full object-cover"
                 loading="lazy"
+                decoding="async"
               />
             </div>
             <div className="absolute -bottom-5 -right-5 bg-[#25D366] text-white rounded-2xl px-5 py-4 text-[13px] font-bold text-center shadow-lg z-10 opacity-0 animate-spring" style={{ animationDelay: '0.6s' }}>

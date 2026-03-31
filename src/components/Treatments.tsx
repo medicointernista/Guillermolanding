@@ -48,11 +48,11 @@ export default function Treatments() {
           Opciones regenerativas, biológicas y quirúrgicas — siempre priorizando lo menos invasivo.
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5 mt-8 sm:mt-10">
+        <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5 mt-8 sm:mt-10 list-none p-0">
           {treatments.map((treatment, idx) => {
             const IconComponent = treatment.icon;
             return (
-            <div
+            <li
               key={idx}
               className="bg-white border border-gray-200 rounded-2xl p-5 sm:p-6 transition-all hover:border-[#25D366] hover:shadow-lg hover:-translate-y-1 cursor-default opacity-0 animate-scale-pop"
               style={{ animationDelay: `${0.4 + idx * 0.075}s` }}
@@ -65,10 +65,10 @@ export default function Treatments() {
               </div>
               <h3 className="text-sm sm:text-base font-bold text-[#1a365d] mb-2">{treatment.title}</h3>
               <p className="text-xs sm:text-[13px] text-gray-600 leading-relaxed">{treatment.desc}</p>
-            </div>
+            </li>
             );
           })}
-        </div>
+        </ul>
       </div>
     </section>
   );

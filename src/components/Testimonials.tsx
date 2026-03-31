@@ -64,7 +64,7 @@ export default function Testimonials() {
                 </div>
               </div>
               <div className="flex items-center gap-2 mt-3 pt-3 border-t border-gray-200">
-                <img src="/Logo-Doctoralia.jpg" alt="Doctoralia" className="h-5 sm:h-6 object-contain" />
+                <img src="/Logo-Doctoralia.jpg" alt="Plataforma Doctoralia - Reseñas verificadas de pacientes del Dr. Guillermo Rodríguez" className="h-5 sm:h-6 object-contain" loading="lazy" decoding="async" />
                 <span className="text-[10px] sm:text-[11px] text-gray-400">Reseña verificada</span>
               </div>
             </div>

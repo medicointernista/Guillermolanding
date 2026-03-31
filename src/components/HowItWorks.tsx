@@ -35,17 +35,17 @@ export default function HowItWorks() {
           ¿Cómo Funciona?
         </span>
         <h2 id="como-heading" className="font-extrabold text-[#1a365d] leading-tight mb-3.5 text-2xl sm:text-3xl md:text-4xl">
-          Proceso de Consulta con tu Ortopedista en Medellín
+          ¿Cómo es el Proceso de Consulta con tu Ortopedista en Medellín?
         </h2>
         <p className="text-sm sm:text-base md:text-[17px] text-gray-600 leading-relaxed max-w-[580px]">
           Del dolor al movimiento en 4 pasos. Sin listas de espera, sin adivinanzas.
         </p>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 mt-8 sm:mt-12">
+        <ol className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 mt-8 sm:mt-12 list-none p-0">
           {steps.map((step, idx) => {
             const IconComponent = step.icon;
             return (
-            <div
+            <li
               key={idx}
               className="bg-white rounded-2xl p-5 sm:p-7 relative shadow-md transition-all hover:-translate-y-1 hover:shadow-xl"
             >
@@ -55,10 +55,10 @@ export default function HowItWorks() {
               <IconComponent className="w-6 sm:w-7 h-6 sm:h-7 text-[#1a365d] mb-3" />
               <h3 className="text-sm sm:text-[15px] font-bold text-[#1a365d] mb-2">{step.title}</h3>
               <p className="text-xs sm:text-[13px] text-gray-600 leading-relaxed">{step.desc}</p>
-            </div>
+            </li>
             );
           })}
-        </div>
+        </ol>
       </div>
     </section>
   );

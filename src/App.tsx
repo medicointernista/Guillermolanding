@@ -18,6 +18,16 @@ function App() {
   useEffect(() => {
     document.documentElement.lang = 'es';
     document.documentElement.style.scrollBehavior = 'smooth';
+
+    const metaUpdated = document.createElement('meta');
+    metaUpdated.name = 'datePublished';
+    metaUpdated.content = '2026-03-31';
+    document.head.appendChild(metaUpdated);
+
+    const metaModified = document.createElement('meta');
+    metaModified.name = 'dateModified';
+    metaModified.content = '2026-03-31';
+    document.head.appendChild(metaModified);
   }, []);
 
   return (
@@ -36,6 +46,9 @@ function App() {
       <Closer />
       <Footer />
       <FloatingButtons />
+      <div className="fixed bottom-20 right-4 sm:right-6 text-[10px] text-gray-400 pointer-events-none">
+        Actualizado Marzo 2026
+      </div>
     </div>
   );
 }
