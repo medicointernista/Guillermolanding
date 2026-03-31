@@ -36,23 +36,11 @@ export default function Footer() {
             <div className="text-xs font-bold uppercase tracking-widest text-white/90 mb-4">Horarios</div>
             <ul className="list-none flex flex-col gap-2 text-xs sm:text-[13px] text-white/60">
               <li>
-                <div className="font-semibold text-white/80">Martes</div>
-                <span>2:00 pm – 6:30 pm</span>
+                <div className="font-semibold text-white/80">Lunes a Viernes</div>
+                <span>7:30 am – 6:00 pm</span>
               </li>
               <li>
-                <div className="font-semibold text-white/80">Miércoles</div>
-                <span>7:30 am – 6:30 pm</span>
-              </li>
-              <li>
-                <div className="font-semibold text-white/80">Jueves</div>
-                <span>2:00 pm – 6:30 pm</span>
-              </li>
-              <li>
-                <div className="font-semibold text-white/80">Viernes</div>
-                <span>7:30 am – 6:30 pm</span>
-              </li>
-              <li>
-                <div className="font-semibold text-white/80">Sábado</div>
+                <div className="font-semibold text-white/80">Sábados</div>
                 <span>7:30 am – 1:00 pm</span>
               </li>
             </ul>
