@@ -19,9 +19,6 @@ export default function Hero() {
           <p className="font-bold text-white/95 leading-tight mb-4 text-lg sm:text-xl md:text-2xl opacity-0 animate-cascade" style={{ animationDelay: '0.35s' }}>
             Dr. Guillermo Rodríguez. Recupera movilidad sin cirugía: <span className="text-[#25D366]">PRP, ácido hialurónico y medicina regenerativa</span> en Torre Medical, Medellín
           </p>
-          <p className="text-sm sm:text-base md:text-[17px] text-white/80 leading-relaxed mb-5 sm:mb-7 opacity-0 animate-cascade" style={{ animationDelay: '0.5s' }}>
-            Especialista con 30+ años de experiencia. Primera consulta: evaluación clínica + diagnóstico ecográfico en tiempo real. Plan de tratamiento basado en evidencia, personalizado para ti. Presencial en Torre Medical o telemedicina.
-          </p>
           <div className="flex flex-col gap-4">
             <div className="flex flex-col gap-2 opacity-0 animate-spring" style={{ animationDelay: '0.7s' }}>
               <a
