@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import Header from './components/Header';
 import Hero from './components/Hero';
+import AcademicBacking from './components/AcademicBacking';
 import FamilyCare from './components/FamilyCare';
 import BilingualCare from './components/BilingualCare';
 import Authority from './components/Authority';
@@ -34,6 +35,7 @@ function App() {
     <div className="min-h-screen bg-white">
       <Header />
       <Hero />
+      <AcademicBacking />
       <FamilyCare />
       <BilingualCare />
       <Authority />
