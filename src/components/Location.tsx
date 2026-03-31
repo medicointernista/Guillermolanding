@@ -48,8 +48,10 @@ export default function Location() {
               </div>
               <div className="min-w-0">
                 <div className="text-[10px] sm:text-[11px] font-bold uppercase tracking-wider text-gray-400 mb-0.5">Horarios de Atención</div>
-                <div className="text-xs sm:text-sm font-semibold text-gray-800 leading-relaxed">
-                  Martes a Sábados: 07:30 – 18:00
+                <div className="text-xs sm:text-sm font-semibold text-gray-800 leading-relaxed space-y-0.5">
+                  <div>Mar y Jue: 14:00 – 18:30</div>
+                  <div>Mié y Vie: 07:30 – 18:30</div>
+                  <div>Sábados: 07:30 – 13:00</div>
                 </div>
               </div>
             </div>
