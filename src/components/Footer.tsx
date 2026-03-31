@@ -20,9 +20,21 @@ export default function Footer() {
                 <span>Calle 7 # 39-107<br/>Consultorio 609, Medellín</span>
               </li>
               <li>
-                <a href="tel:+573244081281" className="hover:text-white transition-colors">
-                  +57 324 408 1281
-                </a>
+                <div className="text-[10px] uppercase tracking-widest text-white/50 mb-1">WhatsApp</div>
+                <div className="space-y-1">
+                  <div>
+                    <span className="text-[10px] text-white/40">Agendar:</span>
+                    <a href="https://wa.me/573244081281" className="hover:text-white transition-colors block">
+                      +57 324 408 1281
+                    </a>
+                  </div>
+                  <div>
+                    <span className="text-[10px] text-[#ff6b6b]">Urgencia:</span>
+                    <a href="https://wa.me/573244340199" className="hover:text-white transition-colors block text-[#ff6b6b]">
+                      +57 324 434 0199
+                    </a>
+                  </div>
+                </div>
               </li>
               <li>
                 <a href="mailto:agendasortopediaguillermorodmd@gmail.com" className="hover:text-white transition-colors break-all">
