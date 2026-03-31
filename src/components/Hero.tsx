@@ -14,8 +14,11 @@ export default function Hero() {
             Atención Integral en Ortopedia y Traumatología · Torre Medical
           </p>
           <h1 className="font-extrabold text-white leading-tight mb-5 text-xl sm:text-2xl md:text-4xl opacity-0 animate-cascade" style={{ animationDelay: '0.3s' }}>
-            Deja de buscar. Aquí encuentras el apoyo integral que tu familia y tú necesitan para <em className="not-italic text-[#25D366]">recuperar la salud</em> de sus articulaciones.
+            Ortopedia y Traumatología en Medellín · Dr. Guillermo Rodríguez
           </h1>
+          <p className="font-bold text-white/95 leading-tight mb-4 text-lg sm:text-xl md:text-2xl opacity-0 animate-cascade" style={{ animationDelay: '0.35s' }}>
+            Apoyo integral para tu familia: diagnóstico preciso y tratamiento personalizado para <span className="text-[#25D366]">recuperar la salud</span> de tus articulaciones
+          </p>
           <p className="text-sm sm:text-base md:text-[17px] text-white/80 leading-relaxed mb-5 sm:mb-7 opacity-0 animate-cascade" style={{ animationDelay: '0.5s' }}>
             Desde la primera visita: evaluación completa de tus necesidades, revisión de todos tus estudios y un plan de tratamiento personalizado — basado en ciencia y construido contigo, no para ti.
           </p>

@@ -34,8 +34,8 @@ export default function ContactForm() {
           <span className="inline-block text-[11px] font-bold tracking-widest uppercase text-[#1ebe57] mb-2.5">
             Cuéntanos Tu Caso
           </span>
-          <h2 className="font-extrabold text-[#1a365d] leading-tight mb-3 text-2xl sm:text-3xl md:text-4xl">
-            Cuéntanos Tu Caso — Te Respondemos Hoy
+          <h2 id="contact-heading" className="font-extrabold text-[#1a365d] leading-tight mb-3 text-2xl sm:text-3xl md:text-4xl">
+            Consulta tu Caso de Ortopedia — Respuesta el Mismo Día
           </h2>
           <p className="text-sm sm:text-base md:text-[17px] text-gray-600 leading-relaxed">
             Sin formularios largos. Sin esperar semanas. Solo describe lo que sientes y recibe atención directa del especialista.
@@ -112,7 +112,7 @@ export default function ContactForm() {
               <div className="flex items-start gap-3">
                 <Clock className="w-5 h-5 text-[#25D366] flex-shrink-0 mt-1" />
                 <div>
-                  <h3 className="font-semibold text-[#1a365d] text-sm mb-1">Respuesta Rápida</h3>
+                  <p className="font-semibold text-[#1a365d] text-sm mb-1">Respuesta Rápida</p>
                   <p className="text-xs text-gray-600">Respuesta en menos de 2 horas en horario de atención</p>
                 </div>
               </div>
@@ -122,7 +122,7 @@ export default function ContactForm() {
               <div className="flex items-start gap-3">
                 <Lock className="w-5 h-5 text-[#25D366] flex-shrink-0 mt-1" />
                 <div>
-                  <h3 className="font-semibold text-[#1a365d] text-sm mb-1">Tus Datos Protegidos</h3>
+                  <p className="font-semibold text-[#1a365d] text-sm mb-1">Tus Datos Protegidos</p>
                   <p className="text-xs text-gray-600">Tus datos están protegidos conforme a la ley colombiana</p>
                 </div>
               </div>
@@ -132,7 +132,7 @@ export default function ContactForm() {
               <div className="flex items-start gap-3">
                 <User className="w-5 h-5 text-[#25D366] flex-shrink-0 mt-1" />
                 <div>
-                  <h3 className="font-semibold text-[#1a365d] text-sm mb-1">Atención Directa</h3>
+                  <p className="font-semibold text-[#1a365d] text-sm mb-1">Atención Directa</p>
                   <p className="text-xs text-gray-600">Atención directa por el especialista, sin intermediarios</p>
                 </div>
               </div>
@@ -142,7 +142,7 @@ export default function ContactForm() {
               <div className="flex items-start gap-3">
                 <span className="w-5 h-5 text-[#25D366] flex-shrink-0 mt-1 flex items-center justify-center text-sm font-bold">📅</span>
                 <div>
-                  <h3 className="font-semibold text-[#1a365d] text-sm mb-1">Citas Disponibles</h3>
+                  <p className="font-semibold text-[#1a365d] text-sm mb-1">Citas Disponibles</p>
                   <p className="text-xs text-gray-600">Citas disponibles de lunes a sábado</p>
                 </div>
               </div>

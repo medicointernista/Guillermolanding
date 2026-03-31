@@ -29,8 +29,8 @@ export default function Testimonials() {
         <span className="inline-block text-[11px] font-bold tracking-widest uppercase text-[#1ebe57] mb-2.5 opacity-0 animate-fade-up" style={{ animationDelay: '0.1s' }}>
           Testimonios Verificados
         </span>
-        <h2 className="font-extrabold text-[#1a365d] leading-tight mb-3.5 text-2xl sm:text-3xl md:text-4xl opacity-0 animate-cascade" style={{ animationDelay: '0.2s' }}>
-          Pacientes Satisfechos con su Ortopedista en Medellín
+        <h2 id="testimonios-heading" className="font-extrabold text-[#1a365d] leading-tight mb-3.5 text-2xl sm:text-3xl md:text-4xl opacity-0 animate-cascade" style={{ animationDelay: '0.2s' }}>
+          Testimonios Reales: Pacientes del Dr. Guillermo Rodríguez en Medellín
         </h2>
         <p className="text-sm sm:text-base md:text-[17px] text-gray-600 leading-relaxed max-w-[580px] opacity-0 animate-cascade" style={{ animationDelay: '0.3s' }}>
           Personas reales. Dolor real. Resultados verificados. Más de 48 reseñas en Doctoralia.

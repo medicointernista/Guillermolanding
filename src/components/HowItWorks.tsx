@@ -34,8 +34,8 @@ export default function HowItWorks() {
         <span className="inline-block text-[11px] font-bold tracking-widest uppercase text-[#1ebe57] mb-2.5">
           ¿Cómo Funciona?
         </span>
-        <h2 className="font-extrabold text-[#1a365d] leading-tight mb-3.5 text-2xl sm:text-3xl md:text-4xl">
-          Cómo Funciona tu Consulta de Ortopedia en Torre Medical
+        <h2 id="como-heading" className="font-extrabold text-[#1a365d] leading-tight mb-3.5 text-2xl sm:text-3xl md:text-4xl">
+          Proceso de Consulta con tu Ortopedista en Medellín
         </h2>
         <p className="text-sm sm:text-base md:text-[17px] text-gray-600 leading-relaxed max-w-[580px]">
           Del dolor al movimiento en 4 pasos. Sin listas de espera, sin adivinanzas.

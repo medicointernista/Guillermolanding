@@ -46,8 +46,8 @@ export default function Authority() {
               Tu Especialista de Confianza
             </span>
 
-            <h2 className="font-extrabold text-[#1a365d] leading-tight mb-1 text-2xl sm:text-3xl md:text-4xl">
-              Dr. Guillermo Rodríguez Restrepo
+            <h2 id="especialista-heading" className="font-extrabold text-[#1a365d] leading-tight mb-1 text-2xl sm:text-3xl md:text-4xl">
+              Dr. Guillermo Rodríguez Restrepo – Ortopedista en Medellín
             </h2>
 
             <p className="text-[14px] sm:text-[16px] text-[#25D366] font-semibold mb-5">

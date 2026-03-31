@@ -4,7 +4,7 @@ export default function Footer() {
       <div className="max-w-[1200px] mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-[1.5fr_1fr_1fr_1fr] gap-8 md:gap-10 mb-10 md:mb-12">
           <div className="opacity-0 animate-fade-up" style={{ animationDelay: '0.1s' }}>
-            <h3 className="text-base font-bold text-white mb-1">Dr. Guillermo Rodríguez Restrepo</h3>
+            <p className="text-base font-bold text-white mb-1">Dr. Guillermo Rodríguez Restrepo</p>
             <p className="text-xs text-[#25D366] font-semibold mb-3">Ortopedista y Traumatólogo · 30+ años</p>
             <p className="text-xs sm:text-[13px] leading-relaxed text-white/60">
               Torre Medical · El Poblado · Medellín<br/>
@@ -13,7 +13,7 @@ export default function Footer() {
           </div>
 
           <div className="opacity-0 animate-fade-up" style={{ animationDelay: '0.15s' }}>
-            <div className="text-xs font-bold uppercase tracking-widest text-white/90 mb-4">Contacto</div>
+            <p className="text-xs font-bold uppercase tracking-widest text-white/90 mb-4">Contacto</p>
             <ul className="list-none flex flex-col gap-3 text-xs sm:text-[13px] text-white/60">
               <li className="space-y-1">
                 <div className="text-[10px] uppercase tracking-widest text-white/50">Dirección</div>
@@ -45,7 +45,7 @@ export default function Footer() {
           </div>
 
           <div className="opacity-0 animate-fade-up" style={{ animationDelay: '0.2s' }}>
-            <div className="text-xs font-bold uppercase tracking-widest text-white/90 mb-4">Horarios</div>
+            <p className="text-xs font-bold uppercase tracking-widest text-white/90 mb-4">Horarios</p>
             <ul className="list-none flex flex-col gap-2 text-xs sm:text-[13px] text-white/60">
               <li>
                 <div className="font-semibold text-white/80">Mar y Jue</div>
@@ -63,7 +63,7 @@ export default function Footer() {
           </div>
 
           <div className="opacity-0 animate-fade-up" style={{ animationDelay: '0.25s' }}>
-            <div className="text-xs font-bold uppercase tracking-widest text-white/90 mb-4">Legal</div>
+            <p className="text-xs font-bold uppercase tracking-widest text-white/90 mb-4">Legal</p>
             <ul className="list-none flex flex-col gap-2">
               <li>
                 <a href="#privacidad" className="text-xs sm:text-[13px] text-white/60 no-underline transition-colors hover:text-white">

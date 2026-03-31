@@ -29,8 +29,8 @@ export default function FAQ() {
         <span className="inline-block text-[11px] font-bold tracking-widest uppercase text-[#1ebe57] mb-2.5 opacity-0 animate-fade-up" style={{ animationDelay: '0.1s' }}>
           Preguntas Frecuentes
         </span>
-        <h2 className="font-extrabold text-[#1a365d] leading-tight mb-3.5 text-2xl sm:text-3xl md:text-4xl opacity-0 animate-cascade" style={{ animationDelay: '0.2s' }}>
-          Preguntas Frecuentes sobre Ortopedia en Medellín
+        <h2 id="faq-heading" className="font-extrabold text-[#1a365d] leading-tight mb-3.5 text-2xl sm:text-3xl md:text-4xl opacity-0 animate-cascade" style={{ animationDelay: '0.2s' }}>
+          Preguntas Frecuentes sobre Ortopedia y Traumatología
         </h2>
 
         <div className="mt-8 sm:mt-10 flex flex-col gap-3 max-w-[740px]">
@@ -45,8 +45,9 @@ export default function FAQ() {
               <button
                 className="w-full px-4 sm:px-5 py-3 sm:py-4 bg-transparent border-none text-left text-sm sm:text-[15px] font-bold text-[#1a365d] cursor-pointer flex items-center justify-between gap-2 sm:gap-3"
                 onClick={() => toggleFaq(idx)}
+                aria-expanded={openIndex === idx}
               >
-                {faq.q}
+                <h3 className="font-bold text-[#1a365d] text-sm sm:text-[15px] m-0">{faq.q}</h3>
                 <ChevronDown
                   className={`w-4 sm:w-5 h-4 sm:h-5 flex-shrink-0 text-gray-400 transition-transform ${
                     openIndex === idx ? 'rotate-180 text-[#1a365d]' : ''

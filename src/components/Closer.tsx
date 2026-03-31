@@ -11,9 +11,9 @@ export default function Closer() {
       <div className="absolute -bottom-32 -left-20 w-96 h-96 rounded-full bg-[rgba(255,255,255,0.03)] pointer-events-none"></div>
 
       <div className="max-w-3xl mx-auto text-center relative z-10">
-        <h2 className="font-extrabold text-white leading-tight mb-8 text-2xl sm:text-3xl md:text-5xl opacity-0 animate-cascade" style={{ animationDelay: '0.2s' }}>
-          No permitas que el dolor decida por ti. Tu nueva vida comienza con un <em className="not-italic text-[#25D366]">mensaje.</em>
-        </h2>
+        <p className="font-extrabold text-white leading-tight mb-8 text-2xl sm:text-3xl md:text-5xl opacity-0 animate-cascade" style={{ animationDelay: '0.2s' }}>
+          No permitas que el dolor decida por ti. Tu nueva vida comienza con un <span className="text-[#25D366]">mensaje.</span>
+        </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center opacity-0 animate-fade-up" style={{ animationDelay: '0.4s' }}>
           <a
