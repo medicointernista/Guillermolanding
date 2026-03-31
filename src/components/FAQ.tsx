@@ -19,11 +19,11 @@ export default function FAQ() {
     },
     {
       q: '¿Cuál es el costo de una consulta de ortopedia con diagnóstico ecográfico?',
-      a: 'Consultas desde $120,000 COP. Incluye evaluación completa, examen físico y diagnóstico ecográfico en tiempo real. Disponible presencial en Torre Medical o telemedicina.'
+      a: 'Nuestra consulta incluye evaluación completa, examen físico y diagnóstico en tiempo real, todo en una sola cita. Para conocer la tarifa vigente contáctanos por WhatsApp — te respondemos en menos de 2 horas.'
     },
     {
       q: '¿Cuánto cuesta un tratamiento de PRP en Medellín?',
-      a: 'Infiltración con PRP desde $800,000 COP. Incluye análisis de sangre, preparación en centrífuga de última generación y aplicación ecoguiada en articulación afectada.'
+      a: 'El costo del PRP varía según la articulación y el protocolo que tu caso requiere — no todos los tratamientos son iguales. Para darte una información precisa y honesta, escríbenos por WhatsApp.'
     },
     {
       q: '¿Qué diferencia hay entre PRP y ácido hialurónico?',
