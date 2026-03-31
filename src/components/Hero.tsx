@@ -30,9 +30,6 @@ export default function Hero() {
                 </svg>
                 QUIERO MI DIAGNÓSTICO HOY
               </a>
-              <p className="text-[11px] text-white/55 font-medium tracking-wide pl-1">
-                Sin compromiso · Respuesta en menos de 2 horas · 100% confidencial
-              </p>
             </div>
             <div className="flex flex-wrap gap-2.5 opacity-0 animate-fade-up" style={{ animationDelay: '0.9s' }}>
               <span className="inline-flex items-center gap-1.5 bg-white/10 border border-white/[0.18] text-white/90 px-3.5 py-1.5 rounded-full text-[13px] font-medium opacity-0 animate-scale-pop" style={{ animationDelay: '1s' }}>
