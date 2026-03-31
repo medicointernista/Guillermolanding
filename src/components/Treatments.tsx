@@ -54,17 +54,20 @@ export default function Treatments() {
             return (
             <li
               key={idx}
-              className="bg-white border border-gray-200 rounded-2xl p-5 sm:p-6 transition-all hover:border-[#25D366] hover:shadow-lg hover:-translate-y-1 cursor-default opacity-0 animate-scale-pop"
+              className="bg-white border border-gray-200 rounded-2xl p-5 sm:p-6 transition-all duration-300 hover:border-[#25D366] hover:shadow-[0_12px_40px_rgba(37,211,102,0.15)] hover:-translate-y-2 cursor-default opacity-0 animate-scale-pop relative group overflow-hidden"
               style={{ animationDelay: `${0.4 + idx * 0.075}s` }}
             >
+              <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#25D366] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               <div className="flex items-start justify-between mb-3">
-                <IconComponent className="w-6 sm:w-7 h-6 sm:h-7 text-[#25D366]" />
-                <span className="bg-[rgba(37,211,102,0.10)] text-[#15803d] text-[10px] font-bold tracking-wider uppercase px-2 py-1 rounded-md">
+                <div className="relative">
+                  <IconComponent className="w-6 sm:w-7 h-6 sm:h-7 text-[#25D366] transition-transform duration-300 group-hover:scale-110 group-hover:rotate-6" />
+                </div>
+                <span className="bg-[rgba(37,211,102,0.10)] text-[#15803d] text-[10px] font-bold tracking-wider uppercase px-2 py-1 rounded-md transition-all duration-300 group-hover:bg-[rgba(37,211,102,0.20)] group-hover:scale-105">
                   {treatment.badge}
                 </span>
               </div>
-              <h3 className="text-sm sm:text-base font-bold text-[#1a365d] mb-2">{treatment.title}</h3>
-              <p className="text-xs sm:text-[13px] text-gray-600 leading-relaxed">{treatment.desc}</p>
+              <h3 className="text-sm sm:text-base font-bold text-[#1a365d] mb-2 transition-colors duration-300 group-hover:text-[#25D366]">{treatment.title}</h3>
+              <p className="text-xs sm:text-[13px] text-gray-600 leading-relaxed transition-colors duration-300 group-hover:text-gray-700">{treatment.desc}</p>
             </li>
             );
           })}

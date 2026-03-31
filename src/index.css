@@ -240,4 +240,127 @@
   .animate-progress-bar {
     animation: progressBar 1s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
   }
+
+  @keyframes glowPulse {
+    0%, 100% {
+      box-shadow: 0 0 20px rgba(37, 211, 102, 0.5), 0 0 40px rgba(37, 211, 102, 0.2);
+    }
+    50% {
+      box-shadow: 0 0 30px rgba(37, 211, 102, 0.8), 0 0 60px rgba(37, 211, 102, 0.4);
+    }
+  }
+
+  .animate-glow-pulse {
+    animation: glowPulse 4s ease-in-out infinite;
+  }
+
+  @keyframes shimmer {
+    0% {
+      background-position: -1000px 0;
+    }
+    100% {
+      background-position: 1000px 0;
+    }
+  }
+
+  .animate-shimmer {
+    animation: shimmer 2s infinite;
+    background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.3) 50%, rgba(255,255,255,0) 100%);
+    background-size: 1000px 100%;
+  }
+
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-8px);
+    }
+  }
+
+  .animate-float {
+    animation: float 3.5s ease-in-out infinite;
+  }
+
+  @keyframes rotateGlow {
+    0% {
+      transform: rotate(0deg);
+      opacity: 0.5;
+    }
+    100% {
+      transform: rotate(360deg);
+      opacity: 0.1;
+    }
+  }
+
+  .animate-rotate-glow {
+    animation: rotateGlow 8s linear infinite;
+  }
+
+  @keyframes slideUpStagger {
+    from {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-slide-up-stagger {
+    animation: slideUpStagger 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+  }
+
+  @keyframes cardHoverLift {
+    0% {
+      transform: translateY(0) scale(1);
+      box-shadow: 0 4px 12px rgba(26, 54, 93, 0.1);
+    }
+    100% {
+      transform: translateY(-4px) scale(1.01);
+      box-shadow: 0 12px 32px rgba(26, 54, 93, 0.2);
+    }
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .animate-fade-in {
+    animation: fadeIn 0.6s ease-in forwards;
+  }
+
+  @keyframes lineGrow {
+    from {
+      width: 0;
+      opacity: 0;
+    }
+    to {
+      width: 100%;
+      opacity: 1;
+    }
+  }
+
+  .animate-line-grow {
+    animation: lineGrow 0.8s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+  }
+
+  @keyframes pulse-subtle {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.8;
+    }
+  }
+
+  .animate-pulse-subtle {
+    animation: pulse-subtle 3s ease-in-out infinite;
+  }
 }
