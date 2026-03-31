@@ -80,20 +80,17 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-white/10 pt-6 sm:pt-8 opacity-0 animate-fade-up" style={{ animationDelay: '0.3s' }}>
-          <div className="flex flex-col sm:flex-row items-center sm:items-start justify-between gap-8">
-            <div className="text-[10px] sm:text-xs text-white/50 text-center sm:text-left flex-1">
-              <p className="mb-2">
-                © 2026 Dr. Guillermo Rodríguez Restrepo. Todos los derechos reservados.<br/>
-                <span className="text-[9px]">Política de Tratamiento de Datos Personales · Términos y Condiciones del Servicio</span>
-              </p>
-              <p className="text-white/40 text-[9px]">
-                Hecho por <a href="https://localrank.com.co" target="_blank" rel="noopener" className="hover:text-white/60 transition-colors">LocalRank.com.co</a>
-              </p>
-            </div>
-            <div className="flex flex-col items-center gap-4">
-              <p className="text-xs font-bold text-white/90">Dr. Guillermo Rodríguez</p>
-              <img src="/manejo-del-dolor-ortopedico-en-medellin.png" alt="Dr. Guillermo Rodríguez" className="h-16 w-auto opacity-70 hover:opacity-100 transition-opacity rounded" />
-            </div>
+          <div className="text-[10px] sm:text-xs text-white/50 text-center">
+            <p className="mb-2">
+              © 2026 Dr. Guillermo Rodríguez Restrepo. Todos los derechos reservados.<br/>
+              <span className="text-[9px]">Política de Tratamiento de Datos Personales · Términos y Condiciones del Servicio</span>
+            </p>
+            <p className="text-white/40 text-[9px] mb-3">
+              Hecho por <a href="https://localrank.com.co" target="_blank" rel="noopener" className="hover:text-white/60 transition-colors">LocalRank.com.co</a>
+            </p>
+            <p className="text-white/30 text-[8px]">
+              Actualizado Marzo 2026
+            </p>
           </div>
         </div>
       </div>
