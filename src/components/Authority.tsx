@@ -48,7 +48,7 @@ export default function Authority() {
             </span>
 
             <h2 id="especialista-heading" className="font-extrabold text-[#1a365d] leading-tight mb-1 text-2xl sm:text-3xl md:text-4xl">
-              Dr. Guillermo Rodríguez Restrepo – Ortopedista en Medellín
+              Dr. Guillermo Rodríguez Restrepo – Ortopedista Torre Medical
             </h2>
 
             <p className="text-[14px] sm:text-[16px] text-[#25D366] font-semibold mb-5">
@@ -56,7 +56,7 @@ export default function Authority() {
             </p>
 
             <p className="text-sm sm:text-base md:text-[17px] text-gray-700 leading-relaxed mb-6">
-              Especialista con más de 20 años dedicados a la ortopedia y traumatología en Medellín. Maneja patologías de mediana y alta complejidad con respaldo académico, científico y clínico — docente universitario, investigador y referente en medicina regenerativa ortopédica.
+              Especialista en ortopedia y traumatología con más de 30 años de experiencia. Atiende en Torre Medical, El Poblado, Medellín con diagnóstico ecográfico. Maneja patologías de mediana y alta complejidad con respaldo académico, científico y clínico — docente universitario, investigador y referente en medicina regenerativa ortopédica.
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">

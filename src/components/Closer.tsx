@@ -33,7 +33,7 @@ export default function Closer() {
         </div>
 
         <p className="text-sm sm:text-base text-white/60 mt-6 opacity-0 animate-fade-up" style={{ animationDelay: '0.6s' }}>
-          Respuesta en menos de 2 horas · Sin compromiso · 100% confidencial
+          Torre Medical, El Poblado - Medellín · Respuesta en menos de 2 horas · Sin compromiso
         </p>
       </div>
     </section>

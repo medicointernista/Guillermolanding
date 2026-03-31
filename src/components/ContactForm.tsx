@@ -35,10 +35,10 @@ export default function ContactForm() {
             Cuéntanos Tu Caso
           </span>
           <h2 id="contact-heading" className="font-extrabold text-[#1a365d] leading-tight mb-3 text-2xl sm:text-3xl md:text-4xl">
-            Consulta tu Caso de Ortopedia — Respuesta el Mismo Día
+            Consulta tu Caso de Ortopedia — Torre Medical, El Poblado
           </h2>
           <p className="text-sm sm:text-base md:text-[17px] text-gray-600 leading-relaxed">
-            Sin formularios largos. Sin esperar semanas. Solo describe lo que sientes y recibe atención directa del especialista.
+            Sin formularios largos. Sin esperar semanas. Solo describe lo que sientes y recibe atención directa del especialista en Torre Medical, Medellín.
           </p>
         </div>
 
