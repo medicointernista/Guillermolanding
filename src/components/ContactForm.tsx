@@ -143,7 +143,7 @@ export default function ContactForm() {
                 <span className="w-5 h-5 text-[#25D366] flex-shrink-0 mt-1 flex items-center justify-center text-sm font-bold">📅</span>
                 <div>
                   <p className="font-semibold text-[#1a365d] text-sm mb-1">Citas Disponibles</p>
-                  <p className="text-xs text-gray-600">Citas disponibles de lunes a sábado</p>
+                  <p className="text-xs text-gray-600">Citas disponibles de martes a sábado</p>
                 </div>
               </div>
             </div>
