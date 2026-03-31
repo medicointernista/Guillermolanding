@@ -7,23 +7,15 @@ export default function FAQ() {
   const faqs = [
     {
       q: '¿Cuándo debo consultar a un ortopedista?',
-      a: 'Debes consultar cuando presentas dolor persistente, limitación de movimiento o lesiones en huesos y articulaciones. Si el dolor dura más de una semana o limita tus actividades diarias, es momento de buscar atención especializada.'
+      a: 'Cuando tienes dolor persistente en una articulación, limitación de movimiento, dificultad para caminar, o después de cualquier trauma — deportivo o del día a día. No esperes a que empeore.'
     },
     {
       q: '¿Qué tratamientos ofrece la ortopedia?',
-      a: 'La ortopedia ofrece manejo médico integral, infiltraciones guiadas por ecografía, terapias biológicas como PRP y viscosuplementación, células mesenquimales, y seguimiento continuo del paciente. Todo enfocado en recuperar la movilidad y calidad de vida.'
+      a: 'Desde infiltraciones y terapias biológicas hasta cirugía — siempre buscando primero la opción menos invasiva. El objetivo es recuperar tu movilidad y calidad de vida.'
     },
     {
       q: '¿La ortopedia es solo para fracturas?',
-      a: 'No. La ortopedia también trata enfermedades articulares (artrosis, artritis), lesiones deportivas, dolor crónico, hernias discales, túnel carpiano, tendinitis, bursitis y muchas otras condiciones musculoesqueléticas.'
-    },
-    {
-      q: '¿Cuánto dura la primera consulta?',
-      a: 'La primera consulta incluye evaluación médica completa y diagnóstico ecográfico, por lo que tiene una duración aproximada de 45 a 60 minutos. El objetivo es entender a fondo tu caso para diseñar el plan de tratamiento más adecuado.'
-    },
-    {
-      q: '¿Los tratamientos son cubiertos por EPS?',
-      a: 'La consulta es particular (sin necesidad de EPS), lo que garantiza atención inmediata, sin largas esperas y con disponibilidad de los tratamientos más avanzados. Esto te permite recibir la mejor atención personalizada sin restricciones.'
+      a: 'No. También tratamos artrosis, lesiones deportivas, dolor crónico, enfermedades articulares y mucho más. Las fracturas son solo una parte de lo que hacemos.'
     }
   ];
 

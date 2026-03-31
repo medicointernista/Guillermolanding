@@ -5,26 +5,26 @@ export default function HowItWorks() {
     {
       num: 1,
       icon: Shield,
-      title: 'Evaluación Médica Profunda',
-      desc: 'Escuchamos tu caso completo: historial, hábitos y el movimiento que quieres recuperar.'
+      title: 'Evaluación Completa',
+      desc: 'Escuchamos tu caso, examinamos tu condición y entendemos exactamente qué necesitas — sin apresurarnos.'
     },
     {
       num: 2,
       icon: Scan,
-      title: 'Diagnóstico Ecográfico en el Acto',
-      desc: 'Vemos el origen exacto de tu lesión en pantalla durante la misma consulta. Cero suposiciones.'
+      title: 'Diagnóstico Preciso',
+      desc: 'Analizamos tu evaluación clínica y todos tus estudios. Si se necesitan exámenes adicionales, te lo decimos. Sin suposiciones.'
     },
     {
       num: 3,
       icon: CheckCircle,
-      title: 'Plan Regenerativo a Tu Medida',
-      desc: 'PRP, viscosuplementación o células mesenquimales — solo lo que tu cuerpo realmente necesita.'
+      title: 'Tu Plan de Tratamiento',
+      desc: 'Construimos un tratamiento personalizado basado en evidencia científica. Infiltraciones, PRP, ácido hialurónico o cirugía solo cuando es necesario — siempre priorizando lo menos invasivo.'
     },
     {
       num: 4,
       icon: Heart,
-      title: 'Seguimiento hasta que lo Logres',
-      desc: 'No te dejamos solo después del tratamiento. Te acompañamos hasta que vuelvas a moverte con libertad.'
+      title: 'Seguimiento Continuo',
+      desc: 'No te dejamos solo. Hacemos seguimiento permanente y ajustamos tu tratamiento según cómo evoluciones.'
     }
   ];
 

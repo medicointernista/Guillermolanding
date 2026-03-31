@@ -1,58 +1,73 @@
 export default function Footer() {
   return (
-    <footer className="bg-gray-800 text-white/65 py-10 sm:py-12 px-4 sm:px-6">
+    <footer className="bg-gray-900 text-white/70 py-12 sm:py-16 md:py-20 px-4 sm:px-6">
       <div className="max-w-[1200px] mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-[1.5fr_1fr_1fr] gap-8 md:gap-10 mb-8 md:mb-10">
+        <div className="grid grid-cols-1 md:grid-cols-[1.5fr_1fr_1fr_1fr] gap-8 md:gap-10 mb-10 md:mb-12">
           <div className="opacity-0 animate-fade-up" style={{ animationDelay: '0.1s' }}>
-            <a href="#inicio" className="inline-block mb-3">
-              <img
-                src="/manejo-del-dolor-ortopedico-en-medellin.png"
-                alt="Dr. Guillermo Rodríguez Restrepo – Ortopedia con Calidad Humana"
-                className="h-[50px] sm:h-[60px] w-auto rounded-lg opacity-90 transition-opacity hover:opacity-100"
-              />
-            </a>
-            <p className="text-xs sm:text-[13px] leading-relaxed max-w-[280px]">
-              Especialista en Ortopedia y Traumatología. Ortopedia con calidad humana en Torre Medical, Medellín.
+            <h3 className="text-base font-bold text-white mb-1">Dr. Guillermo Rodríguez Restrepo</h3>
+            <p className="text-xs text-[#25D366] font-semibold mb-3">Ortopedista y Traumatólogo · 30+ años</p>
+            <p className="text-xs sm:text-[13px] leading-relaxed text-white/60">
+              Torre Medical · El Poblado · Medellín<br/>
+              4.8/5 · Doctoralia verificado
             </p>
           </div>
 
-          <div className="opacity-0 animate-fade-up" style={{ animationDelay: '0.2s' }}>
-            <div className="text-[11px] sm:text-xs font-bold uppercase tracking-widest text-white/90 mb-3">Contacto</div>
-            <ul className="list-none flex flex-col gap-2 sm:gap-3">
-              <li>
-                <div className="text-[10px] sm:text-[11px] uppercase tracking-wider text-white/50 mb-1">Dirección</div>
-                <span className="text-xs sm:text-[13px] text-white/75">Torre Medical, Calle 7 # 39-107, Consultorio 609, Medellín</span>
+          <div className="opacity-0 animate-fade-up" style={{ animationDelay: '0.15s' }}>
+            <div className="text-xs font-bold uppercase tracking-widest text-white/90 mb-4">Contacto</div>
+            <ul className="list-none flex flex-col gap-3 text-xs sm:text-[13px] text-white/60">
+              <li className="space-y-1">
+                <div className="text-[10px] uppercase tracking-widest text-white/50">Dirección</div>
+                <span>Calle 7 # 39-107<br/>Consultorio 609, Medellín</span>
               </li>
               <li>
-                <div className="text-[10px] sm:text-[11px] uppercase tracking-wider text-white/50 mb-1">Horarios</div>
-                <div className="text-xs sm:text-[13px] text-white/75">
-                  <div>Lunes a Viernes: 07:30 – 18:00</div>
-                  <div>Sábados: 07:30 – 13:00</div>
-                </div>
-              </li>
-              <li>
-                <a href="mailto:agendasortopediaguillermorodmd@gmail.com" className="text-xs sm:text-[13px] text-white/60 no-underline transition-colors hover:text-white flex items-center gap-1 break-all">
-                  <span>agendasortopediaguillermorodmd@gmail.com</span>
+                <a href="tel:+573244081281" className="hover:text-white transition-colors">
+                  +57 324 408 1281
                 </a>
               </li>
               <li>
-                <a href="https://wa.me/573244081281" target="_blank" rel="noopener" className="text-xs sm:text-[13px] text-white/60 no-underline transition-colors hover:text-white flex items-center gap-1">
-                  <span>+57 324 408 1281</span>
+                <a href="mailto:agendasortopediaguillermorodmd@gmail.com" className="hover:text-white transition-colors break-all">
+                  agendasortopediaguillermorodmd@gmail.com
                 </a>
               </li>
             </ul>
           </div>
 
-          <div className="opacity-0 animate-fade-up" style={{ animationDelay: '0.3s' }}>
-            <div className="text-[11px] sm:text-xs font-bold uppercase tracking-widest text-white/90 mb-3">Legal</div>
+          <div className="opacity-0 animate-fade-up" style={{ animationDelay: '0.2s' }}>
+            <div className="text-xs font-bold uppercase tracking-widest text-white/90 mb-4">Horarios</div>
+            <ul className="list-none flex flex-col gap-2 text-xs sm:text-[13px] text-white/60">
+              <li>
+                <div className="font-semibold text-white/80">Martes</div>
+                <span>2:00 pm – 6:30 pm</span>
+              </li>
+              <li>
+                <div className="font-semibold text-white/80">Miércoles</div>
+                <span>7:30 am – 6:30 pm</span>
+              </li>
+              <li>
+                <div className="font-semibold text-white/80">Jueves</div>
+                <span>2:00 pm – 6:30 pm</span>
+              </li>
+              <li>
+                <div className="font-semibold text-white/80">Viernes</div>
+                <span>7:30 am – 6:30 pm</span>
+              </li>
+              <li>
+                <div className="font-semibold text-white/80">Sábado</div>
+                <span>7:30 am – 1:00 pm</span>
+              </li>
+            </ul>
+          </div>
+
+          <div className="opacity-0 animate-fade-up" style={{ animationDelay: '0.25s' }}>
+            <div className="text-xs font-bold uppercase tracking-widest text-white/90 mb-4">Legal</div>
             <ul className="list-none flex flex-col gap-2">
               <li>
-                <a href="#" className="text-xs sm:text-[13px] text-white/60 no-underline transition-colors hover:text-white">
+                <a href="#privacidad" className="text-xs sm:text-[13px] text-white/60 no-underline transition-colors hover:text-white">
                   Política de Privacidad
                 </a>
               </li>
               <li>
-                <a href="#" className="text-xs sm:text-[13px] text-white/60 no-underline transition-colors hover:text-white">
+                <a href="#terminos" className="text-xs sm:text-[13px] text-white/60 no-underline transition-colors hover:text-white">
                   Términos del Servicio
                 </a>
               </li>
@@ -60,18 +75,16 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-white/10 pt-5 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 text-xs">
-          <span className="text-[11px] sm:text-xs">
-            © 2026 Dr. Guillermo Rodríguez Restrepo. Todos los derechos reservados.
-          </span>
-          <a
-            href="https://localrank.com.co"
-            target="_blank"
-            rel="noopener"
-            className="inline-flex items-center gap-1 text-[10px] sm:text-xs text-white/40 no-underline transition-colors hover:text-white/80 whitespace-normal sm:whitespace-nowrap"
-          >
-            Hecho por <strong className="font-bold text-white/55">LocalRank.com.co</strong>
-          </a>
+        <div className="border-t border-white/10 pt-6 sm:pt-8 opacity-0 animate-fade-up" style={{ animationDelay: '0.3s' }}>
+          <div className="text-[10px] sm:text-xs text-white/50 text-center sm:text-left">
+            <p className="mb-2">
+              © 2026 Dr. Guillermo Rodríguez Restrepo. Todos los derechos reservados.<br/>
+              <span className="text-[9px]">Política de Tratamiento de Datos Personales · Términos y Condiciones del Servicio</span>
+            </p>
+            <p className="text-white/40 text-[9px]">
+              Hecho por <a href="https://localrank.com.co" target="_blank" rel="noopener" className="hover:text-white/60 transition-colors">LocalRank.com.co</a>
+            </p>
+          </div>
         </div>
       </div>
     </footer>

@@ -11,13 +11,13 @@ export default function Hero() {
       <div className="max-w-[1200px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-14 items-center relative z-10">
         <div>
           <p className="inline-flex items-center gap-2 bg-[rgba(37,211,102,0.15)] border border-[rgba(37,211,102,0.3)] text-[#6ee7b7] px-3.5 py-1.5 rounded-full text-xs font-semibold tracking-wider uppercase mb-5 opacity-0 animate-fade-up" style={{ animationDelay: '0.1s' }}>
-            Ortopedista · Torre Medical · Medellín
+            Atención Integral en Ortopedia y Traumatología · Torre Medical · El Poblado · Medellín
           </p>
           <h1 className="font-extrabold text-white leading-tight mb-5 text-2xl sm:text-3xl md:text-5xl opacity-0 animate-cascade" style={{ animationDelay: '0.3s' }}>
-            ¿Cuánto Tiempo Más vas a Vivir con ese <em className="not-italic text-[#25D366]">Dolor</em> sin un Diagnóstico Real?
+            Deja de buscar. Aquí encuentras el apoyo integral que tu familia y tú necesitan para <em className="not-italic text-[#25D366]">recuperar la salud</em> de sus articulaciones.
           </h1>
           <p className="text-sm sm:text-base md:text-[17px] text-white/80 leading-relaxed mb-5 sm:mb-7 opacity-0 animate-cascade" style={{ animationDelay: '0.5s' }}>
-            En tu primera consulta hacemos el <strong className="text-white">diagnóstico ecográfico en tiempo real</strong> y saldrás con un plan regenerativo personalizado — no con una remisión para dentro de 3 meses.
+            Desde la primera visita: evaluación completa de tus necesidades, revisión de todos tus estudios y un plan de tratamiento personalizado — basado en ciencia y construido contigo, no para ti.
           </p>
           <div className="flex flex-col gap-4">
             <div className="flex flex-col gap-2 opacity-0 animate-spring" style={{ animationDelay: '0.7s' }}>
@@ -36,13 +36,13 @@ export default function Hero() {
             </div>
             <div className="flex flex-wrap gap-2.5 opacity-0 animate-fade-up" style={{ animationDelay: '0.9s' }}>
               <span className="inline-flex items-center gap-1.5 bg-white/10 border border-white/[0.18] text-white/90 px-3.5 py-1.5 rounded-full text-[13px] font-medium opacity-0 animate-scale-pop" style={{ animationDelay: '1s' }}>
-                Cita disponible esta semana
+                Sin largas esperas de EPS
               </span>
               <span className="inline-flex items-center gap-1.5 bg-white/10 border border-white/[0.18] text-white/90 px-3.5 py-1.5 rounded-full text-[13px] font-medium opacity-0 animate-scale-pop" style={{ animationDelay: '1.05s' }}>
-                Diagnóstico ecográfico incluido
+                Valoración personalizada
               </span>
               <span className="inline-flex items-center gap-1.5 bg-white/10 border border-white/[0.18] text-white/90 px-3.5 py-1.5 rounded-full text-[13px] font-medium opacity-0 animate-scale-pop" style={{ animationDelay: '1.1s' }}>
-                Sin cirugía en la mayoría de casos
+                Alternativas sin cirugía
               </span>
             </div>
           </div>
