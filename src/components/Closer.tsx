@@ -12,7 +12,7 @@ export default function Closer() {
 
       <div className="max-w-3xl mx-auto text-center relative z-10">
         <p className="font-extrabold text-white leading-tight mb-8 text-2xl sm:text-3xl md:text-5xl opacity-0 animate-cascade" style={{ animationDelay: '0.2s' }}>
-          No permitas que el dolor decida por ti. Tu nueva vida comienza con un <span className="text-[#25D366]">mensaje.</span>
+          No permitas que el <span className="text-[#25D366]">dolor</span> decida por ti. Tu nueva vida comienza con un <span className="text-[#25D366]">mensaje.</span>
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center opacity-0 animate-fade-up" style={{ animationDelay: '0.4s' }}>
