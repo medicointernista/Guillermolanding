@@ -113,7 +113,7 @@ export default function ContactForm() {
                 <Clock className="w-5 h-5 text-[#25D366] flex-shrink-0 mt-1" />
                 <div>
                   <p className="font-semibold text-[#1a365d] text-sm mb-1">Respuesta Rápida</p>
-                  <p className="text-xs text-gray-600">Respuesta en menos de 2 horas en horario de atención</p>
+                  <p className="text-xs text-gray-600">Respuesta inmediata durante el horario de atención al paciente</p>
                 </div>
               </div>
             </div>
