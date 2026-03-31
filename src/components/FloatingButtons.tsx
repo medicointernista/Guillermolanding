@@ -5,7 +5,7 @@ export default function FloatingButtons() {
 
   return (
     <>
-      <div className="fixed bottom-6 right-6 z-[999] flex flex-col gap-3">
+      <div className="hidden md:flex fixed bottom-6 right-6 z-[999] flex-col gap-3">
         <a
           href="https://wa.me/573244340199?text=Tengo%20una%20urgencia%20m%C3%A9dica.%20Vengo%20desde%20la%20p%C3%A1gina%20web."
           className="w-[60px] h-[60px] rounded-full bg-red-600 text-white flex items-center justify-center shadow-[0_4px_24px_rgba(220,38,38,0.5)] no-underline transition-transform hover:scale-110 hover:shadow-[0_6px_32px_rgba(220,38,38,0.6)]"
@@ -32,7 +32,7 @@ export default function FloatingButtons() {
         </a>
       </div>
 
-      <div className="md:hidden fixed bottom-0 left-0 right-0 z-[998] px-4 py-2.5 bg-white border-t border-gray-200 shadow-[0_-4px_16px_rgba(0,0,0,0.10)] flex gap-2.5 opacity-0 animate-lift" style={{ animationDelay: '0.2s' }}>
+      <div className="md:hidden fixed bottom-0 left-0 right-0 z-[999] px-4 py-2.5 bg-white border-t border-gray-200 shadow-[0_-4px_16px_rgba(0,0,0,0.10)] flex gap-2.5 opacity-0 animate-lift" style={{ animationDelay: '0.2s' }}>
         <a
           href="tel:+573244081281"
           className="flex-1 flex items-center justify-center gap-2 px-3 py-3 rounded-xl text-[13px] font-bold no-underline text-center bg-[#1a365d] text-white transition-all hover:shadow-md"
