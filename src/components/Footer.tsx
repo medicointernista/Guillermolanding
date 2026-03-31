@@ -80,14 +80,21 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-white/10 pt-6 sm:pt-8 opacity-0 animate-fade-up" style={{ animationDelay: '0.3s' }}>
-          <div className="text-[10px] sm:text-xs text-white/50 text-center sm:text-left">
-            <p className="mb-2">
-              © 2026 Dr. Guillermo Rodríguez Restrepo. Todos los derechos reservados.<br/>
-              <span className="text-[9px]">Política de Tratamiento de Datos Personales · Términos y Condiciones del Servicio</span>
-            </p>
-            <p className="text-white/40 text-[9px]">
-              Hecho por <a href="https://localrank.com.co" target="_blank" rel="noopener" className="hover:text-white/60 transition-colors">LocalRank.com.co</a>
-            </p>
+          <div className="flex flex-col sm:flex-row items-center sm:items-start justify-between gap-6">
+            <div className="text-[10px] sm:text-xs text-white/50 text-center sm:text-left flex-1">
+              <p className="mb-2">
+                © 2026 Dr. Guillermo Rodríguez Restrepo. Todos los derechos reservados.<br/>
+                <span className="text-[9px]">Política de Tratamiento de Datos Personales · Términos y Condiciones del Servicio</span>
+              </p>
+              <p className="text-white/40 text-[9px]">
+                Hecho por <a href="https://localrank.com.co" target="_blank" rel="noopener" className="hover:text-white/60 transition-colors">LocalRank.com.co</a>
+              </p>
+            </div>
+            <div className="flex gap-6 items-center">
+              <img src="/Logo_Universidad_de_los_Andes.jpg" alt="Universidad de los Andes" className="h-12 w-auto opacity-70 hover:opacity-100 transition-opacity" />
+              <img src="/Logo-Doctoralia.jpg" alt="Doctoralia" className="h-12 w-auto opacity-70 hover:opacity-100 transition-opacity" />
+              <img src="/Logo-Universidad-CES-Colombia-removebg-preview.png" alt="Universidad CES" className="h-12 w-auto opacity-70 hover:opacity-100 transition-opacity" />
+            </div>
           </div>
         </div>
       </div>
