@@ -7,7 +7,7 @@ export default function FloatingButtons() {
     <>
       <div className="hidden md:flex fixed bottom-6 right-6 z-[999] flex-col gap-3">
         <a
-          href="https://wa.me/573244081281?text=Tengo%20una%20urgencia%20m%C3%A9dica.%20Vengo%20desde%20su%20anuncio%20en%20Google."
+          href="https://wa.me/573244340199?text=Tengo%20una%20urgencia%20m%C3%A9dica.%20Vengo%20desde%20su%20anuncio%20en%20Google."
           className="w-[60px] h-[60px] rounded-full bg-red-600 text-white flex items-center justify-center shadow-[0_4px_24px_rgba(220,38,38,0.5)] no-underline transition-transform hover:scale-110 hover:shadow-[0_6px_32px_rgba(220,38,38,0.6)]"
           target="_blank"
           rel="noopener"
@@ -48,7 +48,7 @@ export default function FloatingButtons() {
           Agendar
         </a>
         <a
-          href="https://wa.me/573244081281?text=Tengo%20una%20urgencia%20m%C3%A9dica.%20Vengo%20desde%20su%20anuncio%20en%20Google."
+          href="https://wa.me/573244340199?text=Tengo%20una%20urgencia%20m%C3%A9dica.%20Vengo%20desde%20su%20anuncio%20en%20Google."
           target="_blank"
           rel="noopener"
           className="flex-1 flex items-center justify-center gap-2 px-3 py-3 rounded-xl text-[13px] font-bold no-underline text-center bg-red-600 text-white transition-all hover:shadow-md"

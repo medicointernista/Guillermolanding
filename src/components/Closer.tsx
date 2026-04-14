@@ -17,14 +17,14 @@ export default function Closer() {
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center opacity-0 animate-fade-up" style={{ animationDelay: '0.4s' }}>
           <a
-            href="https://wa.me/573244081281?text=Tengo%20una%20urgencia%20m%C3%A9dica.%20Vengo%20desde%20su%20anuncio%20en%20Google."
+            href="https://wa.me/573244340199?text=Tengo%20una%20urgencia%20m%C3%A9dica.%20Vengo%20desde%20su%20anuncio%20en%20Google."
             className="inline-flex items-center justify-center gap-3 bg-[#25D366] text-white no-underline px-8 py-5 rounded-full text-base sm:text-lg font-extrabold tracking-wide uppercase transition-all shadow-[0_4px_24px_rgba(37,211,102,0.4)] hover:bg-[#1ebe57] hover:-translate-y-1 hover:shadow-[0_8px_36px_rgba(37,211,102,0.5)]"
           >
             <MessageCircle size={24} />
             Escríbeme por WhatsApp
           </a>
           <a
-            href="tel:+573244081281"
+            href="tel:+573244340199"
             className="inline-flex items-center justify-center gap-3 bg-white/10 border border-white/30 text-white no-underline px-8 py-5 rounded-full text-base sm:text-lg font-extrabold tracking-wide uppercase transition-all hover:bg-white/20 hover:-translate-y-1 hover:border-white/50"
           >
             <Phone size={24} />
