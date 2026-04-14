@@ -44,7 +44,7 @@ export default function Header() {
                 AGENDAR
               </a>
               <a
-                href="https://wa.me/573244340199?text=Tengo%20una%20urgencia%20m%C3%A9dica.%20Vengo%20desde%20la%20p%C3%A1gina%20web."
+                href="https://wa.me/573244081281?text=Tengo%20una%20urgencia%20m%C3%A9dica.%20Vengo%20desde%20su%20anuncio%20en%20Google."
                 className="inline-flex items-center gap-2 bg-red-600 text-white no-underline px-3 py-2 md:px-4 md:py-2.5 rounded-full text-[10px] md:text-xs font-extrabold tracking-wider uppercase transition-all duration-300 shadow-[0_3px_16px_rgba(220,38,38,0.40)] hover:bg-red-700 hover:-translate-y-0.5 hover:shadow-[0_8px_32px_rgba(220,38,38,0.60)] hover:scale-105 whitespace-nowrap flex-shrink-0"
                 target="_blank"
                 rel="noopener"
@@ -69,7 +69,7 @@ export default function Header() {
                 </svg>
               </a>
               <a
-                href="https://wa.me/573244340199?text=Tengo%20una%20urgencia%20m%C3%A9dica.%20Vengo%20desde%20la%20p%C3%A1gina%20web."
+                href="https://wa.me/573244081281?text=Tengo%20una%20urgencia%20m%C3%A9dica.%20Vengo%20desde%20su%20anuncio%20en%20Google."
                 className="inline-flex items-center justify-center gap-1.5 bg-red-600 text-white no-underline px-2.5 sm:px-3 py-1.5 sm:py-2 rounded-full transition-all duration-300 shadow-[0_3px_16px_rgba(220,38,38,0.40)] hover:bg-red-700 hover:-translate-y-0.5 hover:shadow-[0_6px_24px_rgba(220,38,38,0.60)] hover:scale-110"
                 target="_blank"
                 rel="noopener"
