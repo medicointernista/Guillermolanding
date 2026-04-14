@@ -22,7 +22,7 @@ export default function Hero() {
           <div className="flex flex-col gap-4">
             <div className="flex flex-col gap-2 opacity-0 animate-spring" style={{ animationDelay: '0.7s' }}>
               <a
-                href="https://api.whatsapp.com/send/?phone=573244081281&text=Hola+Dr.+Guillermo+Rodr%C3%ADguez%2C+quiero+agendar+una+valoraci%C3%B3n.+Vengo+desde+la+p%C3%A1gina+web.&type=phone_number&app_absent=0"
+                href="https://api.whatsapp.com/send/?phone=573244081281&text=Hola%2C+gracias+por+escribirnos+desde+nuestro+anuncio+en+Google.+El+Dr.+Guillermo+Rodr%C3%ADguez+y+su+equipo+est%C3%A1n+para+ayudarte%2C+%C2%BFen+qu%C3%A9+podemos+colaborarte+hoy%3F&type=phone_number&app_absent=0"
                 target="_blank"
                 rel="noopener"
                 className="inline-flex items-center justify-center gap-2.5 bg-[#25D366] text-white no-underline px-5 py-2.5 rounded-full text-sm font-extrabold tracking-wide uppercase transition-all duration-300 shadow-[0_4px_24px_rgba(37,211,102,0.4)] hover:bg-[#1ebe57] hover:-translate-y-1 hover:shadow-[0_10px_40px_rgba(37,211,102,0.6)] hover:scale-105 self-start group"

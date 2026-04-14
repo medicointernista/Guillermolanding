@@ -45,6 +45,8 @@ const mensajes: Record<string, { titulo: string; detalle: string }> = {
   }
 };
 
+const MENSAJE_INICIAL = 'Hola, gracias por escribirnos desde nuestro anuncio en Google. El Dr. Guillermo Rodríguez y su equipo están para ayudarte, ¿en qué podemos colaborarte hoy?';
+
 export default function WhatsAppWidget() {
   const [patologia, setPatologia] = useState('');
   const [nombre, setNombre] = useState('');
@@ -59,11 +61,11 @@ export default function WhatsAppWidget() {
 
     if (patologia === 'otro') {
       const desc = otroTexto ? `\n\n${otroTexto}` : '';
-      return `${saludo} y me comunico para consultar sobre un caso clínico. Me gustaría agendar una valoración personalizada.${telStr}${desc}\n\nAgradezco me contacten para confirmar mi cita.`;
+      return `${MENSAJE_INICIAL}\n\n${saludo} y me comunico para consultar sobre un caso clínico. Me gustaría agendar una valoración personalizada.${telStr}${desc}\n\nAgradezco me contacten para confirmar mi cita.`;
     }
 
     const m = mensajes[patologia];
-    return `${saludo} y me comunico porque tengo ${m.titulo}. Me gustaría agendar una valoración personalizada.${telStr}\n\n${m.detalle}\n\nAgradezco me contacten para confirmar mi cita.`;
+    return `${MENSAJE_INICIAL}\n\n${saludo} y me comunico porque tengo ${m.titulo}. Me gustaría agendar una valoración personalizada.${telStr}\n\n${m.detalle}\n\nAgradezco me contacten para confirmar mi cita.`;
   };
 
   useEffect(() => {

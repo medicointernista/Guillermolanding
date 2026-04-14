@@ -19,7 +19,7 @@ export default function FloatingButtons() {
           </svg>
         </a>
         <a
-          href="https://wa.me/573244081281?text=Hola%20Dr.%20Guillermo%20Rodr%C3%ADguez,%20quiero%20agendar%20una%20valoraci%C3%B3n%20para%20recuperar%20mi%20movilidad.%20Vengo%20desde%20la%20p%C3%A1gina%20web."
+          href="https://wa.me/573244081281?text=Hola%2C%20gracias%20por%20escribirnos%20desde%20nuestro%20anuncio%20en%20Google.%20El%20Dr.%20Guillermo%20Rodr%C3%ADguez%20y%20su%20equipo%20est%C3%A1n%20para%20ayudarte%2C%20%C2%BFen%20qu%C3%A9%20podemos%20colaborarte%20hoy%3F"
           className="w-[60px] h-[60px] rounded-full bg-[#25D366] text-white flex items-center justify-center shadow-[0_4px_24px_rgba(37,211,102,0.5)] no-underline transition-transform hover:scale-110 hover:shadow-[0_6px_32px_rgba(37,211,102,0.6)] animate-breathe"
           target="_blank"
           rel="noopener"
@@ -40,7 +40,7 @@ export default function FloatingButtons() {
           Llamar
         </a>
         <a
-          href="https://wa.me/573244081281?text=Hola%20Dr.%20Guillermo%20Rodr%C3%ADguez,%20quiero%20agendar%20una%20valoraci%C3%B3n."
+          href="https://wa.me/573244081281?text=Hola%2C%20gracias%20por%20escribirnos%20desde%20nuestro%20anuncio%20en%20Google.%20El%20Dr.%20Guillermo%20Rodr%C3%ADguez%20y%20su%20equipo%20est%C3%A1n%20para%20ayudarte%2C%20%C2%BFen%20qu%C3%A9%20podemos%20colaborarte%20hoy%3F"
           target="_blank"
           rel="noopener"
           className="flex-1 flex items-center justify-center gap-2 px-3 py-3 rounded-xl text-[13px] font-bold no-underline text-center bg-[#25D366] text-white transition-all hover:shadow-md"
