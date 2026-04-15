@@ -66,7 +66,7 @@ export default function Location() {
                   <div>
                     <div className="text-[9px] sm:text-[10px] text-gray-500 font-medium">Agendar:</div>
                     <a
-                      href="https://wa.me/573244081281?text=Hola%20Dr.%20Guillermo%20Rodr%C3%ADguez,%20quiero%20agendar%20una%20valoraci%C3%B3n%20para%20recuperar%20mi%20movilidad.%20Vengo%20desde%20la%20p%C3%A1gina%20web."
+                      href="https://wa.me/573244081281?text=Hola%2C%20gracias%20por%20escribirnos%20desde%20nuestro%20anuncio%20en%20Google.%20El%20Dr.%20Guillermo%20Rodr%C3%ADguez%20y%20su%20equipo%20est%C3%A1n%20para%20ayudarte%2C%20%C2%BFen%20qu%C3%A9%20podemos%20colaborarte%20hoy%3F"
                       className="text-[#1a365d] no-underline hover:underline break-all"
                       target="_blank"
                       rel="noopener"
@@ -107,7 +107,7 @@ export default function Location() {
             </div>
 
             <a
-              href="https://wa.me/573244081281?text=Hola%20Dr.%20Guillermo%20Rodr%C3%ADguez,%20quiero%20agendar%20una%20valoraci%C3%B3n%20para%20recuperar%20mi%20movilidad.%20Vengo%20desde%20la%20p%C3%A1gina%20web."
+              href="https://wa.me/573244081281?text=Hola%2C%20gracias%20por%20escribirnos%20desde%20nuestro%20anuncio%20en%20Google.%20El%20Dr.%20Guillermo%20Rodr%C3%ADguez%20y%20su%20equipo%20est%C3%A1n%20para%20ayudarte%2C%20%C2%BFen%20qu%C3%A9%20podemos%20colaborarte%20hoy%3F"
               target="_blank"
               rel="noopener"
               className="inline-flex items-center justify-center gap-2.5 bg-[#25D366] text-white no-underline px-6 sm:px-7 py-3 sm:py-4 rounded-full text-sm sm:text-[15px] font-extrabold tracking-wide uppercase transition-all shadow-[0_4px_24px_rgba(37,211,102,0.4)] hover:bg-[#1ebe57] hover:-translate-y-0.5 hover:shadow-[0_6px_32px_rgba(37,211,102,0.5)] w-full justify-center mt-0.5 opacity-0 animate-spring"
