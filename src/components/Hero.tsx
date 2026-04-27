@@ -11,13 +11,13 @@ export default function Hero() {
       <div className="max-w-[1200px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-14 items-center relative z-10">
         <div>
           <p className="inline-flex items-center gap-2 bg-[rgba(37,211,102,0.15)] border border-[rgba(37,211,102,0.3)] text-[#6ee7b7] px-3.5 py-1.5 rounded-full text-xs font-semibold tracking-wider uppercase mb-5 opacity-0 animate-fade-up" style={{ animationDelay: '0.1s' }}>
-            Atención Integral en Ortopedia y Traumatología · Torre Medical
+            Especialista en Rodilla, Hombro y Traumatología en Medellín
           </p>
           <h1 className="font-extrabold text-white leading-tight mb-5 text-xl sm:text-2xl md:text-4xl opacity-0 animate-cascade" style={{ animationDelay: '0.3s' }}>
-            Deja de buscar. Aquí encuentras el apoyo integral que tu familia y tú necesitan para <span className="text-[#25D366]">recuperar la salud de sus articulaciones</span>.
+            Diagnóstico preciso y tratamiento efectivo para lesiones, dolor crónico y <span className="text-[#25D366]">cirugías ortopédicas</span>.
           </h1>
           <p className="font-bold text-white/95 leading-tight mb-4 text-base sm:text-lg md:text-xl opacity-0 animate-cascade" style={{ animationDelay: '0.35s' }}>
-            Desde la primera visita: evaluación completa de tus necesidades, revisión de todos tus estudios y un plan de tratamiento personalizado — basado en ciencia y construido <span className="text-[#25D366]">contigo, no para ti</span>.
+            Más de 20 años de experiencia. Diagnóstico preciso desde la primera cita y tratamiento enfocado en aliviar tu dolor y <span className="text-[#25D366]">recuperar tu movilidad rápidamente</span>.
           </p>
           <div className="flex flex-col gap-4">
             <div className="flex flex-col gap-2 opacity-0 animate-spring" style={{ animationDelay: '0.7s' }}>
