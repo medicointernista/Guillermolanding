@@ -23,14 +23,14 @@ export default function Footer() {
                 <div className="text-[10px] uppercase tracking-widest text-white/50 mb-1">WhatsApp</div>
                 <div className="space-y-1">
                   <div>
-                    <span className="text-[10px] text-white/40">Agendar:</span>
+                    <span className="text-[10px] text-white/40">¿Desea hablar con el Dr.?</span>
                     <a href="https://wa.me/573244081281" className="hover:text-white transition-colors block">
                       +57 324 408 1281
                     </a>
                   </div>
                   <div>
-                    <span className="text-[10px] text-[#ff6b6b]">Urgencia:</span>
-                    <a href="https://wa.me/573244340199" className="hover:text-white transition-colors block text-[#ff6b6b]">
+                    <span className="text-[10px] text-white/40">¿Desea hablar con el Dr.?</span>
+                    <a href="https://wa.me/573244340199" className="hover:text-white transition-colors block">
                       +57 324 434 0199
                     </a>
                   </div>
