@@ -53,7 +53,7 @@ export default function FloatingButtons() {
           rel="noopener"
           className="flex-1 flex items-center justify-center gap-2 px-3 py-3 rounded-xl text-[13px] font-bold no-underline text-center bg-red-600 text-white transition-all hover:shadow-md"
         >
-          Urgencia
+          Habla con el Dr.
         </a>
       </div>
     </>
