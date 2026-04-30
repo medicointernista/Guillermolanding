@@ -64,7 +64,7 @@ export default function Location() {
                 <div className="text-[10px] sm:text-[11px] font-bold uppercase tracking-wider text-gray-400 mb-0.5">WhatsApp</div>
                 <div className="text-xs sm:text-sm font-semibold text-gray-800 leading-relaxed space-y-0.5">
                   <div>
-                    <div className="text-[9px] sm:text-[10px] text-gray-500 font-medium">Agendar:</div>
+                    <div className="text-[9px] sm:text-[10px] text-gray-500 font-medium">¿Desea hablar con el Dr.?</div>
                     <a
                       href="https://wa.me/573244081281?text=Hola%2C%20gracias%20por%20escribirnos%20desde%20nuestro%20anuncio%20en%20Google.%20El%20Dr.%20Guillermo%20Rodr%C3%ADguez%20y%20su%20equipo%20est%C3%A1n%20para%20ayudarte%2C%20%C2%BFen%20qu%C3%A9%20podemos%20colaborarte%20hoy%3F"
                       className="text-[#1a365d] no-underline hover:underline break-all"
