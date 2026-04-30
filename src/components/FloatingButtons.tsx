@@ -34,26 +34,20 @@ export default function FloatingButtons() {
 
       <div className="md:hidden fixed bottom-0 left-0 right-0 z-[999] px-4 py-2.5 bg-white border-t border-gray-200 shadow-[0_-4px_16px_rgba(0,0,0,0.10)] flex gap-2.5 opacity-0 animate-lift" style={{ animationDelay: '0.2s' }}>
         <a
-          href="tel:+573244081281"
-          className="flex-1 flex items-center justify-center gap-2 px-3 py-3 rounded-xl text-[13px] font-bold no-underline text-center bg-[#1a365d] text-white transition-all hover:shadow-md"
-        >
-          Llamar
-        </a>
-        <a
           href="https://wa.me/573244081281?text=Hola%2C%20gracias%20por%20escribirnos%20desde%20nuestro%20anuncio%20en%20Google.%20El%20Dr.%20Guillermo%20Rodr%C3%ADguez%20y%20su%20equipo%20est%C3%A1n%20para%20ayudarte%2C%20%C2%BFen%20qu%C3%A9%20podemos%20colaborarte%20hoy%3F"
           target="_blank"
           rel="noopener"
           className="flex-1 flex items-center justify-center gap-2 px-3 py-3 rounded-xl text-[13px] font-bold no-underline text-center bg-[#25D366] text-white transition-all hover:shadow-md"
         >
-          Agendar
+          Agenda una Cita
         </a>
         <a
-          href="https://wa.me/573244340199?text=Hola%2C%20vi%20su%20anuncio%20en%20Google%20y%20deseo%20hablar%20con%20el%20Dr.%20Guillermo%20Rodr%C3%ADguez."
+          href="https://wa.me/573244340199?text=Hola%2C%20vi%20su%20anuncio%20en%20Google%20y%20quisiera%20resolver%20una%20duda%20con%20el%20Dr.%20Guillermo%20Rodr%C3%ADguez."
           target="_blank"
           rel="noopener"
           className="flex-1 flex items-center justify-center gap-2 px-3 py-3 rounded-xl text-[13px] font-bold no-underline text-center bg-red-600 text-white transition-all hover:shadow-md"
         >
-          Habla con el Dr.
+          Desea hablar con el Dr.
         </a>
       </div>
     </>
