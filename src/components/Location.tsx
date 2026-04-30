@@ -75,10 +75,10 @@ export default function Location() {
                     </a>
                   </div>
                   <div>
-                    <div className="text-[9px] sm:text-[10px] text-red-600 font-medium">Urgencia:</div>
+                    <div className="text-[9px] sm:text-[10px] text-[#1a365d] font-medium">¿Tienes dudas? Habla con el Dr</div>
                     <a
                       href="https://wa.me/573244340199?text=Tengo%20una%20urgencia%20m%C3%A9dica.%20Vengo%20desde%20la%20p%C3%A1gina%20web."
-                      className="text-red-600 no-underline hover:underline break-all"
+                      className="text-[#1a365d] no-underline hover:underline break-all"
                       target="_blank"
                       rel="noopener"
                     >
