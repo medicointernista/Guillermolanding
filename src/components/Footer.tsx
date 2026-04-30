@@ -23,14 +23,14 @@ export default function Footer() {
                 <div className="text-[10px] uppercase tracking-widest text-white/50 mb-1">WhatsApp</div>
                 <div className="space-y-1">
                   <div>
-                    <span className="text-[10px] text-white/40">¿Desea hablar con el Dr.?</span>
-                    <a href="https://wa.me/573244081281" className="hover:text-white transition-colors block">
+                    <span className="text-[10px] text-white/40">Agenda una cita</span>
+                    <a href="https://wa.me/573244081281?text=Hola%2C%20gracias%20por%20escribirnos%20desde%20nuestro%20anuncio%20en%20Google.%20El%20Dr.%20Guillermo%20Rodr%C3%ADguez%20y%20su%20equipo%20est%C3%A1n%20para%20ayudarte%2C%20%C2%BFen%20qu%C3%A9%20podemos%20colaborarte%20hoy%3F" className="hover:text-white transition-colors block">
                       +57 324 408 1281
                     </a>
                   </div>
                   <div>
-                    <span className="text-[10px] text-white/40">¿Desea hablar con el Dr.?</span>
-                    <a href="https://wa.me/573244340199" className="hover:text-white transition-colors block">
+                    <span className="text-[10px] text-white/40">¿Tienes dudas? Habla con el Dr</span>
+                    <a href="https://wa.me/573244340199?text=Hola%2C%20vi%20su%20anuncio%20en%20Google%20y%20quisiera%20resolver%20una%20duda%20con%20el%20Dr.%20Guillermo%20Rodr%C3%ADguez." className="hover:text-white transition-colors block">
                       +57 324 434 0199
                     </a>
                   </div>
