@@ -44,7 +44,7 @@ export default function Header() {
                 AGENDAR
               </a>
               <a
-                href="https://wa.me/573244340199?text=Hola%2C%20vi%20su%20anuncio%20en%20Google%20y%20deseo%20hablar%20con%20el%20Dr.%20Guillermo%20Rodr%C3%ADguez."
+                href="https://wa.me/573244081281?text=Hola%2C%20gracias%20por%20escribirnos%20desde%20nuestro%20anuncio%20en%20Google.%20El%20Dr.%20Guillermo%20Rodr%C3%ADguez%20y%20su%20equipo%20est%C3%A1n%20para%20ayudarte%2C%20%C2%BFen%20qu%C3%A9%20podemos%20colaborarte%20hoy%3F"
                 className="inline-flex items-center gap-2 bg-[#1a365d] text-white no-underline px-3 py-2 md:px-4 md:py-2.5 rounded-full text-[10px] md:text-xs font-extrabold tracking-wider uppercase transition-all duration-300 shadow-[0_3px_16px_rgba(26,54,93,0.40)] hover:bg-[#0f1e35] hover:-translate-y-0.5 hover:shadow-[0_8px_32px_rgba(26,54,93,0.60)] hover:scale-105 whitespace-nowrap flex-shrink-0"
                 target="_blank"
                 rel="noopener"
@@ -69,7 +69,7 @@ export default function Header() {
                 </svg>
               </a>
               <a
-                href="https://wa.me/573244340199?text=Hola%2C%20vi%20su%20anuncio%20en%20Google%20y%20deseo%20hablar%20con%20el%20Dr.%20Guillermo%20Rodr%C3%ADguez."
+                href="https://wa.me/573244081281?text=Hola%2C%20gracias%20por%20escribirnos%20desde%20nuestro%20anuncio%20en%20Google.%20El%20Dr.%20Guillermo%20Rodr%C3%ADguez%20y%20su%20equipo%20est%C3%A1n%20para%20ayudarte%2C%20%C2%BFen%20qu%C3%A9%20podemos%20colaborarte%20hoy%3F"
                 className="inline-flex items-center justify-center gap-1.5 bg-[#1a365d] text-white no-underline px-2.5 sm:px-3 py-1.5 sm:py-2 rounded-full transition-all duration-300 shadow-[0_3px_16px_rgba(26,54,93,0.40)] hover:bg-[#0f1e35] hover:-translate-y-0.5 hover:shadow-[0_6px_24px_rgba(26,54,93,0.60)] hover:scale-110"
                 target="_blank"
                 rel="noopener"
