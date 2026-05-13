@@ -28,12 +28,6 @@ export default function Footer() {
                       +57 324 408 1281
                     </a>
                   </div>
-                  <div>
-                    <span className="text-[10px] text-white/40">¿Tienes dudas? Habla con el Dr</span>
-                    <a href="https://wa.me/573244340199?text=Hola%2C%20vi%20su%20anuncio%20en%20Google%20y%20quisiera%20resolver%20una%20duda%20con%20el%20Dr.%20Guillermo%20Rodr%C3%ADguez." className="hover:text-white transition-colors block">
-                      +57 324 434 0199
-                    </a>
-                  </div>
                 </div>
               </li>
               <li>

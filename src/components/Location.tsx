@@ -74,17 +74,6 @@ export default function Location() {
                       +57 324 408 1281
                     </a>
                   </div>
-                  <div>
-                    <div className="text-[9px] sm:text-[10px] text-[#1a365d] font-medium">¿Tienes dudas? Habla con el Dr</div>
-                    <a
-                      href="https://wa.me/573244340199?text=Hola%2C%20vi%20su%20anuncio%20en%20Google%20y%20quisiera%20resolver%20una%20duda%20con%20el%20Dr.%20Guillermo%20Rodr%C3%ADguez."
-                      className="text-[#1a365d] no-underline hover:underline break-all"
-                      target="_blank"
-                      rel="noopener"
-                    >
-                      +57 324 434 0199
-                    </a>
-                  </div>
                 </div>
               </div>
             </div>
