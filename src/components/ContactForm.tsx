@@ -17,7 +17,7 @@ export default function ContactForm() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    const whatsappMessage = `Hola Dr. Rodríguez, mi nombre es ${formData.name}. ${formData.message}`;
+    const whatsappMessage = `Hola, gracias por escribirnos desde nuestro anuncio en Google. El Dr. Guillermo Rodríguez y su equipo están para ayudarte, ¿en qué podemos colaborarte hoy?\n\nNombre: ${formData.name}\nTeléfono: ${formData.phone}\nMensaje: ${formData.message}`;
     const whatsappUrl = `https://wa.me/573244081281?text=${encodeURIComponent(whatsappMessage)}`;
     window.open(whatsappUrl, '_blank');
     setSubmitted(true);
