@@ -1,8 +1,15 @@
 import { useState } from 'react';
 import Layout from '../components/Layout';
-import { MapPin, Phone, Mail, Clock, MessageCircle } from 'lucide-react';
+import { MapPin, Phone, Mail, Clock } from 'lucide-react';
 
 const WA_HREF = "https://wa.me/573244081281?text=Hola%2C%20gracias%20por%20escribirnos%20desde%20nuestro%20sitio%20web.%20El%20Dr.%20Guillermo%20Rodr%C3%ADguez%20y%20su%20equipo%20est%C3%A1n%20para%20ayudarte%2C%20%C2%BFen%20qu%C3%A9%20podemos%20colaborarte%20hoy%3F";
+
+const INFO_ITEMS = [
+  { icon: MapPin, label: 'Dirección',           value: 'Torre Medical, Calle 7 #39-107\nConsultorio 609, Medellín' },
+  { icon: Clock,  label: 'Horario',             value: 'Mar y Jue: 14:00 – 18:30\nMié y Vie: 07:30 – 18:30\nSáb: 07:30 – 13:00' },
+  { icon: Phone,  label: 'Teléfono / WhatsApp', value: '+57 324 408 1281' },
+  { icon: Mail,   label: 'Correo',              value: 'agendasortopediaguillermorodmd@gmail.com' },
+] as const;
 
 export default function ContactoPage() {
   const [form, setForm] = useState({ nombre: '', telefono: '', email: '', motivo: '' });
@@ -10,7 +17,9 @@ export default function ContactoPage() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    const msg = encodeURIComponent(`Hola, me comunico desde el sitio web del Dr. Guillermo Rodríguez. Mi nombre es ${form.nombre}${form.motivo ? ', motivo de consulta: ' + form.motivo : ''}. Mi teléfono de contacto es ${form.telefono}. Quedo atento a su respuesta.`);
+    const msg = encodeURIComponent(
+      `Hola, me comunico desde el sitio web del Dr. Guillermo Rodríguez. Mi nombre es ${form.nombre}${form.motivo ? ', motivo de consulta: ' + form.motivo : ''}. Mi teléfono de contacto es ${form.telefono}. Quedo atento a su respuesta.`
+    );
     window.open(`https://wa.me/573244081281?text=${msg}`, '_blank');
     setSent(true);
   };
@@ -22,7 +31,7 @@ export default function ContactoPage() {
     >
       {/* Hero */}
       <section className="relative bg-gradient-to-br from-[#0f2340] via-[#1a365d] to-[#2a4a7f] py-14 sm:py-20 px-4 sm:px-6 overflow-hidden">
-        <div className="absolute -top-16 -right-20 w-[500px] h-[500px] rounded-full bg-[rgba(37,211,102,0.07)] pointer-events-none animate-rotate-glow"></div>
+        <div className="absolute -top-16 -right-20 w-[500px] h-[500px] rounded-full bg-[rgba(37,211,102,0.07)] pointer-events-none animate-rotate-glow" />
         <div className="max-w-[1200px] mx-auto relative z-10 text-center">
           <p className="inline-flex items-center gap-2 bg-[rgba(37,211,102,0.15)] border border-[rgba(37,211,102,0.3)] text-[#6ee7b7] px-3.5 py-1.5 rounded-full text-xs font-semibold tracking-wider uppercase mb-5 opacity-0 animate-fade-up" style={{ animationDelay: '0.1s' }}>
             Medellín, Antioquia · Colombia
@@ -36,41 +45,59 @@ export default function ContactoPage() {
         </div>
       </section>
 
-      {/* Map hero */}
-      <section className="w-full">
-        <div className="relative w-full h-[340px] sm:h-[420px] md:h-[480px]">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.433895715107!2d-75.57230398524658!3d6.206357129595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4428f693dcefff%3A0xaf14d3a4e8017e38!2sTorre%20Medical!5e0!3m2!1ses-419!2sco!4v1718700000000!5m2!1ses-419!2sco"
-            width="100%"
-            height="100%"
-            style={{ border: 0, display: 'block' }}
-            allowFullScreen
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-            title="Ubicación Dr. Guillermo Rodríguez – Torre Medical Medellín"
-          />
-          {/* Overlay badge */}
-          <a
-            href="https://maps.google.com/maps?q=Torre+Medical+Calle+7+39-107+Medellin"
-            target="_blank"
-            rel="noopener"
-            className="absolute bottom-4 left-4 flex items-center gap-3 bg-white rounded-xl shadow-lg px-4 py-3 no-underline hover:shadow-xl transition-shadow"
-          >
-            <div className="w-9 h-9 bg-[#1a365d] rounded-lg flex items-center justify-center flex-shrink-0">
-              <MapPin size={18} className="text-white" />
-            </div>
-            <div>
-              <p className="text-[11px] font-bold uppercase tracking-widest text-[#1ebe57] leading-none mb-0.5">Torre Medical</p>
-              <p className="text-xs font-semibold text-gray-700">Calle 7 #39-107, Cons. 609 · Medellín</p>
-            </div>
-          </a>
+      {/* Info + Mapa — contenidos dentro del max-width */}
+      <section className="py-10 sm:py-14 px-4 sm:px-6 bg-white" id="ubicacion">
+        <div className="max-w-[1200px] mx-auto flex flex-col gap-5">
+
+          {/* Tarjetas de información arriba del mapa */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            {INFO_ITEMS.map(({ icon: Icon, label, value }) => (
+              <div key={label} className="bg-[#f0fdf4] border border-[rgba(37,211,102,0.2)] rounded-2xl p-4 flex items-start gap-3">
+                <div className="w-9 h-9 bg-[rgba(37,211,102,0.15)] rounded-xl flex items-center justify-center flex-shrink-0 mt-0.5">
+                  <Icon size={16} className="text-[#1ebe57]" />
+                </div>
+                <div>
+                  <p className="text-[10px] font-bold uppercase tracking-widest text-gray-400 mb-0.5">{label}</p>
+                  <p className="text-sm font-semibold text-gray-800 whitespace-pre-line leading-relaxed">{value}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* Mapa contenido — bordes redondeados, no desborda */}
+          <div className="relative w-full rounded-2xl overflow-hidden border border-gray-200 shadow-md h-[280px] sm:h-[360px] md:h-[420px]">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.433895715107!2d-75.57230398524658!3d6.206357129595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4428f693dcefff%3A0xaf14d3a4e8017e38!2sTorre%20Medical!5e0!3m2!1ses-419!2sco!4v1718700000000!5m2!1ses-419!2sco"
+              width="100%"
+              height="100%"
+              style={{ border: 0, display: 'block' }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Ubicación Dr. Guillermo Rodríguez – Torre Medical Medellín"
+            />
+            <a
+              href="https://maps.google.com/maps?q=Torre+Medical+Calle+7+39-107+Medellin"
+              target="_blank"
+              rel="noopener"
+              className="absolute bottom-4 left-4 flex items-center gap-3 bg-white rounded-xl shadow-lg px-4 py-2.5 no-underline hover:shadow-xl transition-shadow"
+            >
+              <div className="w-7 h-7 bg-[#1a365d] rounded-lg flex items-center justify-center flex-shrink-0">
+                <MapPin size={14} className="text-white" />
+              </div>
+              <div>
+                <p className="text-[10px] font-bold uppercase tracking-widest text-[#1ebe57] leading-none mb-0.5">Ver en Google Maps</p>
+                <p className="text-xs font-semibold text-gray-700">Calle 7 #39-107, Cons. 609 · Medellín</p>
+              </div>
+            </a>
+          </div>
         </div>
       </section>
 
-      {/* Contact Grid */}
-      <section className="py-14 sm:py-20 px-4 sm:px-6 bg-white">
-        <div className="max-w-[1200px] mx-auto grid grid-cols-1 lg:grid-cols-[1fr_380px] gap-10">
-          {/* Form */}
+      {/* Formulario */}
+      <section className="py-10 sm:py-16 px-4 sm:px-6 bg-gray-50 border-t border-gray-100">
+        <div className="max-w-[1200px] mx-auto grid grid-cols-1 lg:grid-cols-[1fr_320px] gap-10">
+
           <div>
             <span className="inline-block text-[11px] font-bold tracking-widest uppercase text-[#1ebe57] mb-3">Formulario de Contacto</span>
             <h2 className="font-extrabold text-[#1a365d] text-2xl sm:text-3xl mb-6">Escríbenos y te contactamos</h2>
@@ -78,7 +105,9 @@ export default function ContactoPage() {
             {sent ? (
               <div className="bg-[#f0fdf4] border border-[rgba(37,211,102,0.3)] rounded-2xl p-8 text-center">
                 <div className="w-14 h-14 bg-[#25D366] rounded-full flex items-center justify-center mx-auto mb-4">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M4 12l6 6 10-10" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M4 12l6 6 10-10" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
+                  </svg>
                 </div>
                 <h3 className="font-bold text-[#1a365d] text-lg mb-2">¡Mensaje enviado!</h3>
                 <p className="text-gray-600 text-sm">Hemos abierto WhatsApp con tu mensaje. El Dr. Rodríguez responderá pronto.</p>
@@ -140,30 +169,7 @@ export default function ContactoPage() {
             )}
           </div>
 
-          {/* Info */}
-          <div className="flex flex-col gap-4">
-            <div className="bg-[#f0fdf4] border border-[rgba(37,211,102,0.25)] rounded-2xl p-6">
-              <p className="text-xs font-bold uppercase tracking-widest text-[#1ebe57] mb-4">Información de Contacto</p>
-              <ul className="list-none flex flex-col gap-4">
-                {[
-                  { icon: MapPin, label: 'Dirección', value: 'Torre Medical Calle 7 #39-107\nConsultorio 609, Medellín, Antioquia' },
-                  { icon: Phone, label: 'Teléfono / WhatsApp', value: '+57 324 408 1281' },
-                  { icon: Mail, label: 'Correo', value: 'agendasortopediaguillermorodmd@gmail.com' },
-                  { icon: Clock, label: 'Horario', value: 'Mar y Jue: 14:00 – 18:30\nMié y Vie: 07:30 – 18:30\nSáb: 07:30 – 13:00' },
-                ].map(({ icon: Icon, label, value }) => (
-                  <li key={label} className="flex items-start gap-3">
-                    <div className="w-8 h-8 bg-[rgba(37,211,102,0.12)] rounded-lg flex items-center justify-center flex-shrink-0">
-                      <Icon size={15} className="text-[#25D366]" />
-                    </div>
-                    <div>
-                      <p className="text-[10px] font-bold uppercase tracking-widest text-gray-400 mb-0.5">{label}</p>
-                      <p className="text-sm text-gray-700 whitespace-pre-line">{value}</p>
-                    </div>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
+          <div className="flex flex-col gap-4 justify-start pt-1">
             <a
               href={WA_HREF}
               target="_blank"
@@ -172,42 +178,17 @@ export default function ContactoPage() {
             >
               AGENDAR POR WHATSAPP
             </a>
-
             <div className="flex items-center gap-2 bg-white border border-gray-200 rounded-xl px-4 py-3 shadow-sm">
               <div className="flex gap-0.5 flex-shrink-0">
                 {[...Array(5)].map((_, i) => <span key={i} className="text-[#f59e0b] text-sm">★</span>)}
               </div>
-              <div className="text-xs font-semibold text-gray-800 flex-1"><strong>4.8 / 5</strong> — 48+ reseñas verificadas</div>
+              <div className="text-xs font-semibold text-gray-800 flex-1"><strong>4.8 / 5</strong> — 48+ reseñas</div>
               <span className="text-[10px] text-gray-400 border-l border-gray-200 pl-2.5 flex-shrink-0">Doctoralia</span>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Ubicación detallada */}
-      <section className="py-12 sm:py-16 px-4 sm:px-6 bg-gray-50 border-t border-gray-100" id="ubicacion">
-        <div className="max-w-[1200px] mx-auto">
-          <span className="inline-block text-[11px] font-bold tracking-widest uppercase text-[#1ebe57] mb-2.5">Cómo llegar</span>
-          <h2 className="font-extrabold text-[#1a365d] text-2xl sm:text-3xl mb-2">Torre Medical, El Poblado – Medellín</h2>
-          <p className="text-sm text-gray-500 mb-8">Fácil acceso, estacionamiento disponible. Sin largas colas.</p>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-            {[
-              { icon: MapPin, title: 'Dirección', body: 'Torre Medical\nCalle 7 #39-107, Cons. 609\nMedellín, Antioquia' },
-              { icon: Clock, title: 'Horarios', body: 'Mar y Jue: 14:00 – 18:30\nMié y Vie: 07:30 – 18:30\nSáb: 07:30 – 13:00' },
-              { icon: MessageCircle, title: 'WhatsApp', body: '+57 324 408 1281\nRespuesta en menos\nde 2 horas' },
-              { icon: Mail, title: 'Correo', body: 'agendasortopediaguillermorodmd\n@gmail.com' },
-            ].map(({ icon: Icon, title, body }) => (
-              <div key={title} className="bg-white border border-gray-200 rounded-2xl p-5 flex flex-col gap-3 hover:shadow-md transition-shadow">
-                <div className="w-10 h-10 bg-[#1a365d] rounded-xl flex items-center justify-center">
-                  <Icon size={18} className="text-white" strokeWidth={1.5} />
-                </div>
-                <div>
-                  <p className="text-[10px] font-bold uppercase tracking-widest text-gray-400 mb-1">{title}</p>
-                  <p className="text-sm font-semibold text-gray-800 whitespace-pre-line leading-relaxed">{body}</p>
-                </div>
-              </div>
-            ))}
+            <div className="bg-white border border-gray-200 rounded-2xl p-5">
+              <p className="text-[10px] font-bold uppercase tracking-widest text-gray-400 mb-1.5">Tiempo de respuesta</p>
+              <p className="text-sm font-semibold text-gray-800">Respondemos por WhatsApp en <strong className="text-[#1a365d]">menos de 2 horas</strong> en horario de atención.</p>
+            </div>
           </div>
         </div>
       </section>
