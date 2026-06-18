@@ -1,5 +1,4 @@
 import Layout from '../components/Layout';
-import { Link } from 'react-router-dom';
 
 const WA_HREF = "https://wa.me/573244081281?text=Hola%2C%20gracias%20por%20escribirnos%20desde%20nuestro%20sitio%20web.%20El%20Dr.%20Guillermo%20Rodr%C3%ADguez%20y%20su%20equipo%20est%C3%A1n%20para%20ayudarte%2C%20%C2%BFen%20qu%C3%A9%20podemos%20colaborarte%20hoy%3F";
 
@@ -137,55 +136,23 @@ export default function SobreMiPage() {
 
       {/* About Text */}
       <section className="py-14 sm:py-20 px-4 sm:px-6 bg-white">
-        <div className="max-w-[1200px] mx-auto grid grid-cols-1 lg:grid-cols-[1fr_360px] gap-12">
-          <div>
-            <h2 className="font-extrabold text-[#1a365d] text-2xl sm:text-3xl md:text-4xl mb-5 opacity-0 animate-cascade" style={{ animationDelay: '0.15s' }}>
-              Experto en Ortopedia y Traumatología en Medellín
-            </h2>
-            <div className="text-gray-700 text-sm sm:text-base leading-relaxed space-y-4 opacity-0 animate-cascade" style={{ animationDelay: '0.2s' }}>
-              <p>
-                El Dr. Guillermo Rodríguez Restrepo es un especialista en Ortopedia y Traumatología con amplia trayectoria en el manejo de lesiones musculoesqueléticas, enfermedades articulares y tratamientos ortopédicos de vanguardia enfocados en la recuperación funcional de sus pacientes.
-              </p>
-              <p>
-                Su enfoque se caracteriza por ofrecer <strong className="text-[#1a365d]">atención personalizada, humana y basada en evidencia</strong>, priorizando siempre las opciones menos invasivas antes de considerar intervenciones quirúrgicas. Utiliza tecnología de ecografía músculo-esquelética para diagnósticos precisos y procedimientos guiados.
-              </p>
-              <p>
-                Con formación académica de alto nivel —incluyendo un Magíster en Educación de la Universidad de los Andes y la docencia en la Universidad CES— el Dr. Rodríguez combina conocimiento científico actualizado con una comunicación clara y empática con el paciente.
-              </p>
-              <p>
-                Atiende en la Torre Medical de Medellín, un entorno especializado donde ofrece toda la gama de tratamientos: desde los regenerativos como el PRP y la viscosuplementación, hasta las infiltraciones ecoguiadas y la cirugía de mínima invasión cuando es necesaria.
-              </p>
-            </div>
-          </div>
-
-          <div className="flex flex-col gap-4">
-            <div className="bg-[#f0fdf4] border border-[rgba(37,211,102,0.25)] rounded-2xl p-5">
-              <p className="text-xs font-bold uppercase tracking-widest text-[#1ebe57] mb-3">Datos de Contacto</p>
-              <ul className="list-none flex flex-col gap-2 text-sm text-gray-700">
-                <li className="flex items-start gap-2">
-                  <span className="text-[#25D366] font-bold flex-shrink-0">Tel:</span>
-                  <a href="tel:+573244081281" className="hover:text-[#1a365d] transition-colors no-underline">+57 324 408 1281</a>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-[#25D366] font-bold flex-shrink-0">WA:</span>
-                  <a href={WA_HREF} target="_blank" rel="noopener" className="hover:text-[#1a365d] transition-colors no-underline">+57 324 408 1281</a>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-[#25D366] font-bold flex-shrink-0">Dir:</span>
-                  <span>Torre Medical Calle 7 #39-107<br/>Consultorio 609, Medellín</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-[#25D366] font-bold flex-shrink-0">H:</span>
-                  <span>Mar a Vie 07:30–18:30<br/>Sáb 07:30–13:00</span>
-                </li>
-              </ul>
-            </div>
-            <a href={WA_HREF} target="_blank" rel="noopener" className="flex items-center justify-center gap-2 bg-[#25D366] text-white no-underline py-3.5 rounded-2xl text-sm font-extrabold tracking-wide uppercase transition-all duration-300 shadow-[0_4px_24px_rgba(37,211,102,0.35)] hover:bg-[#1ebe57] hover:-translate-y-0.5">
-              AGENDAR MI VALORACIÓN
-            </a>
-            <Link to="/contacto" className="flex items-center justify-center gap-2 bg-white border border-gray-200 text-[#1a365d] no-underline py-3.5 rounded-2xl text-sm font-bold transition-all hover:border-[#25D366] hover:shadow-md">
-              Formulario de Contacto
-            </Link>
+        <div className="max-w-[1200px] mx-auto">
+          <h2 className="font-extrabold text-[#1a365d] text-2xl sm:text-3xl md:text-4xl mb-5 opacity-0 animate-cascade" style={{ animationDelay: '0.15s' }}>
+            Experto en Ortopedia y Traumatología en Medellín
+          </h2>
+          <div className="text-gray-700 text-sm sm:text-base leading-relaxed space-y-4 opacity-0 animate-cascade" style={{ animationDelay: '0.2s' }}>
+            <p>
+              El Dr. Guillermo Rodríguez Restrepo es un especialista en Ortopedia y Traumatología con amplia trayectoria en el manejo de lesiones musculoesqueléticas, enfermedades articulares y tratamientos ortopédicos de vanguardia enfocados en la recuperación funcional de sus pacientes.
+            </p>
+            <p>
+              Su enfoque se caracteriza por ofrecer <strong className="text-[#1a365d]">atención personalizada, humana y basada en evidencia</strong>, priorizando siempre las opciones menos invasivas antes de considerar intervenciones quirúrgicas. Utiliza tecnología de ecografía músculo-esquelética para diagnósticos precisos y procedimientos guiados.
+            </p>
+            <p>
+              Con formación académica de alto nivel —incluyendo un Magíster en Educación de la Universidad de los Andes y la docencia en la Universidad CES— el Dr. Rodríguez combina conocimiento científico actualizado con una comunicación clara y empática con el paciente.
+            </p>
+            <p>
+              Atiende en la Torre Medical de Medellín, un entorno especializado donde ofrece toda la gama de tratamientos: desde los regenerativos como el PRP y la viscosuplementación, hasta las infiltraciones ecoguiadas y la cirugía de mínima invasión cuando es necesaria.
+            </p>
           </div>
         </div>
       </section>
