@@ -8,7 +8,7 @@ const INFO_ITEMS = [
   { icon: MapPin, label: 'Dirección',           value: 'Torre Medical, Calle 7 #39-107\nConsultorio 609, Medellín' },
   { icon: Clock,  label: 'Horario',             value: 'Mar y Jue: 14:00 – 18:30\nMié y Vie: 07:30 – 18:30\nSáb: 07:30 – 13:00' },
   { icon: Phone,  label: 'Teléfono / WhatsApp', value: '+57 324 408 1281' },
-  { icon: Mail,   label: 'Correo',              value: 'agendasortopediaguillermorodmd@gmail.com' },
+  { icon: Mail,   label: 'Correo',              value: 'agendasortopedia\nguillermorodmd@gmail.com' },
 ] as const;
 
 export default function ContactoPage() {
@@ -178,17 +178,19 @@ export default function ContactoPage() {
             >
               AGENDAR POR WHATSAPP
             </a>
-            <div className="flex items-center gap-2 bg-white border border-gray-200 rounded-xl px-4 py-3 shadow-sm">
-              <div className="flex gap-0.5 flex-shrink-0">
-                {[...Array(5)].map((_, i) => <span key={i} className="text-[#f59e0b] text-sm">★</span>)}
+            <a
+              href="https://www.doctoralia.co/guillermo-fernando-rodriguez-restrepo/ortopedista-y-traumatologo/medellin#address-id=69445&is-online-only=false&filters%5Bspecializations%5D%5B%5D=48"
+              target="_blank"
+              rel="noopener"
+              className="flex flex-col items-center gap-2 bg-white border border-gray-200 rounded-2xl px-5 py-5 shadow-sm no-underline hover:shadow-md hover:border-[#f59e0b]/40 transition-all group"
+            >
+              <div className="flex gap-1">
+                {[...Array(5)].map((_, i) => <span key={i} className="text-[#f59e0b] text-2xl leading-none">★</span>)}
               </div>
-              <div className="text-xs font-semibold text-gray-800 flex-1"><strong>4.8 / 5</strong> — 48+ reseñas</div>
-              <span className="text-[10px] text-gray-400 border-l border-gray-200 pl-2.5 flex-shrink-0">Doctoralia</span>
-            </div>
-            <div className="bg-white border border-gray-200 rounded-2xl p-5">
-              <p className="text-[10px] font-bold uppercase tracking-widest text-gray-400 mb-1.5">Tiempo de respuesta</p>
-              <p className="text-sm font-semibold text-gray-800">Respondemos por WhatsApp en <strong className="text-[#1a365d]">menos de 2 horas</strong> en horario de atención.</p>
-            </div>
+              <p className="text-2xl font-extrabold text-[#1a365d] leading-none">4.8 <span className="text-base font-semibold text-gray-500">/ 5</span></p>
+              <p className="text-xs text-gray-500">48+ reseñas verificadas</p>
+              <span className="text-[11px] font-bold uppercase tracking-widest text-[#25a0b5] border border-[#25a0b5]/30 rounded-full px-3 py-0.5 group-hover:bg-[#25a0b5]/5 transition-colors">Ver en Doctoralia</span>
+            </a>
           </div>
         </div>
       </section>
