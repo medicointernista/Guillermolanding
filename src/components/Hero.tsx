@@ -57,13 +57,18 @@ export default function Hero() {
               decoding="async"
             />
           </div>
-          <div className="absolute bottom-5 left-5 right-5 bg-white/95 rounded-2xl p-3.5 flex items-center gap-3.5 shadow-[0_4px_24px_rgba(0,0,0,0.2)] opacity-0 animate-fade-up transition-all duration-300 hover:shadow-[0_8px_32px_rgba(0,0,0,0.3)] hover:scale-105" style={{ animationDelay: '1.2s' }}>
+          <a
+            href="https://www.doctoralia.co/guillermo-fernando-rodriguez-restrepo/ortopedista-y-traumatologo/medellin#address-id=69445&is-online-only=false&filters%5Bspecializations%5D%5B%5D=48"
+            target="_blank"
+            rel="noopener"
+            className="absolute bottom-5 left-5 right-5 bg-white/95 rounded-2xl p-3.5 flex items-center gap-3.5 shadow-[0_4px_24px_rgba(0,0,0,0.2)] opacity-0 animate-fade-up transition-all duration-300 hover:shadow-[0_8px_32px_rgba(0,0,0,0.3)] hover:scale-105 no-underline" style={{ animationDelay: '1.2s' }}
+          >
             <div className="text-[#f59e0b] text-base animate-float">★★★★★</div>
             <div className="flex-1">
               <strong className="block text-sm font-bold text-[#1a365d]">48+ reseñas · 4.8★</strong>
               <span className="text-xs text-gray-600">Doctoralia verificado</span>
             </div>
-          </div>
+          </a>
         </div>
       </div>
     </section>
