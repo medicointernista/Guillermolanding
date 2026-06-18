@@ -5,12 +5,12 @@ import { MapPin, Phone, Mail, Clock } from 'lucide-react';
 const WA_HREF = "https://wa.me/573244081281?text=Hola%2C%20gracias%20por%20escribirnos%20desde%20nuestro%20sitio%20web.%20El%20Dr.%20Guillermo%20Rodr%C3%ADguez%20y%20su%20equipo%20est%C3%A1n%20para%20ayudarte%2C%20%C2%BFen%20qu%C3%A9%20podemos%20colaborarte%20hoy%3F";
 
 export default function ContactoPage() {
-  const [form, setForm] = useState({ nombre: '', telefono: '', email: '', motivo: '', urgente: false });
+  const [form, setForm] = useState({ nombre: '', telefono: '', email: '', motivo: '' });
   const [sent, setSent] = useState(false);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    const msg = encodeURIComponent(`Hola Dr. Guillermo Rodríguez, mi nombre es ${form.nombre}. ${form.motivo ? 'Motivo: ' + form.motivo : ''} Mi teléfono: ${form.telefono}. ${form.urgente ? '⚠️ ES URGENTE.' : ''}`);
+    const msg = encodeURIComponent(`Hola, me comunico desde el sitio web del Dr. Guillermo Rodríguez. Mi nombre es ${form.nombre}${form.motivo ? ', motivo de consulta: ' + form.motivo : ''}. Mi teléfono de contacto es ${form.telefono}. Quedo atento a su respuesta.`);
     window.open(`https://wa.me/573244081281?text=${msg}`, '_blank');
     setSent(true);
   };
@@ -98,15 +98,6 @@ export default function ContactoPage() {
                     className="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm text-gray-800 outline-none focus:border-[#25D366] focus:ring-2 focus:ring-[#25D366]/20 transition-all resize-none"
                   />
                 </div>
-                <label className="flex items-center gap-3 cursor-pointer">
-                  <input
-                    type="checkbox"
-                    checked={form.urgente}
-                    onChange={e => setForm(f => ({ ...f, urgente: e.target.checked }))}
-                    className="w-4 h-4 accent-[#25D366]"
-                  />
-                  <span className="text-sm text-gray-700">Es una urgencia (necesito atención hoy)</span>
-                </label>
                 <button
                   type="submit"
                   className="flex items-center justify-center gap-2 bg-[#25D366] text-white py-4 rounded-full font-extrabold uppercase tracking-wide text-sm transition-all duration-300 shadow-[0_4px_24px_rgba(37,211,102,0.35)] hover:bg-[#1ebe57] hover:-translate-y-0.5 hover:scale-[1.02]"
@@ -168,3 +159,6 @@ export default function ContactoPage() {
     </Layout>
   );
 }
+
+
+export default ContactoPage
