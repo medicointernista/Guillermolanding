@@ -46,12 +46,12 @@ export default function FloatingButtons() {
           Agendar
         </a>
         <a
-          href="tel:+573244081281"
+          href="https://www.doctoralia.co/guillermo-fernando-rodriguez-restrepo/ortopedista-y-traumatologo/medellin#address-id=69445&is-online-only=false&filters%5Bspecializations%5D%5B%5D=48"
           target="_blank"
           rel="noopener"
-          className="flex-1 flex items-center justify-center gap-2 px-3 py-3 rounded-xl text-[13px] font-bold no-underline text-center bg-red-600 text-white transition-all hover:shadow-md"
+          className="flex-1 flex items-center justify-center gap-2 px-3 py-3 rounded-xl text-[13px] font-bold no-underline text-center bg-[#00A0B0] text-white transition-all hover:shadow-md"
         >
-          Llámame Ahora
+          Doctoralia
         </a>
       </div>
     </>
