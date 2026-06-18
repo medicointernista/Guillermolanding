@@ -177,7 +177,7 @@ export default function SiteHeader() {
           <div className="flex items-center gap-2 sm:gap-2.5">
             <div className="hidden md:flex items-center gap-2">
               <a
-                href="https://wa.me/573244081281?text=Hola%20Dr.%20Guillermo%20Rodr%C3%ADguez,%20quiero%20agendar%20una%20valoraci%C3%B3n.%20Vengo%20desde%20la%20p%C3%A1gina%20web."
+                href="https://wa.me/573244081281?text=Hola%2C%20gracias%20por%20escribirnos%20desde%20nuestro%20sitio%20web.%20El%20Dr.%20Guillermo%20Rodr%C3%ADguez%20y%20su%20equipo%20est%C3%A1n%20para%20ayudarte%2C%20%C2%BFen%20qu%C3%A9%20podemos%20colaborarte%20hoy%3F"
                 className="inline-flex items-center gap-2 bg-[#25D366] text-white no-underline px-4 py-2 md:px-5 md:py-2.5 rounded-full text-[10px] md:text-xs font-extrabold tracking-wider uppercase transition-all duration-300 shadow-[0_3px_16px_rgba(37,211,102,0.40)] hover:bg-[#1ebe57] hover:-translate-y-0.5 hover:shadow-[0_8px_32px_rgba(37,211,102,0.60)] hover:scale-105 whitespace-nowrap flex-shrink-0 group"
                 target="_blank"
                 rel="noopener"
@@ -192,12 +192,12 @@ export default function SiteHeader() {
                 className="inline-flex items-center gap-2 bg-red-600 text-white no-underline px-3 py-2 md:px-4 md:py-2.5 rounded-full text-[10px] md:text-xs font-extrabold tracking-wider uppercase transition-all duration-300 shadow-[0_3px_16px_rgba(220,38,38,0.40)] hover:bg-red-700 hover:-translate-y-0.5 hover:shadow-[0_8px_32px_rgba(220,38,38,0.60)] hover:scale-105 whitespace-nowrap flex-shrink-0"
                 aria-label="Llamar al Dr. Guillermo Rodríguez"
               >
-                URGENCIA
+                LLÁMAME AHORA
               </a>
             </div>
             <div className="md:hidden flex items-center gap-1.5">
               <a
-                href="https://wa.me/573244081281?text=Hola%20Dr.%20Guillermo%20Rodr%C3%ADguez,%20quiero%20agendar%20una%20valoraci%C3%B3n.%20Vengo%20desde%20la%20p%C3%A1gina%20web."
+                href="https://wa.me/573244081281?text=Hola%2C%20gracias%20por%20escribirnos%20desde%20nuestro%20sitio%20web.%20El%20Dr.%20Guillermo%20Rodr%C3%ADguez%20y%20su%20equipo%20est%C3%A1n%20para%20ayudarte%2C%20%C2%BFen%20qu%C3%A9%20podemos%20colaborarte%20hoy%3F"
                 className="inline-flex items-center justify-center gap-1.5 bg-[#25D366] text-white no-underline px-2.5 sm:px-3 py-1.5 sm:py-2 rounded-full transition-all duration-300 shadow-[0_3px_16px_rgba(37,211,102,0.40)] hover:bg-[#1ebe57]"
                 target="_blank"
                 rel="noopener"
@@ -260,7 +260,7 @@ export default function SiteHeader() {
           <Link to="/contacto" onClick={closeNav} className="text-sm sm:text-[15px] font-semibold text-gray-700 no-underline py-2.5 sm:py-3 px-3 sm:px-4 rounded-lg transition-all hover:bg-gray-100 hover:text-[#1a365d]">Contacto</Link>
 
           <a
-            href="https://wa.me/573244081281?text=Hola%20Dr.%20Guillermo%20Rodr%C3%ADguez,%20quiero%20agendar%20una%20valoraci%C3%B3n.%20Vengo%20desde%20la%20p%C3%A1gina%20web."
+            href="https://wa.me/573244081281?text=Hola%2C%20gracias%20por%20escribirnos%20desde%20nuestro%20sitio%20web.%20El%20Dr.%20Guillermo%20Rodr%C3%ADguez%20y%20su%20equipo%20est%C3%A1n%20para%20ayudarte%2C%20%C2%BFen%20qu%C3%A9%20podemos%20colaborarte%20hoy%3F"
             className="mt-2 sm:mt-3 bg-[#25D366] text-white no-underline text-center font-semibold rounded-full py-2.5 sm:py-3 px-3 sm:px-4 transition-all hover:bg-[#1ebe57] flex items-center justify-center gap-2 text-sm sm:text-base"
             target="_blank"
             rel="noopener"

@@ -233,7 +233,7 @@ export default function Treatments() {
             <p className="text-white/60 text-sm mt-0.5">El Dr. Rodríguez evalúa cualquier condición musculoesquelética — agenda una valoración.</p>
           </div>
           <a
-            href="https://wa.me/573244081281?text=Hola%20Dr.%20Guillermo%20Rodr%C3%ADguez,%20quiero%20agendar%20una%20valoraci%C3%B3n.%20Vengo%20desde%20la%20secci%C3%B3n%20de%20tratamientos."
+            href="https://wa.me/573244081281?text=Hola%2C%20gracias%20por%20escribirnos%20desde%20nuestro%20sitio%20web.%20El%20Dr.%20Guillermo%20Rodr%C3%ADguez%20y%20su%20equipo%20est%C3%A1n%20para%20ayudarte%2C%20%C2%BFen%20qu%C3%A9%20podemos%20colaborarte%20hoy%3F"
             target="_blank"
             rel="noopener"
             className="flex-shrink-0 inline-flex items-center gap-2 bg-[#25D366] text-white no-underline px-6 py-3 rounded-full text-xs font-extrabold uppercase tracking-wider transition-all duration-300 shadow-[0_4px_20px_rgba(37,211,102,0.4)] hover:bg-[#1ebe57] hover:-translate-y-0.5 hover:shadow-[0_8px_32px_rgba(37,211,102,0.6)] whitespace-nowrap"

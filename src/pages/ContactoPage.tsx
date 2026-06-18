@@ -2,7 +2,7 @@ import { useState } from 'react';
 import Layout from '../components/Layout';
 import { MapPin, Phone, Mail, Clock } from 'lucide-react';
 
-const WA_HREF = "https://wa.me/573244081281?text=Hola%20Dr.%20Guillermo%20Rodr%C3%ADguez%2C%20quiero%20agendar%20una%20valoraci%C3%B3n.%20Vengo%20desde%20la%20p%C3%A1gina%20web.";
+const WA_HREF = "https://wa.me/573244081281?text=Hola%2C%20gracias%20por%20escribirnos%20desde%20nuestro%20sitio%20web.%20El%20Dr.%20Guillermo%20Rodr%C3%ADguez%20y%20su%20equipo%20est%C3%A1n%20para%20ayudarte%2C%20%C2%BFen%20qu%C3%A9%20podemos%20colaborarte%20hoy%3F";
 
 export default function ContactoPage() {
   const [form, setForm] = useState({ nombre: '', telefono: '', email: '', motivo: '', urgente: false });
