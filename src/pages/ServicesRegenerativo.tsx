@@ -190,7 +190,7 @@ export function InfiltracionesPage() {
         badge="Procedimientos Intervencionistas · Ecoguiado"
         title="Infiltraciones Articulares con Antiinflamatorios en Medellín: Alivio del Dolor"
         subtitle="Procedimiento terapéutico mínimamente invasivo que inyecta antiinflamatorios directamente en la articulación o tejido blando afectado, guiado por ecografía para máxima precisión y seguridad."
-        heroImage="/manejo-del-dolor-ortopedico-en-medellin.png"
+        heroImage="/Dr.-Guillermo-Rodriguez-Restrepo--Infiltraciones-articulares-ecoguiadas-para-dolor-e-inflamacion-en-Medellin.jpg"
         heroImageAlt="Infiltración articular ecoguiada para dolor ortopédico en Medellín"
         intro="Las infiltraciones articulares o de tejidos blandos con antiinflamatorios son procedimientos terapéuticos mínimamente invasivos ampliamente utilizados en ortopedia para el control del dolor articular e inflamación. Consisten en la inyección directa de corticosteroides u otros antiinflamatorios en la articulación, bursa o tejido blando afectado. Bajo la guía ecográfica que utiliza el Dr. Guillermo Rodríguez Restrepo, se logra una precisión óptima que maximiza el efecto terapéutico y minimiza los riesgos."
         symptomsTitle="Condiciones Tratadas con Infiltraciones"
