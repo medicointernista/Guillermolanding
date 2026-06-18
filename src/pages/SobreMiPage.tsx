@@ -57,6 +57,10 @@ export default function SobreMiPage() {
       {/* Authority – Tu Especialista de Confianza */}
       <section className="bg-white border-b border-gray-200 py-12 sm:py-16 md:py-20 px-4 sm:px-6" id="especialista" aria-label="Tu especialista de confianza">
         <div className="max-w-[1200px] mx-auto">
+          <div className="mb-10 opacity-0 animate-fade-up" style={{ animationDelay: '0.05s' }}>
+            <span className="inline-block text-[11px] font-bold tracking-widest uppercase text-[#1ebe57] mb-3">Perfil Profesional</span>
+            <h2 className="font-extrabold text-[#1a365d] text-2xl sm:text-3xl md:text-4xl">Experto en Ortopedia y Traumatología en Medellín</h2>
+          </div>
           <div className="grid grid-cols-1 lg:grid-cols-[1fr_1.5fr] gap-10 md:gap-16 items-start">
             <div className="relative opacity-0 animate-slide-left" style={{ animationDelay: '0.1s' }}>
               <div className="relative bg-gradient-to-br from-[#1a365d] to-[#2a4a7f] rounded-3xl aspect-[3/4] flex flex-col items-center justify-center overflow-hidden shadow-lg">
