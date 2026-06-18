@@ -120,7 +120,7 @@ export function FracturasTobillo() {
         badge="Pie y Tobillo · Traumatología"
         title="Tratamiento Especializado para Fracturas de Tobillo en Medellín"
         subtitle="Diagnóstico preciso y manejo integral para fracturas de tobillo. Desde la estabilización con yeso hasta la osteosíntesis quirúrgica cuando es necesaria, con programa de rehabilitación completo."
-        heroImage="/Evaluacion-medica-especializada.jpg"
+        heroImage="/Dr.-Guillermo-Rodriguez-Restrepo--Diagnostico-y-tratamiento-integral-de-fracturas-de-tobillo-en-Medellin.jpg"
         heroImageAlt="Tratamiento fractura de tobillo en Medellín – ortopedia y traumatología"
         intro="Las fracturas de tobillo son lesiones frecuentes en traumatología y pueden ser resultado de torceduras graves, caídas, impactos deportivos o accidentes. El manejo oportuno y especializado es fundamental para garantizar una recuperación funcional completa y prevenir complicaciones como la inestabilidad crónica o la artrosis post-traumática. El Dr. Guillermo Rodríguez Restrepo ofrece en Medellín un manejo integral con la última tecnología diagnóstica y terapéutica."
         symptomsTitle="Tipos y Causas"
