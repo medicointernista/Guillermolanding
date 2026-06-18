@@ -28,18 +28,25 @@ export default function SobreMiPage() {
         <div className="max-w-[1200px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center relative z-10">
           <div>
             <p className="inline-flex items-center gap-2 bg-[rgba(37,211,102,0.15)] border border-[rgba(37,211,102,0.3)] text-[#6ee7b7] px-3.5 py-1.5 rounded-full text-xs font-semibold tracking-wider uppercase mb-5 opacity-0 animate-fade-up" style={{ animationDelay: '0.1s' }}>
-              Ortopedia con Calidad Humana · Medellín
+              Ortopedia con calidad humana en Medellín
             </p>
-            <h1 className="font-extrabold text-white leading-tight mb-5 text-2xl sm:text-3xl md:text-4xl opacity-0 animate-cascade" style={{ animationDelay: '0.2s' }}>
+            <h1 className="font-extrabold text-white leading-tight mb-2 text-2xl sm:text-3xl md:text-4xl opacity-0 animate-cascade" style={{ animationDelay: '0.2s' }}>
               Dr. Guillermo Rodríguez Restrepo
-              <span className="block text-[#25D366] text-xl sm:text-2xl mt-1">Especialista en Ortopedia y Traumatología</span>
             </h1>
+            <p className="text-[#25D366] font-semibold text-base sm:text-lg mb-5 opacity-0 animate-cascade" style={{ animationDelay: '0.25s' }}>
+              Ortopedista y Traumatólogo · 30+ años de experiencia
+            </p>
             <p className="text-white/85 leading-relaxed text-sm sm:text-base mb-6 opacity-0 animate-cascade" style={{ animationDelay: '0.3s' }}>
-              Experto en el manejo integral de lesiones musculoesqueléticas, enfermedades articulares y tratamientos ortopédicos avanzados con enfoque en recuperación funcional y calidad de vida del paciente.
+              Manejo integral de lesiones musculoesqueléticas y enfermedades articulares, con diagnósticos ecográficos precisos y tratamientos ortopédicos avanzados enfocados en recuperar tu movilidad y calidad de vida.
             </p>
             <div className="flex gap-3 opacity-0 animate-spring" style={{ animationDelay: '0.5s' }}>
-              <a href={WA_HREF} target="_blank" rel="noopener" className="inline-flex items-center gap-2 bg-[#25D366] text-white no-underline px-6 py-3 rounded-full text-sm font-extrabold tracking-wide uppercase transition-all duration-300 shadow-[0_4px_24px_rgba(37,211,102,0.4)] hover:bg-[#1ebe57] hover:-translate-y-0.5 hover:scale-105">
-                AGENDAR CITA
+              <a
+                href="https://wa.me/573244081281?text=Hola%2C%20Dr.%20Guillermo.%20Vi%20su%20perfil%20en%20el%20sitio%20web%20y%20me%20gustar%C3%ADa%20agendar%20una%20cita%20con%20usted.%20%C2%BFCu%C3%A1les%20son%20los%20horarios%20disponibles%3F"
+                target="_blank"
+                rel="noopener"
+                className="inline-flex items-center gap-2 bg-[#25D366] text-white no-underline px-6 py-3 rounded-full text-sm font-extrabold tracking-wide uppercase transition-all duration-300 shadow-[0_4px_24px_rgba(37,211,102,0.4)] hover:bg-[#1ebe57] hover:-translate-y-0.5 hover:scale-105"
+              >
+                AGENDAR CITA POR WHATSAPP
               </a>
             </div>
           </div>
