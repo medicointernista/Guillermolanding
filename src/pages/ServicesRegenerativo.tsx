@@ -133,7 +133,7 @@ export function CelulasMesenquimalesPage() {
         badge="Tratamientos Regenerativos · Vanguardia"
         title="Células Mesenquimales en Medellín: Tratamiento Innovador en Ortopedia"
         subtitle="Opción regenerativa no quirúrgica de vanguardia para el tratamiento de la artrosis de rodilla. Reduce el dolor, mejora la función articular y favorece la movilidad."
-        heroImage="/Evaluacion-medica-especializada.jpg"
+        heroImage="/Dr.-Guillermo-Rodriguez-explicando-tratamiento-con-celulas-mesenquimales-para-artrosis-de-rodilla-y-regeneracion-articular-en-Medellin.jpg"
         heroImageAlt="Tratamiento con células mesenquimales para artrosis de rodilla en Medellín"
         intro="Las células mesenquimales (también llamadas células madre mesenquimales) representan la frontera más avanzada de la medicina regenerativa en ortopedia. Estas células tienen la capacidad de diferenciarse en tejido cartilaginoso y liberar factores antiinflamatorios y regenerativos que favorecen la reparación del tejido articular dañado. En el consultorio del Dr. Guillermo Rodríguez Restrepo en Medellín, este tratamiento se ofrece como alternativa no quirúrgica especialmente para pacientes con artrosis de rodilla que no han respondido a otros tratamientos conservadores."
         symptomsTitle="Indicaciones para Células Mesenquimales"
