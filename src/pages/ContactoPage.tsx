@@ -159,6 +159,3 @@ export default function ContactoPage() {
     </Layout>
   );
 }
-
-
-export default ContactoPage
