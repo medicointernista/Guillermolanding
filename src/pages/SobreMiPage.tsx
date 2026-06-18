@@ -125,30 +125,6 @@ export default function SobreMiPage() {
                 </ul>
               </div>
 
-              <div className="pt-8 border-t border-gray-200 opacity-0 animate-cascade" style={{ animationDelay: '0.4s' }}>
-                <h3 className="text-xs font-bold uppercase tracking-widest text-gray-500 mb-4">Respaldo Académico</h3>
-                <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 place-items-center">
-                  {[
-                    { src: '/SCCOT.jpg', alt: 'SCCOT – Sociedad Colombiana de Cirugía Ortopédica y Traumatología' },
-                    { src: '/ACCART-2025.jpg', alt: 'ACCART 2025 – Diplomado Internacional en Ortobiológicos' },
-                    { src: '/Logo_Universidad_de_los_Andes.jpg', alt: 'Universidad de los Andes Colombia – Magíster en Educación' },
-                    { src: '/Logo-Universidad-CES-Colombia-removebg-preview.png', alt: 'Universidad CES Colombia – Docente de Ortopedia' },
-                  ].map((cred, index) => (
-                    <div
-                      key={index}
-                      className="flex items-center justify-center p-3 bg-gray-50 border border-gray-200 rounded-lg transition-all hover:shadow-md opacity-0 animate-scale-pop w-full"
-                      style={{ animationDelay: `${0.5 + index * 0.08}s` }}
-                    >
-                      <img
-                        src={cred.src}
-                        alt={cred.alt}
-                        className="h-10 sm:h-14 w-auto max-w-[100px] object-contain grayscale opacity-60 transition-all hover:grayscale-0 hover:opacity-100"
-                        loading="lazy"
-                      />
-                    </div>
-                  ))}
-                </div>
-              </div>
             </div>
           </div>
         </div>
