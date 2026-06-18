@@ -181,7 +181,7 @@ export default function SobreMiPage() {
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-[#25D366] font-bold flex-shrink-0">H:</span>
-                  <span>Lun–Vie 07:30–18:00<br/>Sáb 07:30–13:00</span>
+                  <span>Mar a Vie 07:30–18:30<br/>Sáb 07:30–13:00</span>
                 </li>
               </ul>
             </div>

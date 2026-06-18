@@ -282,7 +282,7 @@ export default function ServicePage({
           </h2>
           <p className="text-white/70 text-sm sm:text-base mb-6 opacity-0 animate-fade-up" style={{ animationDelay: '0.2s' }}>
             Torre Medical · Calle 7 #39-107 Consultorio 609 · Medellín, Antioquia<br/>
-            Lunes a Viernes 07:30–18:00 · Sábados 07:30–13:00
+            Martes a Viernes 07:30–18:30 · Sábados 07:30–13:00
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center items-center opacity-0 animate-spring" style={{ animationDelay: '0.3s' }}>
             <a
