@@ -120,6 +120,25 @@ export default function SobreMiPage() {
         </div>
       </section>
 
+      {/* Certifications */}
+      <section className="py-12 sm:py-16 px-4 sm:px-6 bg-gray-50">
+        <div className="max-w-[1200px] mx-auto">
+          <span className="inline-block text-[11px] font-bold tracking-widest uppercase text-[#1ebe57] mb-3 opacity-0 animate-fade-up" style={{ animationDelay: '0.05s' }}>Formación y Certificaciones</span>
+          <h2 className="font-extrabold text-[#1a365d] text-2xl sm:text-3xl mb-8 opacity-0 animate-cascade" style={{ animationDelay: '0.1s' }}>Avales Académicos y Profesionales</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            {certs.map((c, i) => (
+              <div key={i} className="bg-white border border-gray-200 rounded-2xl p-5 flex flex-col items-center text-center gap-3 opacity-0 animate-scale-pop hover:border-[#25D366] hover:shadow-[0_8px_32px_rgba(37,211,102,0.12)] hover:-translate-y-1 transition-all" style={{ animationDelay: `${0.2 + i * 0.08}s` }}>
+                <img src={c.img} alt={c.alt} className="h-14 w-auto object-contain" loading="lazy" />
+                <div>
+                  <p className="font-bold text-[#1a365d] text-sm">{c.label}</p>
+                  <p className="text-xs text-gray-500 mt-1 leading-relaxed">{c.sub}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* About Text */}
       <section className="py-14 sm:py-20 px-4 sm:px-6 bg-white">
         <div className="max-w-[1200px] mx-auto grid grid-cols-1 lg:grid-cols-[1fr_360px] gap-12">
@@ -172,28 +191,6 @@ export default function SobreMiPage() {
             <Link to="/contacto" className="flex items-center justify-center gap-2 bg-white border border-gray-200 text-[#1a365d] no-underline py-3.5 rounded-2xl text-sm font-bold transition-all hover:border-[#25D366] hover:shadow-md">
               Formulario de Contacto
             </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* Certifications */}
-      <section className="py-12 sm:py-16 px-4 sm:px-6 bg-gray-50">
-        <div className="max-w-[1200px] mx-auto">
-          <span className="inline-block text-[11px] font-bold tracking-widest uppercase text-[#1ebe57] mb-3 opacity-0 animate-fade-up" style={{ animationDelay: '0.05s' }}>Perfil Profesional</span>
-          <h2 className="font-extrabold text-[#1a365d] text-2xl sm:text-3xl mb-1 opacity-0 animate-cascade" style={{ animationDelay: '0.1s' }}>Experto en Ortopedia y Traumatología en Medellín</h2>
-          <div className="w-12 h-0.5 bg-[#25D366] mb-8 opacity-0 animate-fade-up" style={{ animationDelay: '0.12s' }}></div>
-          <span className="inline-block text-[11px] font-bold tracking-widest uppercase text-[#1ebe57] mb-3 opacity-0 animate-fade-up" style={{ animationDelay: '0.15s' }}>Formación y Certificaciones</span>
-          <h3 className="font-extrabold text-[#1a365d] text-xl sm:text-2xl mb-8 opacity-0 animate-cascade" style={{ animationDelay: '0.18s' }}>Avales Académicos y Profesionales</h3>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-            {certs.map((c, i) => (
-              <div key={i} className="bg-white border border-gray-200 rounded-2xl p-5 flex flex-col items-center text-center gap-3 opacity-0 animate-scale-pop hover:border-[#25D366] hover:shadow-[0_8px_32px_rgba(37,211,102,0.12)] hover:-translate-y-1 transition-all" style={{ animationDelay: `${0.2 + i * 0.08}s` }}>
-                <img src={c.img} alt={c.alt} className="h-14 w-auto object-contain" loading="lazy" />
-                <div>
-                  <p className="font-bold text-[#1a365d] text-sm">{c.label}</p>
-                  <p className="text-xs text-gray-500 mt-1 leading-relaxed">{c.sub}</p>
-                </div>
-              </div>
-            ))}
           </div>
         </div>
       </section>
