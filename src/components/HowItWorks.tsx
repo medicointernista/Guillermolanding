@@ -37,7 +37,7 @@ export default function HowItWorks() {
         <h2 id="como-heading" className="font-extrabold text-[#1a365d] leading-tight mb-3.5 text-2xl sm:text-3xl md:text-4xl">
           Proceso de Consulta en Torre Medical, El Poblado — Medellín
         </h2>
-        <p className="text-sm sm:text-base md:text-[17px] text-gray-600 leading-relaxed max-w-[580px]">
+        <p className="text-sm sm:text-base md:text-[17px] text-gray-600 leading-relaxed">
           Del dolor al movimiento en 4 pasos. Sin listas de espera, sin adivinanzas.
         </p>
 

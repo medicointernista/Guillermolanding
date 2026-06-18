@@ -10,7 +10,7 @@ export default function Location() {
         <h2 id="ubicacion-heading" className="font-extrabold text-[#1a365d] leading-tight mb-3.5 text-2xl sm:text-3xl md:text-4xl opacity-0 animate-cascade" style={{ animationDelay: '0.2s' }}>
           Ubicación: Consultorio de Ortopedia en Torre Medical, El Poblado
         </h2>
-        <p className="text-sm sm:text-base md:text-[17px] text-gray-600 leading-relaxed max-w-[580px] opacity-0 animate-cascade" style={{ animationDelay: '0.3s' }}>
+        <p className="text-sm sm:text-base md:text-[17px] text-gray-600 leading-relaxed opacity-0 animate-cascade" style={{ animationDelay: '0.3s' }}>
           Fácil acceso en El Poblado. Estacionamiento disponible. Atención sin largas colas.
         </p>
 

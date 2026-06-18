@@ -25,7 +25,7 @@ export default function BilingualCare() {
           Atención Bilingüe en Ortopedia: Español e Inglés
         </h2>
 
-        <p className="text-sm sm:text-base md:text-[17px] text-gray-600 leading-relaxed max-w-[680px] opacity-0 animate-cascade" style={{ animationDelay: '0.3s' }}>
+        <p className="text-sm sm:text-base md:text-[17px] text-gray-600 leading-relaxed opacity-0 animate-cascade" style={{ animationDelay: '0.3s' }}>
           El Dr. Rodríguez atiende en Español e Inglés — presencialmente en Torre Medical o por telemedicina desde cualquier país. Sin barreras de idioma, sin intermediarios.
         </p>
 
