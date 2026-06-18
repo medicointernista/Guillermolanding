@@ -2,8 +2,6 @@ import { useState } from 'react';
 import Layout from '../components/Layout';
 import { MapPin, Phone, Mail, Clock } from 'lucide-react';
 
-const WA_HREF = "https://wa.me/573244081281?text=Hola%2C%20gracias%20por%20escribirnos%20desde%20nuestro%20sitio%20web.%20El%20Dr.%20Guillermo%20Rodr%C3%ADguez%20y%20su%20equipo%20est%C3%A1n%20para%20ayudarte%2C%20%C2%BFen%20qu%C3%A9%20podemos%20colaborarte%20hoy%3F";
-
 const INFO_ITEMS = [
   { icon: MapPin, label: 'Dirección',           value: 'Torre Medical, Calle 7 #39-107\nConsultorio 609, Medellín' },
   { icon: Clock,  label: 'Horario',             value: 'Mar y Jue: 14:00 – 18:30\nMié y Vie: 07:30 – 18:30\nSáb: 07:30 – 13:00' },
@@ -45,11 +43,11 @@ export default function ContactoPage() {
         </div>
       </section>
 
-      {/* Info + Mapa — contenidos dentro del max-width */}
+      {/* Info + Mapa */}
       <section className="py-10 sm:py-14 px-4 sm:px-6 bg-white" id="ubicacion">
         <div className="max-w-[1200px] mx-auto flex flex-col gap-5">
 
-          {/* Tarjetas de información arriba del mapa */}
+          {/* Tarjetas de información */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {INFO_ITEMS.map(({ icon: Icon, label, value }) => (
               <div key={label} className="bg-[#f0fdf4] border border-[rgba(37,211,102,0.2)] rounded-2xl p-4 flex items-start gap-3">
@@ -64,7 +62,7 @@ export default function ContactoPage() {
             ))}
           </div>
 
-          {/* Mapa contenido — bordes redondeados, no desborda */}
+          {/* Mapa contenido */}
           <div className="relative w-full rounded-2xl overflow-hidden border border-gray-200 shadow-md h-[280px] sm:h-[360px] md:h-[420px]">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.433895715107!2d-75.57230398524658!3d6.206357129595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4428f693dcefff%3A0xaf14d3a4e8017e38!2sTorre%20Medical!5e0!3m2!1ses-419!2sco!4v1718700000000!5m2!1ses-419!2sco"
@@ -169,27 +167,20 @@ export default function ContactoPage() {
             )}
           </div>
 
+          {/* Sidebar — solo badge Doctoralia */}
           <div className="flex flex-col gap-4 justify-start pt-1">
-            <a
-              href={WA_HREF}
-              target="_blank"
-              rel="noopener"
-              className="flex items-center justify-center gap-2 bg-[#25D366] text-white no-underline py-4 rounded-2xl font-extrabold uppercase tracking-wide text-sm transition-all duration-300 shadow-[0_4px_24px_rgba(37,211,102,0.35)] hover:bg-[#1ebe57] hover:-translate-y-0.5"
-            >
-              AGENDAR POR WHATSAPP
-            </a>
             <a
               href="https://www.doctoralia.co/guillermo-fernando-rodriguez-restrepo/ortopedista-y-traumatologo/medellin#address-id=69445&is-online-only=false&filters%5Bspecializations%5D%5B%5D=48"
               target="_blank"
               rel="noopener"
-              className="flex flex-col items-center gap-2 bg-white border border-gray-200 rounded-2xl px-5 py-5 shadow-sm no-underline hover:shadow-md hover:border-[#f59e0b]/40 transition-all group"
+              className="flex flex-col items-center gap-2 bg-white border border-gray-200 rounded-2xl px-5 py-6 shadow-sm no-underline hover:shadow-md hover:border-[#f59e0b]/40 transition-all group"
             >
               <div className="flex gap-1">
                 {[...Array(5)].map((_, i) => <span key={i} className="text-[#f59e0b] text-2xl leading-none">★</span>)}
               </div>
-              <p className="text-2xl font-extrabold text-[#1a365d] leading-none">4.8 <span className="text-base font-semibold text-gray-500">/ 5</span></p>
-              <p className="text-xs text-gray-500">48+ reseñas verificadas</p>
-              <span className="text-[11px] font-bold uppercase tracking-widest text-[#25a0b5] border border-[#25a0b5]/30 rounded-full px-3 py-0.5 group-hover:bg-[#25a0b5]/5 transition-colors">Ver en Doctoralia</span>
+              <p className="text-3xl font-extrabold text-[#1a365d] leading-none mt-1">4.8 <span className="text-base font-semibold text-gray-500">/ 5</span></p>
+              <p className="text-sm text-gray-500 font-medium">48+ reseñas verificadas</p>
+              <span className="text-[11px] font-bold uppercase tracking-widest text-[#25a0b5] border border-[#25a0b5]/30 rounded-full px-3 py-1 mt-1 group-hover:bg-[#25a0b5]/5 transition-colors">Ver en Doctoralia</span>
             </a>
           </div>
         </div>
