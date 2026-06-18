@@ -11,7 +11,7 @@ export function FascitisPlantar() {
         badge="Pie y Tobillo · Medellín"
         title="Fascitis Plantar en Medellín: Diagnóstico y Tratamiento Especializado"
         subtitle="Una de las causas más frecuentes de dolor en el talón. Tratamiento integral con opciones conservadoras, infiltraciones y PRP, adaptadas a cada paciente."
-        heroImage="/Evaluacion-medica-especializada.jpg"
+        heroImage="/Dr.-Guillermo-Rodriguez-Restrepo--Diagnostico-preciso-de-fascitis-plantar-con-ecografia-en-Medellin.jpg"
         heroImageAlt="Tratamiento de fascitis plantar en Medellín – dolor de talón – ortopedia"
         intro="La fascitis plantar es la inflamación de la fascia plantar, el tejido fibroso que conecta el hueso del talón con los dedos del pie. Es la causa más frecuente de dolor en el talón y puede afectar significativamente la calidad de vida. En el consultorio del Dr. Guillermo Rodríguez Restrepo en Medellín, ofrecemos un diagnóstico preciso con ecografía músculo-esquelética y un plan de tratamiento personalizado."
         symptomsTitle="Síntomas y Factores de Riesgo"
