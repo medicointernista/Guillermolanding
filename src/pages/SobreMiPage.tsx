@@ -179,8 +179,11 @@ export default function SobreMiPage() {
       {/* Certifications */}
       <section className="py-12 sm:py-16 px-4 sm:px-6 bg-gray-50">
         <div className="max-w-[1200px] mx-auto">
-          <span className="inline-block text-[11px] font-bold tracking-widest uppercase text-[#1ebe57] mb-3 opacity-0 animate-fade-up" style={{ animationDelay: '0.1s' }}>Formación y Certificaciones</span>
-          <h2 className="font-extrabold text-[#1a365d] text-2xl sm:text-3xl mb-8 opacity-0 animate-cascade" style={{ animationDelay: '0.15s' }}>Avales Académicos y Profesionales</h2>
+          <span className="inline-block text-[11px] font-bold tracking-widest uppercase text-[#1ebe57] mb-3 opacity-0 animate-fade-up" style={{ animationDelay: '0.05s' }}>Perfil Profesional</span>
+          <h2 className="font-extrabold text-[#1a365d] text-2xl sm:text-3xl mb-1 opacity-0 animate-cascade" style={{ animationDelay: '0.1s' }}>Experto en Ortopedia y Traumatología en Medellín</h2>
+          <div className="w-12 h-0.5 bg-[#25D366] mb-8 opacity-0 animate-fade-up" style={{ animationDelay: '0.12s' }}></div>
+          <span className="inline-block text-[11px] font-bold tracking-widest uppercase text-[#1ebe57] mb-3 opacity-0 animate-fade-up" style={{ animationDelay: '0.15s' }}>Formación y Certificaciones</span>
+          <h3 className="font-extrabold text-[#1a365d] text-xl sm:text-2xl mb-8 opacity-0 animate-cascade" style={{ animationDelay: '0.18s' }}>Avales Académicos y Profesionales</h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {certs.map((c, i) => (
               <div key={i} className="bg-white border border-gray-200 rounded-2xl p-5 flex flex-col items-center text-center gap-3 opacity-0 animate-scale-pop hover:border-[#25D366] hover:shadow-[0_8px_32px_rgba(37,211,102,0.12)] hover:-translate-y-1 transition-all" style={{ animationDelay: `${0.2 + i * 0.08}s` }}>
