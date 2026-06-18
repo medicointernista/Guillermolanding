@@ -54,8 +54,7 @@ export default function SiteFooter() {
             </ul>
             <p className="text-xs font-bold uppercase tracking-widest text-white/90 mb-3">Horarios</p>
             <ul className="list-none flex flex-col gap-2 text-xs sm:text-[13px] text-white/60">
-              <li><div className="font-semibold text-white/80">Mar y Jue</div><span>14:00 – 18:30</span></li>
-              <li><div className="font-semibold text-white/80">Mié y Vie</div><span>07:30 – 18:30</span></li>
+              <li><div className="font-semibold text-white/80">Mar a Viernes</div><span>07:30 – 18:30</span></li>
               <li><div className="font-semibold text-white/80">Sábados</div><span>07:30 – 13:00</span></li>
             </ul>
           </div>
