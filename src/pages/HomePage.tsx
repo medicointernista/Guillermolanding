@@ -2,7 +2,6 @@ import Layout from '../components/Layout';
 import Hero from '../components/Hero';
 import FamilyCare from '../components/FamilyCare';
 import BilingualCare from '../components/BilingualCare';
-import Authority from '../components/Authority';
 import HowItWorks from '../components/HowItWorks';
 import Treatments from '../components/Treatments';
 import ContactForm from '../components/ContactForm';
@@ -20,7 +19,6 @@ export default function HomePage() {
       <Hero />
       <FamilyCare />
       <BilingualCare />
-      <Authority />
       <HowItWorks />
       <Treatments />
       <ContactForm />
