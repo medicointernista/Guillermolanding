@@ -7,7 +7,6 @@ import Treatments from '../components/Treatments';
 import ContactForm from '../components/ContactForm';
 import Testimonials from '../components/Testimonials';
 import FAQ from '../components/FAQ';
-import Location from '../components/Location';
 import Closer from '../components/Closer';
 
 export default function HomePage() {
@@ -24,7 +23,6 @@ export default function HomePage() {
       <ContactForm />
       <Testimonials />
       <FAQ />
-      <Location />
       <Closer />
     </Layout>
   );

@@ -166,10 +166,6 @@ export default function SiteHeader() {
                   Testimonios
                   <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-[#25D366] to-transparent group-hover:w-full transition-all duration-300"></span>
                 </a>
-                <a href="/#ubicacion" className={navLinkCls}>
-                  Ubicación
-                  <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-[#25D366] to-transparent group-hover:w-full transition-all duration-300"></span>
-                </a>
               </>
             )}
           </nav>

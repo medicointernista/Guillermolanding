@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import Layout from '../components/Layout';
-import { MapPin, Phone, Mail, Clock } from 'lucide-react';
+import { MapPin, Phone, Mail, Clock, MessageCircle } from 'lucide-react';
 
 const WA_HREF = "https://wa.me/573244081281?text=Hola%2C%20gracias%20por%20escribirnos%20desde%20nuestro%20sitio%20web.%20El%20Dr.%20Guillermo%20Rodr%C3%ADguez%20y%20su%20equipo%20est%C3%A1n%20para%20ayudarte%2C%20%C2%BFen%20qu%C3%A9%20podemos%20colaborarte%20hoy%3F";
 
@@ -172,6 +172,42 @@ export default function ContactoPage() {
             >
               AGENDAR POR WHATSAPP
             </a>
+
+            <div className="flex items-center gap-2 bg-white border border-gray-200 rounded-xl px-4 py-3 shadow-sm">
+              <div className="flex gap-0.5 flex-shrink-0">
+                {[...Array(5)].map((_, i) => <span key={i} className="text-[#f59e0b] text-sm">★</span>)}
+              </div>
+              <div className="text-xs font-semibold text-gray-800 flex-1"><strong>4.8 / 5</strong> — 48+ reseñas verificadas</div>
+              <span className="text-[10px] text-gray-400 border-l border-gray-200 pl-2.5 flex-shrink-0">Doctoralia</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Ubicación detallada */}
+      <section className="py-12 sm:py-16 px-4 sm:px-6 bg-gray-50 border-t border-gray-100" id="ubicacion">
+        <div className="max-w-[1200px] mx-auto">
+          <span className="inline-block text-[11px] font-bold tracking-widest uppercase text-[#1ebe57] mb-2.5">Cómo llegar</span>
+          <h2 className="font-extrabold text-[#1a365d] text-2xl sm:text-3xl mb-2">Torre Medical, El Poblado – Medellín</h2>
+          <p className="text-sm text-gray-500 mb-8">Fácil acceso, estacionamiento disponible. Sin largas colas.</p>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            {[
+              { icon: MapPin, title: 'Dirección', body: 'Torre Medical\nCalle 7 #39-107, Cons. 609\nMedellín, Antioquia' },
+              { icon: Clock, title: 'Horarios', body: 'Mar y Jue: 14:00 – 18:30\nMié y Vie: 07:30 – 18:30\nSáb: 07:30 – 13:00' },
+              { icon: MessageCircle, title: 'WhatsApp', body: '+57 324 408 1281\nRespuesta en menos\nde 2 horas' },
+              { icon: Mail, title: 'Correo', body: 'agendasortopediaguillermorodmd\n@gmail.com' },
+            ].map(({ icon: Icon, title, body }) => (
+              <div key={title} className="bg-white border border-gray-200 rounded-2xl p-5 flex flex-col gap-3 hover:shadow-md transition-shadow">
+                <div className="w-10 h-10 bg-[#1a365d] rounded-xl flex items-center justify-center">
+                  <Icon size={18} className="text-white" strokeWidth={1.5} />
+                </div>
+                <div>
+                  <p className="text-[10px] font-bold uppercase tracking-widest text-gray-400 mb-1">{title}</p>
+                  <p className="text-sm font-semibold text-gray-800 whitespace-pre-line leading-relaxed">{body}</p>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
