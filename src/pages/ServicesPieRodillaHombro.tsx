@@ -66,7 +66,7 @@ export function EsguincesTobillo() {
         badge="Pie y Tobillo · Medellín"
         title="Esguinces Crónicos de Tobillo en Medellín: Atención Especializada en Ortopedia"
         subtitle="Valoración experta con ecografía para diagnóstico preciso. Protocolos personalizados que incluyen infiltraciones y PRP para reducir el dolor e inflamación y prevenir recaídas."
-        heroImage="/Evaluacion-medica-especializada.jpg"
+        heroImage="/Dr.-Guillermo-Rodriguez-Restrepo--Diagnostico-y-tratamiento-especializado-para-esguinces-cronicos-de-tobillo-en-Medellin.jpg"
         heroImageAlt="Tratamiento de esguinces crónicos de tobillo en Medellín – ortopedia y traumatología"
         intro="Los esguinces crónicos de tobillo son aquellos que persisten o se repiten frecuentemente, generando inestabilidad, dolor y limitación funcional. Cuando un esguince inicial no se trata adecuadamente, puede evolucionar hacia una condición crónica que requiere valoración ortopédica especializada. El Dr. Guillermo Rodríguez Restrepo ofrece en Medellín un manejo integral que va desde las terapias conservadoras hasta las infiltraciones articulares ecoguiadas."
         symptomsTitle="Síntomas de Esguince Crónico de Tobillo"
