@@ -134,16 +134,14 @@ export default function ServicePage({
       </div>
 
       {/* Intro */}
-      <section className="py-12 sm:py-16 px-4 sm:px-6 bg-white">
+      <section className="py-10 sm:py-12 px-4 sm:px-6 bg-white">
         <div className="max-w-[1200px] mx-auto">
-          <div className="max-w-3xl">
-            <span className="inline-block text-[11px] font-bold tracking-widest uppercase text-[#1ebe57] mb-2.5 opacity-0 animate-fade-up" style={{ animationDelay: '0.1s' }}>
-              Dr. Guillermo Rodríguez Restrepo · Medellín
-            </span>
-            <p className="text-base sm:text-lg text-gray-700 leading-relaxed opacity-0 animate-cascade" style={{ animationDelay: '0.2s' }}>
-              {intro}
-            </p>
-          </div>
+          <span className="inline-block text-[11px] font-bold tracking-widest uppercase text-[#1ebe57] mb-2.5 opacity-0 animate-fade-up" style={{ animationDelay: '0.1s' }}>
+            Dr. Guillermo Rodríguez Restrepo · Medellín
+          </span>
+          <p className="text-base sm:text-lg text-gray-700 leading-relaxed opacity-0 animate-cascade" style={{ animationDelay: '0.2s' }}>
+            {intro}
+          </p>
         </div>
       </section>
 
