@@ -68,24 +68,8 @@ export default function SobreMiPage() {
             <span className="inline-block text-[11px] font-bold tracking-widest uppercase text-[#1ebe57] mb-3">Perfil Profesional</span>
             <h2 className="font-extrabold text-[#1a365d] text-2xl sm:text-3xl md:text-4xl">Experto en Ortopedia y Traumatología en Medellín</h2>
           </div>
-          <div className="grid grid-cols-1 lg:grid-cols-[1fr_1.5fr] gap-10 md:gap-16 items-start">
-            <div className="relative opacity-0 animate-slide-left" style={{ animationDelay: '0.1s' }}>
-              <div className="relative bg-gradient-to-br from-[#1a365d] to-[#2a4a7f] rounded-3xl aspect-[3/4] flex flex-col items-center justify-center overflow-hidden shadow-lg">
-                <img
-                  src="/Dr-Guillermo-rodriguez.jpg"
-                  alt="Dr. Guillermo Rodríguez Restrepo – Especialista en Ortopedia, Traumatología y Medicina Regenerativa con 30+ años"
-                  className="w-full h-full object-cover"
-                  loading="lazy"
-                  decoding="async"
-                />
-              </div>
-              <div className="absolute -bottom-5 -right-5 bg-[#25D366] text-white rounded-2xl px-5 py-4 text-[13px] font-bold text-center shadow-lg z-10 opacity-0 animate-spring" style={{ animationDelay: '0.6s' }}>
-                <strong className="block text-[24px] font-extrabold">30+</strong>
-                años de experiencia
-              </div>
-            </div>
-
-            <div className="opacity-0 animate-slide-right" style={{ animationDelay: '0.15s' }}>
+          <div>
+            <div className="opacity-0 animate-fade-up" style={{ animationDelay: '0.15s' }}>
               <span className="inline-block text-[11px] font-bold tracking-widest uppercase text-[#1ebe57] mb-2.5">
                 Tu Especialista de Confianza
               </span>
@@ -131,7 +115,6 @@ export default function SobreMiPage() {
                   ))}
                 </ul>
               </div>
-
             </div>
           </div>
         </div>
