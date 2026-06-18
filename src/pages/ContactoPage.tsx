@@ -36,9 +36,40 @@ export default function ContactoPage() {
         </div>
       </section>
 
+      {/* Map hero */}
+      <section className="w-full">
+        <div className="relative w-full h-[340px] sm:h-[420px] md:h-[480px]">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.433895715107!2d-75.57230398524658!3d6.206357129595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4428f693dcefff%3A0xaf14d3a4e8017e38!2sTorre%20Medical!5e0!3m2!1ses-419!2sco!4v1718700000000!5m2!1ses-419!2sco"
+            width="100%"
+            height="100%"
+            style={{ border: 0, display: 'block' }}
+            allowFullScreen
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            title="Ubicación Dr. Guillermo Rodríguez – Torre Medical Medellín"
+          />
+          {/* Overlay badge */}
+          <a
+            href="https://maps.google.com/maps?q=Torre+Medical+Calle+7+39-107+Medellin"
+            target="_blank"
+            rel="noopener"
+            className="absolute bottom-4 left-4 flex items-center gap-3 bg-white rounded-xl shadow-lg px-4 py-3 no-underline hover:shadow-xl transition-shadow"
+          >
+            <div className="w-9 h-9 bg-[#1a365d] rounded-lg flex items-center justify-center flex-shrink-0">
+              <MapPin size={18} className="text-white" />
+            </div>
+            <div>
+              <p className="text-[11px] font-bold uppercase tracking-widest text-[#1ebe57] leading-none mb-0.5">Torre Medical</p>
+              <p className="text-xs font-semibold text-gray-700">Calle 7 #39-107, Cons. 609 · Medellín</p>
+            </div>
+          </a>
+        </div>
+      </section>
+
       {/* Contact Grid */}
       <section className="py-14 sm:py-20 px-4 sm:px-6 bg-white">
-        <div className="max-w-[1200px] mx-auto grid grid-cols-1 lg:grid-cols-[1fr_400px] gap-10">
+        <div className="max-w-[1200px] mx-auto grid grid-cols-1 lg:grid-cols-[1fr_380px] gap-10">
           {/* Form */}
           <div>
             <span className="inline-block text-[11px] font-bold tracking-widest uppercase text-[#1ebe57] mb-3">Formulario de Contacto</span>
@@ -118,7 +149,7 @@ export default function ContactoPage() {
                   { icon: MapPin, label: 'Dirección', value: 'Torre Medical Calle 7 #39-107\nConsultorio 609, Medellín, Antioquia' },
                   { icon: Phone, label: 'Teléfono / WhatsApp', value: '+57 324 408 1281' },
                   { icon: Mail, label: 'Correo', value: 'agendasortopediaguillermorodmd@gmail.com' },
-                  { icon: Clock, label: 'Horario', value: 'Lun–Vie: 07:30 – 18:00\nSáb: 07:30 – 13:00' },
+                  { icon: Clock, label: 'Horario', value: 'Mar y Jue: 14:00 – 18:30\nMié y Vie: 07:30 – 18:30\nSáb: 07:30 – 13:00' },
                 ].map(({ icon: Icon, label, value }) => (
                   <li key={label} className="flex items-start gap-3">
                     <div className="w-8 h-8 bg-[rgba(37,211,102,0.12)] rounded-lg flex items-center justify-center flex-shrink-0">
@@ -141,18 +172,6 @@ export default function ContactoPage() {
             >
               AGENDAR POR WHATSAPP
             </a>
-
-            <div className="rounded-2xl overflow-hidden border border-gray-200 h-48">
-              <iframe
-                src="https://maps.google.com/maps?q=Torre+Medical+Calle+7+39-107+Medellin&output=embed"
-                width="100%"
-                height="100%"
-                style={{ border: 0 }}
-                loading="lazy"
-                title="Ubicación Torre Medical Medellín"
-                allowFullScreen
-              />
-            </div>
           </div>
         </div>
       </section>
