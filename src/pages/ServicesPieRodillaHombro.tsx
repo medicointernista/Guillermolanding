@@ -174,7 +174,7 @@ export function HalluxValgusPage() {
         badge="Pie y Tobillo · Medellín"
         title="Tratamiento Especializado para Hallux Valgus en Medellín, Antioquia"
         subtitle="Deformidad progresiva del dedo gordo del pie que causa dolor e incapacidad. Ofrecemos opciones no quirúrgicas y quirúrgicas según la severidad de cada caso."
-        heroImage="/Evaluacion-medica-especializada.jpg"
+        heroImage="/Diagnostico-y-tratamiento-personalizado-para-Hallux-Valgus.jpg"
         heroImageAlt="Tratamiento Hallux Valgus juanete en Medellín – ortopedia pie"
         intro="El Hallux Valgus, comúnmente conocido como juanete, es una deformidad progresiva del dedo gordo del pie donde la articulación metatarsofalángica se desvía hacia afuera, causando una prominencia ósea dolorosa en el lado interno del pie. Es más frecuente en mujeres y puede agravarse con el uso de calzado ajustado. El Dr. Guillermo Rodríguez Restrepo ofrece en Medellín diagnóstico diferencial preciso y un plan de tratamiento adaptado a la severidad de la deformidad."
         symptomsTitle="Síntomas del Hallux Valgus"
