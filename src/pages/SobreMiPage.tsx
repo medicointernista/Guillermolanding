@@ -198,11 +198,18 @@ export default function SobreMiPage() {
       {/* Doctoralia */}
       <section className="py-10 px-4 sm:px-6 bg-white">
         <div className="max-w-[1200px] mx-auto flex flex-col md:flex-row items-center gap-6">
-          <img src="/Logo-Doctoralia.jpg" alt="Dr. Guillermo Rodríguez en Doctoralia – plataforma médica verificada" className="h-12 w-auto object-contain" loading="lazy" />
-          <div>
-            <p className="text-sm font-semibold text-[#1a365d] mb-1">Verificado en Doctoralia</p>
-            <p className="text-xs text-gray-500">Perfil médico activo con reseñas reales de pacientes. Reputación 4.8/5 estrellas.</p>
-          </div>
+          <a
+            href="https://www.doctoralia.co/guillermo-fernando-rodriguez-restrepo/ortopedista-y-traumatologo/medellin#address-id=69445&is-online-only=false&filters%5Bspecializations%5D%5B%5D=48"
+            target="_blank"
+            rel="noopener"
+            className="flex flex-col md:flex-row items-center gap-6 no-underline hover:opacity-90 transition-opacity group"
+          >
+            <img src="/Logo-Doctoralia.jpg" alt="Dr. Guillermo Rodríguez en Doctoralia – plataforma médica verificada" className="h-12 w-auto object-contain" loading="lazy" />
+            <div>
+              <p className="text-sm font-semibold text-[#1a365d] mb-1 group-hover:underline">Verificado en Doctoralia</p>
+              <p className="text-xs text-gray-500">Perfil médico activo con reseñas reales de pacientes. Reputación 4.8/5 estrellas.</p>
+            </div>
+          </a>
         </div>
       </section>
 
