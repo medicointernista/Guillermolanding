@@ -17,7 +17,7 @@ export default function Location() {
         <div className="grid grid-cols-1 md:grid-cols-[1.2fr_1fr] gap-6 md:gap-8 items-stretch mt-8 sm:mt-10">
           <div className="rounded-2xl overflow-hidden shadow-md border-[1.5px] border-gray-200 h-full min-h-[360px] animate-slide-left" style={{ animationDelay: '0.4s' }}>
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m12!1m8!1m3!1d3966.433895715107!2d-75.5701125!3d6.2063571!3m2!1i1024!2i768!4f13.1!2m1!1sortopedista%20y%20traumat%C3%B3logo%20en%20medellin%20dr%20guillermo%20rodriguez!5e0!3m2!1ses-419!2sco!4v1773845881650!5m2!1ses-419!2sco"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.433895715107!2d-75.57230398524658!3d6.206357129595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4428f693dcefff%3A0xaf14d3a4e8017e38!2sTorre%20Medical!5e0!3m2!1ses-419!2sco!4v1718700000000!5m2!1ses-419!2sco"
               width="100%"
               height="100%"
               style={{ border: 0, minHeight: '360px' }}
