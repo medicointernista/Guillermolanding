@@ -1,0 +1,172 @@
+import Layout from '../components/Layout';
+import { Link } from 'react-router-dom';
+
+const WA_HREF = "https://wa.me/573244081281?text=Hola%20Dr.%20Guillermo%20Rodr%C3%ADguez%2C%20quiero%20agendar%20una%20valoraci%C3%B3n.%20Vengo%20desde%20la%20p%C3%A1gina%20web.";
+
+const certs = [
+  { img: '/SCCOT.jpg', alt: 'Membresía SCCOT – Asociación Colombiana de Cirugía Ortopédica', label: 'Miembro SCCOT', sub: 'Asociación Colombiana de Cirugía Ortopédica y Traumatología' },
+  { img: '/ACCART-2025.jpg', alt: 'Diplomado Internacional Ortobiológicos ACCART 2025', label: 'ACCART 2025', sub: 'Diplomado Internacional en Uso de Ortobiológicos' },
+  { img: '/Logo_Universidad_de_los_Andes.jpg', alt: 'Magíster en Educación Universidad de los Andes Colombia', label: 'Magíster en Educación', sub: 'Universidad de los Andes, Colombia – 2013' },
+  { img: '/Logo-Universidad-CES-Colombia-removebg-preview.png', alt: 'Docente Ortopedia Universidad CES Colombia', label: 'Docente de Ortopedia', sub: 'Universidad CES, Colombia' },
+];
+
+const testimonials = [
+  { name: 'María L.', text: 'El tratamiento para mi tendinitis fue claro y efectivo, siempre con un acompañamiento profesional.' },
+  { name: 'Jorge R.', text: 'Recibí un manejo integral para mi lesión de hombro que mejoró notablemente mi movilidad.' },
+  { name: 'Carlos M.', text: 'Gracias a la atención en ortopedia pude mejorar el dolor de rodilla y volver a mis actividades diarias con confianza.' },
+];
+
+export default function SobreMiPage() {
+  return (
+    <Layout
+      title="Sobre el Dr. Guillermo Rodríguez Restrepo – Ortopedista Medellín"
+      description="Conozca el perfil profesional, certificaciones y trayectoria del Dr. Guillermo Rodríguez Restrepo, Especialista en Ortopedia y Traumatología en Medellín."
+    >
+      {/* Hero */}
+      <section className="relative overflow-hidden bg-gradient-to-br from-[#0f2340] via-[#1a365d] to-[#2a4a7f] py-14 sm:py-20 px-4 sm:px-6">
+        <div className="absolute -top-16 -right-20 w-[500px] h-[500px] rounded-full bg-[rgba(37,211,102,0.07)] pointer-events-none animate-rotate-glow"></div>
+        <div className="max-w-[1200px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center relative z-10">
+          <div>
+            <p className="inline-flex items-center gap-2 bg-[rgba(37,211,102,0.15)] border border-[rgba(37,211,102,0.3)] text-[#6ee7b7] px-3.5 py-1.5 rounded-full text-xs font-semibold tracking-wider uppercase mb-5 opacity-0 animate-fade-up" style={{ animationDelay: '0.1s' }}>
+              Ortopedia con Calidad Humana · Medellín
+            </p>
+            <h1 className="font-extrabold text-white leading-tight mb-5 text-2xl sm:text-3xl md:text-4xl opacity-0 animate-cascade" style={{ animationDelay: '0.2s' }}>
+              Dr. Guillermo Rodríguez Restrepo
+              <span className="block text-[#25D366] text-xl sm:text-2xl mt-1">Especialista en Ortopedia y Traumatología</span>
+            </h1>
+            <p className="text-white/85 leading-relaxed text-sm sm:text-base mb-6 opacity-0 animate-cascade" style={{ animationDelay: '0.3s' }}>
+              Experto en el manejo integral de lesiones musculoesqueléticas, enfermedades articulares y tratamientos ortopédicos avanzados con enfoque en recuperación funcional y calidad de vida del paciente.
+            </p>
+            <div className="flex gap-3 opacity-0 animate-spring" style={{ animationDelay: '0.5s' }}>
+              <a href={WA_HREF} target="_blank" rel="noopener" className="inline-flex items-center gap-2 bg-[#25D366] text-white no-underline px-6 py-3 rounded-full text-sm font-extrabold tracking-wide uppercase transition-all duration-300 shadow-[0_4px_24px_rgba(37,211,102,0.4)] hover:bg-[#1ebe57] hover:-translate-y-0.5 hover:scale-105">
+                AGENDAR CITA
+              </a>
+            </div>
+          </div>
+          <div className="bg-white/[0.08] border border-white/15 rounded-3xl overflow-hidden opacity-0 animate-slide-right" style={{ animationDelay: '0.4s' }}>
+            <img
+              src="/Dr-Guillermo-rodriguez.jpg"
+              alt="Dr. Guillermo Rodríguez Restrepo – Ortopedista y Traumatólogo en Medellín, Antioquia"
+              className="w-full h-72 sm:h-96 object-cover object-top"
+              loading="eager"
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* About Text */}
+      <section className="py-14 sm:py-20 px-4 sm:px-6 bg-white">
+        <div className="max-w-[1200px] mx-auto grid grid-cols-1 lg:grid-cols-[1fr_360px] gap-12">
+          <div>
+            <span className="inline-block text-[11px] font-bold tracking-widest uppercase text-[#1ebe57] mb-3 opacity-0 animate-fade-up" style={{ animationDelay: '0.1s' }}>Perfil Profesional</span>
+            <h2 className="font-extrabold text-[#1a365d] text-2xl sm:text-3xl md:text-4xl mb-5 opacity-0 animate-cascade" style={{ animationDelay: '0.15s' }}>
+              Experto en Ortopedia y Traumatología en Medellín
+            </h2>
+            <div className="text-gray-700 text-sm sm:text-base leading-relaxed space-y-4 opacity-0 animate-cascade" style={{ animationDelay: '0.2s' }}>
+              <p>
+                El Dr. Guillermo Rodríguez Restrepo es un especialista en Ortopedia y Traumatología con amplia trayectoria en el manejo de lesiones musculoesqueléticas, enfermedades articulares y tratamientos ortopédicos de vanguardia enfocados en la recuperación funcional de sus pacientes.
+              </p>
+              <p>
+                Su enfoque se caracteriza por ofrecer <strong className="text-[#1a365d]">atención personalizada, humana y basada en evidencia</strong>, priorizando siempre las opciones menos invasivas antes de considerar intervenciones quirúrgicas. Utiliza tecnología de ecografía músculo-esquelética para diagnósticos precisos y procedimientos guiados.
+              </p>
+              <p>
+                Con formación académica de alto nivel —incluyendo un Magíster en Educación de la Universidad de los Andes y la docencia en la Universidad CES— el Dr. Rodríguez combina conocimiento científico actualizado con una comunicación clara y empática con el paciente.
+              </p>
+              <p>
+                Atiende en la Torre Medical de Medellín, un entorno especializado donde ofrece toda la gama de tratamientos: desde los regenerativos como el PRP y la viscosuplementación, hasta las infiltraciones ecoguiadas y la cirugía de mínima invasión cuando es necesaria.
+              </p>
+            </div>
+          </div>
+
+          <div className="flex flex-col gap-4">
+            <div className="bg-[#f0fdf4] border border-[rgba(37,211,102,0.25)] rounded-2xl p-5">
+              <p className="text-xs font-bold uppercase tracking-widest text-[#1ebe57] mb-3">Datos de Contacto</p>
+              <ul className="list-none flex flex-col gap-2 text-sm text-gray-700">
+                <li className="flex items-start gap-2">
+                  <span className="text-[#25D366] font-bold flex-shrink-0">Tel:</span>
+                  <a href="tel:+573244081281" className="hover:text-[#1a365d] transition-colors no-underline">+57 324 408 1281</a>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-[#25D366] font-bold flex-shrink-0">WA:</span>
+                  <a href={WA_HREF} target="_blank" rel="noopener" className="hover:text-[#1a365d] transition-colors no-underline">+57 324 408 1281</a>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-[#25D366] font-bold flex-shrink-0">Dir:</span>
+                  <span>Torre Medical Calle 7 #39-107<br/>Consultorio 609, Medellín</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-[#25D366] font-bold flex-shrink-0">H:</span>
+                  <span>Lun–Vie 07:30–18:00<br/>Sáb 07:30–13:00</span>
+                </li>
+              </ul>
+            </div>
+            <a href={WA_HREF} target="_blank" rel="noopener" className="flex items-center justify-center gap-2 bg-[#25D366] text-white no-underline py-3.5 rounded-2xl text-sm font-extrabold tracking-wide uppercase transition-all duration-300 shadow-[0_4px_24px_rgba(37,211,102,0.35)] hover:bg-[#1ebe57] hover:-translate-y-0.5">
+              AGENDAR MI VALORACIÓN
+            </a>
+            <Link to="/contacto" className="flex items-center justify-center gap-2 bg-white border border-gray-200 text-[#1a365d] no-underline py-3.5 rounded-2xl text-sm font-bold transition-all hover:border-[#25D366] hover:shadow-md">
+              Formulario de Contacto
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Certifications */}
+      <section className="py-12 sm:py-16 px-4 sm:px-6 bg-gray-50">
+        <div className="max-w-[1200px] mx-auto">
+          <span className="inline-block text-[11px] font-bold tracking-widest uppercase text-[#1ebe57] mb-3 opacity-0 animate-fade-up" style={{ animationDelay: '0.1s' }}>Formación y Certificaciones</span>
+          <h2 className="font-extrabold text-[#1a365d] text-2xl sm:text-3xl mb-8 opacity-0 animate-cascade" style={{ animationDelay: '0.15s' }}>Avales Académicos y Profesionales</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            {certs.map((c, i) => (
+              <div key={i} className="bg-white border border-gray-200 rounded-2xl p-5 flex flex-col items-center text-center gap-3 opacity-0 animate-scale-pop hover:border-[#25D366] hover:shadow-[0_8px_32px_rgba(37,211,102,0.12)] hover:-translate-y-1 transition-all" style={{ animationDelay: `${0.2 + i * 0.08}s` }}>
+                <img src={c.img} alt={c.alt} className="h-14 w-auto object-contain" loading="lazy" />
+                <div>
+                  <p className="font-bold text-[#1a365d] text-sm">{c.label}</p>
+                  <p className="text-xs text-gray-500 mt-1 leading-relaxed">{c.sub}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Doctoralia */}
+      <section className="py-10 px-4 sm:px-6 bg-white">
+        <div className="max-w-[1200px] mx-auto flex flex-col md:flex-row items-center gap-6">
+          <img src="/Logo-Doctoralia.jpg" alt="Dr. Guillermo Rodríguez en Doctoralia – plataforma médica verificada" className="h-12 w-auto object-contain" loading="lazy" />
+          <div>
+            <p className="text-sm font-semibold text-[#1a365d] mb-1">Verificado en Doctoralia</p>
+            <p className="text-xs text-gray-500">Perfil médico activo con reseñas reales de pacientes. Reputación 4.8/5 estrellas.</p>
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonials */}
+      <section className="py-12 sm:py-16 px-4 sm:px-6 bg-gradient-to-br from-[#0f2340] via-[#1a365d] to-[#2a4a7f]">
+        <div className="max-w-[1200px] mx-auto">
+          <h2 className="font-extrabold text-white text-2xl sm:text-3xl mb-8 text-center opacity-0 animate-cascade" style={{ animationDelay: '0.1s' }}>
+            Lo que Dicen Nuestros Pacientes
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+            {testimonials.map((t, i) => (
+              <div key={i} className="bg-white/10 border border-white/15 rounded-2xl p-5 opacity-0 animate-scale-pop" style={{ animationDelay: `${0.2 + i * 0.1}s` }}>
+                <div className="text-[#f59e0b] text-sm mb-3">★★★★★</div>
+                <p className="font-serif italic text-white/90 text-sm leading-relaxed mb-3">"{t.text}"</p>
+                <p className="font-bold text-[#25D366] text-xs">{t.name}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section className="py-10 px-4 sm:px-6 bg-white">
+        <div className="max-w-[1200px] mx-auto text-center">
+          <h2 className="font-extrabold text-[#1a365d] text-xl sm:text-2xl mb-4">¿Listo para recuperar tu movilidad?</h2>
+          <a href={WA_HREF} target="_blank" rel="noopener" className="inline-flex items-center gap-2 bg-[#25D366] text-white no-underline px-8 py-4 rounded-full text-sm font-extrabold tracking-wide uppercase transition-all duration-300 shadow-[0_4px_24px_rgba(37,211,102,0.4)] hover:bg-[#1ebe57] hover:-translate-y-1 hover:scale-105">
+            AGENDA TU CITA AHORA
+          </a>
+        </div>
+      </section>
+    </Layout>
+  );
+}

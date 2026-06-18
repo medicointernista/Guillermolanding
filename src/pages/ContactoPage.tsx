@@ -1,0 +1,170 @@
+import { useState } from 'react';
+import Layout from '../components/Layout';
+import { MapPin, Phone, Mail, Clock } from 'lucide-react';
+
+const WA_HREF = "https://wa.me/573244081281?text=Hola%20Dr.%20Guillermo%20Rodr%C3%ADguez%2C%20quiero%20agendar%20una%20valoraci%C3%B3n.%20Vengo%20desde%20la%20p%C3%A1gina%20web.";
+
+export default function ContactoPage() {
+  const [form, setForm] = useState({ nombre: '', telefono: '', email: '', motivo: '', urgente: false });
+  const [sent, setSent] = useState(false);
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    const msg = encodeURIComponent(`Hola Dr. Guillermo Rodríguez, mi nombre es ${form.nombre}. ${form.motivo ? 'Motivo: ' + form.motivo : ''} Mi teléfono: ${form.telefono}. ${form.urgente ? '⚠️ ES URGENTE.' : ''}`);
+    window.open(`https://wa.me/573244081281?text=${msg}`, '_blank');
+    setSent(true);
+  };
+
+  return (
+    <Layout
+      title="Contacto – Dr. Guillermo Rodríguez Restrepo | Ortopedista Medellín"
+      description="Contáctenos para agendar su cita con el Dr. Guillermo Rodríguez Restrepo, Ortopedista en Medellín. Torre Medical, Consultorio 609. WhatsApp +57 324 408 1281."
+    >
+      {/* Hero */}
+      <section className="relative bg-gradient-to-br from-[#0f2340] via-[#1a365d] to-[#2a4a7f] py-14 sm:py-20 px-4 sm:px-6 overflow-hidden">
+        <div className="absolute -top-16 -right-20 w-[500px] h-[500px] rounded-full bg-[rgba(37,211,102,0.07)] pointer-events-none animate-rotate-glow"></div>
+        <div className="max-w-[1200px] mx-auto relative z-10 text-center">
+          <p className="inline-flex items-center gap-2 bg-[rgba(37,211,102,0.15)] border border-[rgba(37,211,102,0.3)] text-[#6ee7b7] px-3.5 py-1.5 rounded-full text-xs font-semibold tracking-wider uppercase mb-5 opacity-0 animate-fade-up" style={{ animationDelay: '0.1s' }}>
+            Medellín, Antioquia · Colombia
+          </p>
+          <h1 className="font-extrabold text-white text-2xl sm:text-3xl md:text-4xl mb-4 opacity-0 animate-cascade" style={{ animationDelay: '0.2s' }}>
+            Agenda tu Cita con el Dr. Guillermo Rodríguez
+          </h1>
+          <p className="text-white/80 text-sm sm:text-base max-w-xl mx-auto opacity-0 animate-cascade" style={{ animationDelay: '0.3s' }}>
+            Ortopedia con Calidad Humana · Torre Medical · Consultorio 609
+          </p>
+        </div>
+      </section>
+
+      {/* Contact Grid */}
+      <section className="py-14 sm:py-20 px-4 sm:px-6 bg-white">
+        <div className="max-w-[1200px] mx-auto grid grid-cols-1 lg:grid-cols-[1fr_400px] gap-10">
+          {/* Form */}
+          <div>
+            <span className="inline-block text-[11px] font-bold tracking-widest uppercase text-[#1ebe57] mb-3">Formulario de Contacto</span>
+            <h2 className="font-extrabold text-[#1a365d] text-2xl sm:text-3xl mb-6">Escríbenos y te contactamos</h2>
+
+            {sent ? (
+              <div className="bg-[#f0fdf4] border border-[rgba(37,211,102,0.3)] rounded-2xl p-8 text-center">
+                <div className="w-14 h-14 bg-[#25D366] rounded-full flex items-center justify-center mx-auto mb-4">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M4 12l6 6 10-10" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
+                </div>
+                <h3 className="font-bold text-[#1a365d] text-lg mb-2">¡Mensaje enviado!</h3>
+                <p className="text-gray-600 text-sm">Hemos abierto WhatsApp con tu mensaje. El Dr. Rodríguez responderá pronto.</p>
+              </div>
+            ) : (
+              <form onSubmit={handleSubmit} className="flex flex-col gap-4">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div>
+                    <label className="text-xs font-semibold text-gray-700 mb-1.5 block">Nombre completo *</label>
+                    <input
+                      type="text"
+                      required
+                      value={form.nombre}
+                      onChange={e => setForm(f => ({ ...f, nombre: e.target.value }))}
+                      placeholder="Tu nombre"
+                      className="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm text-gray-800 outline-none focus:border-[#25D366] focus:ring-2 focus:ring-[#25D366]/20 transition-all"
+                    />
+                  </div>
+                  <div>
+                    <label className="text-xs font-semibold text-gray-700 mb-1.5 block">Teléfono *</label>
+                    <input
+                      type="tel"
+                      required
+                      value={form.telefono}
+                      onChange={e => setForm(f => ({ ...f, telefono: e.target.value }))}
+                      placeholder="+57 300 000 0000"
+                      className="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm text-gray-800 outline-none focus:border-[#25D366] focus:ring-2 focus:ring-[#25D366]/20 transition-all"
+                    />
+                  </div>
+                </div>
+                <div>
+                  <label className="text-xs font-semibold text-gray-700 mb-1.5 block">Correo electrónico</label>
+                  <input
+                    type="email"
+                    value={form.email}
+                    onChange={e => setForm(f => ({ ...f, email: e.target.value }))}
+                    placeholder="tucorreo@email.com"
+                    className="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm text-gray-800 outline-none focus:border-[#25D366] focus:ring-2 focus:ring-[#25D366]/20 transition-all"
+                  />
+                </div>
+                <div>
+                  <label className="text-xs font-semibold text-gray-700 mb-1.5 block">Motivo de consulta</label>
+                  <textarea
+                    rows={4}
+                    value={form.motivo}
+                    onChange={e => setForm(f => ({ ...f, motivo: e.target.value }))}
+                    placeholder="Describe brevemente tu síntoma o motivo de consulta..."
+                    className="w-full border border-gray-200 rounded-xl px-4 py-3 text-sm text-gray-800 outline-none focus:border-[#25D366] focus:ring-2 focus:ring-[#25D366]/20 transition-all resize-none"
+                  />
+                </div>
+                <label className="flex items-center gap-3 cursor-pointer">
+                  <input
+                    type="checkbox"
+                    checked={form.urgente}
+                    onChange={e => setForm(f => ({ ...f, urgente: e.target.checked }))}
+                    className="w-4 h-4 accent-[#25D366]"
+                  />
+                  <span className="text-sm text-gray-700">Es una urgencia (necesito atención hoy)</span>
+                </label>
+                <button
+                  type="submit"
+                  className="flex items-center justify-center gap-2 bg-[#25D366] text-white py-4 rounded-full font-extrabold uppercase tracking-wide text-sm transition-all duration-300 shadow-[0_4px_24px_rgba(37,211,102,0.35)] hover:bg-[#1ebe57] hover:-translate-y-0.5 hover:scale-[1.02]"
+                >
+                  ENVIAR POR WHATSAPP
+                </button>
+                <p className="text-xs text-gray-400 text-center">Al enviar, se abrirá WhatsApp con tu mensaje listo para enviar al Dr. Rodríguez.</p>
+              </form>
+            )}
+          </div>
+
+          {/* Info */}
+          <div className="flex flex-col gap-4">
+            <div className="bg-[#f0fdf4] border border-[rgba(37,211,102,0.25)] rounded-2xl p-6">
+              <p className="text-xs font-bold uppercase tracking-widest text-[#1ebe57] mb-4">Información de Contacto</p>
+              <ul className="list-none flex flex-col gap-4">
+                {[
+                  { icon: MapPin, label: 'Dirección', value: 'Torre Medical Calle 7 #39-107\nConsultorio 609, Medellín, Antioquia' },
+                  { icon: Phone, label: 'Teléfono / WhatsApp', value: '+57 324 408 1281' },
+                  { icon: Mail, label: 'Correo', value: 'agendasortopediaguillermorodmd@gmail.com' },
+                  { icon: Clock, label: 'Horario', value: 'Lun–Vie: 07:30 – 18:00\nSáb: 07:30 – 13:00' },
+                ].map(({ icon: Icon, label, value }) => (
+                  <li key={label} className="flex items-start gap-3">
+                    <div className="w-8 h-8 bg-[rgba(37,211,102,0.12)] rounded-lg flex items-center justify-center flex-shrink-0">
+                      <Icon size={15} className="text-[#25D366]" />
+                    </div>
+                    <div>
+                      <p className="text-[10px] font-bold uppercase tracking-widest text-gray-400 mb-0.5">{label}</p>
+                      <p className="text-sm text-gray-700 whitespace-pre-line">{value}</p>
+                    </div>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            <a
+              href={WA_HREF}
+              target="_blank"
+              rel="noopener"
+              className="flex items-center justify-center gap-2 bg-[#25D366] text-white no-underline py-4 rounded-2xl font-extrabold uppercase tracking-wide text-sm transition-all duration-300 shadow-[0_4px_24px_rgba(37,211,102,0.35)] hover:bg-[#1ebe57] hover:-translate-y-0.5"
+            >
+              AGENDAR POR WHATSAPP
+            </a>
+
+            <div className="rounded-2xl overflow-hidden border border-gray-200 h-48">
+              <iframe
+                src="https://maps.google.com/maps?q=Torre+Medical+Calle+7+39-107+Medellin&output=embed"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                loading="lazy"
+                title="Ubicación Torre Medical Medellín"
+                allowFullScreen
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </Layout>
+  );
+}
