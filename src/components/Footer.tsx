@@ -75,6 +75,17 @@ export default function Footer() {
                   Términos del Servicio
                 </a>
               </li>
+              <li className="pt-2 border-t border-white/10 mt-1">
+                <a
+                  href="https://www.doctoralia.co/guillermo-fernando-rodriguez-restrepo/ortopedista-y-traumatologo/medellin#address-id=69445&is-online-only=false&filters%5Bspecializations%5D%5B%5D=48"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-xs sm:text-[13px] text-white/60 no-underline transition-colors hover:text-white flex items-center gap-1.5"
+                >
+                  <span className="inline-block w-1.5 h-1.5 rounded-full bg-[#25D366] flex-shrink-0" />
+                  Perfil en Doctoralia
+                </a>
+              </li>
             </ul>
           </div>
         </div>
