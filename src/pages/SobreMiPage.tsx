@@ -159,12 +159,12 @@ export default function SobreMiPage() {
 
       {/* Doctoralia */}
       <section className="py-10 px-4 sm:px-6 bg-white">
-        <div className="max-w-[1200px] mx-auto flex flex-col md:flex-row items-center gap-6">
+        <div className="max-w-[1200px] mx-auto flex justify-center">
           <a
             href="https://www.doctoralia.co/guillermo-fernando-rodriguez-restrepo/ortopedista-y-traumatologo/medellin#address-id=69445&is-online-only=false&filters%5Bspecializations%5D%5B%5D=48"
             target="_blank"
             rel="noopener"
-            className="flex flex-col md:flex-row items-center gap-6 no-underline hover:opacity-90 transition-opacity group"
+            className="flex flex-col items-center gap-3 no-underline hover:opacity-90 transition-opacity group text-center"
           >
             <img src="/Logo-Doctoralia.jpg" alt="Dr. Guillermo Rodríguez en Doctoralia – plataforma médica verificada" className="h-12 w-auto object-contain" loading="lazy" />
             <div>
