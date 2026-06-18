@@ -72,7 +72,7 @@ export function PRPPage() {
         badge="Tratamientos Regenerativos · Medellín"
         title="Plasma Rico en Plaquetas (PRP) en Medellín: Tratamiento Regenerativo en Ortopedia"
         subtitle="Terapia biológica de vanguardia que utiliza los factores de crecimiento de tu propia sangre para estimular la regeneración de tejidos dañados, sin riesgo de rechazo."
-        heroImage="/Evaluacion_medica_especializada.png"
+        heroImage="/Plasma-Rico-en-Plaquetas-(PRP)-en-Medellin-para-regeneracion-de-tejidos-y-recuperacion-ortopedica.jpg"
         heroImageAlt="Tratamiento con Plasma Rico en Plaquetas PRP en Medellín – ortopedia regenerativa"
         intro="El Plasma Rico en Plaquetas (PRP) es una terapia biológica avanzada que consiste en obtener una muestra de sangre del propio paciente, concentrarla mediante centrifugación para obtener un plasma con alta concentración de plaquetas y factores de crecimiento, e inyectarlo en la zona lesionada. Al utilizar componentes del propio organismo, el PRP es completamente seguro, no genera rechazo y estimula la regeneración natural de tejidos articulares, tendinosos y ligamentosos."
         symptomsTitle="Indicaciones del PRP en Ortopedia"
