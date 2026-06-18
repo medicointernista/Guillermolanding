@@ -64,10 +64,6 @@ export default function SobreMiPage() {
       {/* Authority – Tu Especialista de Confianza */}
       <section className="bg-white border-b border-gray-200 py-12 sm:py-16 md:py-20 px-4 sm:px-6" id="especialista" aria-label="Tu especialista de confianza">
         <div className="max-w-[1200px] mx-auto">
-          <div className="mb-10 opacity-0 animate-fade-up" style={{ animationDelay: '0.05s' }}>
-            <span className="inline-block text-[11px] font-bold tracking-widest uppercase text-[#1ebe57] mb-3">Perfil Profesional</span>
-            <h2 className="font-extrabold text-[#1a365d] text-2xl sm:text-3xl md:text-4xl">Experto en Ortopedia y Traumatología en Medellín</h2>
-          </div>
           <div>
             <div className="opacity-0 animate-fade-up" style={{ animationDelay: '0.15s' }}>
               <span className="inline-block text-[11px] font-bold tracking-widest uppercase text-[#1ebe57] mb-2.5">
@@ -143,7 +139,6 @@ export default function SobreMiPage() {
       <section className="py-14 sm:py-20 px-4 sm:px-6 bg-white">
         <div className="max-w-[1200px] mx-auto grid grid-cols-1 lg:grid-cols-[1fr_360px] gap-12">
           <div>
-            <span className="inline-block text-[11px] font-bold tracking-widest uppercase text-[#1ebe57] mb-3 opacity-0 animate-fade-up" style={{ animationDelay: '0.1s' }}>Perfil Profesional</span>
             <h2 className="font-extrabold text-[#1a365d] text-2xl sm:text-3xl md:text-4xl mb-5 opacity-0 animate-cascade" style={{ animationDelay: '0.15s' }}>
               Experto en Ortopedia y Traumatología en Medellín
             </h2>
