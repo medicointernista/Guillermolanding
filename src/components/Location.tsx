@@ -113,9 +113,14 @@ export default function Location() {
               <div className="text-xs sm:text-[13px] font-semibold text-gray-800 flex-1">
                 <strong>4.8 / 5</strong> — 48+ reseñas verificadas
               </div>
-              <span className="text-[10px] sm:text-[11px] text-gray-400 sm:border-l sm:border-gray-200 sm:pl-2.5 flex-shrink-0">
+              <a
+                href="https://www.doctoralia.co/guillermo-fernando-rodriguez-restrepo/ortopedista-y-traumatologo/medellin#address-id=69445&is-online-only=false&filters%5Bspecializations%5D%5B%5D=48"
+                target="_blank"
+                rel="noopener"
+                className="text-[10px] sm:text-[11px] text-[#25a0b5] font-semibold sm:border-l sm:border-gray-200 sm:pl-2.5 flex-shrink-0 no-underline hover:underline"
+              >
                 Doctoralia
-              </span>
+              </a>
             </div>
           </div>
         </div>

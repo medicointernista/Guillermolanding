@@ -63,10 +63,15 @@ export default function Testimonials() {
                   </div>
                 </div>
               </div>
-              <div className="flex items-center gap-2 mt-3 pt-3 border-t border-gray-200">
+              <a
+                href="https://www.doctoralia.co/guillermo-fernando-rodriguez-restrepo/ortopedista-y-traumatologo/medellin#address-id=69445&is-online-only=false&filters%5Bspecializations%5D%5B%5D=48"
+                target="_blank"
+                rel="noopener"
+                className="flex items-center gap-2 mt-3 pt-3 border-t border-gray-200 no-underline hover:opacity-80 transition-opacity"
+              >
                 <img src="/Logo-Doctoralia.jpg" alt="Plataforma Doctoralia - Reseñas verificadas de pacientes del Dr. Guillermo Rodríguez" className="h-5 sm:h-6 object-contain" loading="lazy" decoding="async" />
                 <span className="text-[10px] sm:text-[11px] text-gray-400">Reseña verificada</span>
-              </div>
+              </a>
             </div>
           ))}
         </div>
