@@ -13,7 +13,7 @@ export function ViscosuplementacionPage() {
         badge="Tratamientos Regenerativos · Medellín"
         title="Viscosuplementación en Medellín, Antioquia: Alivio para tus Articulaciones"
         subtitle="Tratamiento de vanguardia con ácido hialurónico para pacientes con artrosis de rodilla leve a moderada que buscan recuperar movilidad y reducir el dolor sin cirugía."
-        heroImage="/Evaluacion-medica-especializada.jpg"
+        heroImage="/Medico-especialista-realizando-consulta-de-viscosuplementacion-con-acido-hialuronico-para-aliviar-el-dolor-y-mejorar-la-movilidad-en-pacientes-con-artrosis-de-rodilla-en-Medellin.jpg"
         heroImageAlt="Viscosuplementación con ácido hialurónico para artrosis de rodilla en Medellín"
         intro="La viscosuplementación es un procedimiento ortopédico mínimamente invasivo que consiste en la infiltración intraarticular de ácido hialurónico en la articulación afectada. El ácido hialurónico actúa como lubricante y amortiguador natural, restaurando las propiedades del líquido sinovial y aliviando el dolor causado por la artrosis. En el consultorio del Dr. Guillermo Rodríguez Restrepo en Medellín, este tratamiento se realiza de forma ecoguiada, garantizando precisión y seguridad."
         symptomsTitle="¿Quién es Candidato a Viscosuplementación?"
