@@ -108,6 +108,38 @@ export default function SiteFooter() {
           </div>
         </div>
 
+        {/* Doctoralia CTA */}
+        <div className="border-t border-white/10 pt-6 pb-5 mb-2 opacity-0 animate-fade-up" style={{ animationDelay: '0.28s' }}>
+          <div className="flex flex-col sm:flex-row items-center justify-between gap-4 bg-white/[0.04] border border-white/10 rounded-2xl px-5 py-4">
+            <div className="flex items-center gap-3">
+              <img
+                src="/Logo-Doctoralia.jpg"
+                alt="Doctoralia"
+                className="h-7 w-auto rounded object-contain bg-white px-1.5 py-0.5"
+              />
+              <div>
+                <p className="text-xs font-bold text-white leading-tight">Verificado en Doctoralia</p>
+                <div className="flex items-center gap-1 mt-0.5">
+                  {[1,2,3,4,5].map((s) => (
+                    <svg key={s} width="11" height="11" viewBox="0 0 12 12" fill="#f59e0b">
+                      <path d="M6 1l1.39 2.82L10.5 4.27l-2.25 2.19.53 3.1L6 7.96l-2.78 1.6.53-3.1L1.5 4.27l3.11-.45z"/>
+                    </svg>
+                  ))}
+                  <span className="text-[10px] text-white/60 ml-1">4.8 / 5 · Opiniones reales de pacientes</span>
+                </div>
+              </div>
+            </div>
+            <a
+              href="https://www.doctoralia.com.co/guillermo-rodriguez-restrepo/traumatologo-ortopedista/medellin"
+              target="_blank"
+              rel="noopener"
+              className="inline-flex items-center gap-2 bg-[#00A9E0] text-white no-underline px-5 py-2 rounded-full text-xs font-bold uppercase tracking-wider transition-all hover:bg-[#0090c0] hover:-translate-y-0.5 whitespace-nowrap flex-shrink-0"
+            >
+              Agendar en Doctoralia
+            </a>
+          </div>
+        </div>
+
         <div className="border-t border-white/10 pt-4 opacity-0 animate-fade-up" style={{ animationDelay: '0.3s' }}>
           <p className="text-[10px] text-white/40 leading-relaxed text-center mb-2 max-w-3xl mx-auto">
             <span className="font-semibold text-white/60">Aviso legal:</span> La información contenida en este sitio es de carácter informativo y educativo. No constituye consejo médico, diagnóstico ni prescripción. Consulte siempre a un médico especialista ante cualquier síntoma o condición de salud.{' '}
