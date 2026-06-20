@@ -8,57 +8,75 @@ const WA_ICON = (
   </svg>
 );
 
-const serviceCategories = [
+// Desktop dropdown: 3 balanced columns
+const desktopColumns = [
   {
-    label: 'Tratamientos Regenerativos',
+    label: 'Regenerativo e Intervencionista',
     items: [
       { label: 'Viscosuplementación', href: '/viscosuplementacion' },
       { label: 'Plasma Rico en Plaquetas (PRP)', href: '/plasma-rico-en-plaquetas' },
       { label: 'Células Mesenquimales', href: '/celulas-mesenguimales' },
+      { label: 'Infiltraciones Articulares', href: '/infiltraciones-articulares-o-de-tejidos-blandos-con-antiinflamatorios' },
     ],
   },
   {
-    label: 'Procedimientos Intervencionistas',
-    items: [
-      { label: 'Infiltraciones Articulares con Antiinflamatorios', href: '/infiltraciones-articulares-o-de-tejidos-blandos-con-antiinflamatorios' },
-    ],
-  },
-  {
-    label: 'Pie y Tobillo',
+    label: 'Pie, Tobillo y Rodilla',
     items: [
       { label: 'Fascitis Plantar', href: '/fascitis-plantar' },
       { label: 'Esguinces Crónicos de Tobillo', href: '/esguinces-cronicos-de-tobillo' },
       { label: 'Fracturas de Tobillo', href: '/fracturas-de-tobillo' },
       { label: 'Hallux Valgus', href: '/hallux-valgus' },
-    ],
-  },
-  {
-    label: 'Rodilla',
-    items: [
       { label: 'Artrosis de Rodillas', href: '/artrosis-de-rodillas' },
     ],
   },
   {
-    label: 'Hombro',
+    label: 'Hombro, Mano y Muñeca',
     items: [
-      { label: 'Síndrome de Manguito Rotador', href: '/sindrome-de-manguito-rotador' },
-    ],
-  },
-  {
-    label: 'Mano y Muñeca',
-    items: [
-      { label: 'Tendinitis de Muñeca', href: '/tendinitis-de-muneca' },
+      { label: 'Manguito Rotador', href: '/sindrome-de-manguito-rotador' },
+      { label: 'Túnel del Carpo', href: '/sindrome-de-tunel-del-carpo' },
       { label: 'Tendinitis de Quervain', href: '/tendinitis-de-quervain' },
-      { label: 'Síndrome de Túnel del Carpo', href: '/sindrome-de-tunel-del-carpo' },
+      { label: 'Tendinitis de Muñeca', href: '/tendinitis-de-muneca' },
+      { label: 'Dedos en Gatillo', href: '/dedos-en-gatillo-o-resorte' },
       { label: 'Gangliones', href: '/gangliones' },
-      { label: 'Dedos en Gatillo o Resorte', href: '/dedos-en-gatillo-o-resorte' },
       { label: 'Fracturas de Radio Distal', href: '/fracturas-de-radio-distal' },
       { label: 'Fracturas de Antebrazo', href: '/fracturas-de-antebrazo' },
+      { label: 'Ortopedia Geriátrica', href: '/ortopedia-geriatrica' },
+    ],
+  },
+];
+
+// Mobile: flat list grouped by area
+const serviceCategories = [
+  {
+    label: 'Regenerativo e Intervencionista',
+    items: [
+      { label: 'Viscosuplementación', href: '/viscosuplementacion' },
+      { label: 'Plasma Rico en Plaquetas (PRP)', href: '/plasma-rico-en-plaquetas' },
+      { label: 'Células Mesenquimales', href: '/celulas-mesenguimales' },
+      { label: 'Infiltraciones Articulares', href: '/infiltraciones-articulares-o-de-tejidos-blandos-con-antiinflamatorios' },
     ],
   },
   {
-    label: 'Ortopedia Especial',
+    label: 'Pie, Tobillo y Rodilla',
     items: [
+      { label: 'Fascitis Plantar', href: '/fascitis-plantar' },
+      { label: 'Esguinces Crónicos de Tobillo', href: '/esguinces-cronicos-de-tobillo' },
+      { label: 'Fracturas de Tobillo', href: '/fracturas-de-tobillo' },
+      { label: 'Hallux Valgus', href: '/hallux-valgus' },
+      { label: 'Artrosis de Rodillas', href: '/artrosis-de-rodillas' },
+    ],
+  },
+  {
+    label: 'Hombro, Mano y Muñeca',
+    items: [
+      { label: 'Manguito Rotador', href: '/sindrome-de-manguito-rotador' },
+      { label: 'Túnel del Carpo', href: '/sindrome-de-tunel-del-carpo' },
+      { label: 'Tendinitis de Quervain', href: '/tendinitis-de-quervain' },
+      { label: 'Tendinitis de Muñeca', href: '/tendinitis-de-muneca' },
+      { label: 'Dedos en Gatillo', href: '/dedos-en-gatillo-o-resorte' },
+      { label: 'Gangliones', href: '/gangliones' },
+      { label: 'Fracturas de Radio Distal', href: '/fracturas-de-radio-distal' },
+      { label: 'Fracturas de Antebrazo', href: '/fracturas-de-antebrazo' },
       { label: 'Ortopedia Geriátrica', href: '/ortopedia-geriatrica' },
     ],
   },
@@ -133,12 +151,12 @@ export default function SiteHeader() {
               </button>
 
               {servicesOpen && (
-                <div className="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-[680px] bg-white border border-gray-200 rounded-2xl shadow-[0_16px_48px_rgba(26,54,93,0.14)] z-[100] p-5 grid grid-cols-2 gap-5 animate-scale-pop">
-                  {serviceCategories.map((cat) => (
-                    <div key={cat.label}>
-                      <p className="text-[10px] font-bold uppercase tracking-widest text-[#1ebe57] mb-2">{cat.label}</p>
-                      <ul className="list-none flex flex-col gap-0.5">
-                        {cat.items.map((item) => (
+                <div className="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-[720px] bg-white border border-gray-200 rounded-2xl shadow-[0_16px_48px_rgba(26,54,93,0.14)] z-[100] p-5 grid grid-cols-3 gap-x-6 gap-y-0 animate-scale-pop">
+                  {desktopColumns.map((col) => (
+                    <div key={col.label}>
+                      <p className="text-[10px] font-bold uppercase tracking-widest text-[#1ebe57] mb-2 pb-1.5 border-b border-gray-100">{col.label}</p>
+                      <ul className="list-none flex flex-col gap-0">
+                        {col.items.map((item) => (
                           <li key={item.href}>
                             <Link
                               to={item.href}
