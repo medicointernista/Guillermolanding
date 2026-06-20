@@ -1,7 +1,6 @@
 import { ReactNode } from 'react';
 import { Link } from 'react-router-dom';
 import { ChevronRight } from 'lucide-react';
-import MedicalDisclaimer from './MedicalDisclaimer';
 import CredentialsBadge from './CredentialsBadge';
 import MedicalSources, { type MedicalSource } from './MedicalSources';
 
@@ -140,9 +139,6 @@ export default function ServicePage({
 
       {/* Credentials */}
       <CredentialsBadge />
-
-      {/* Disclaimer */}
-      <MedicalDisclaimer />
 
       {/* Intro */}
       <section className="py-10 sm:py-12 px-4 sm:px-6 bg-white">
