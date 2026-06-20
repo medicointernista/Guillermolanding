@@ -34,18 +34,10 @@ import {
   FracturasRadioDistal,
   FracturasAntebrazo,
 } from './pages/ServicesManoMuneca';
+import { NotFoundPage, ServerErrorPage } from './pages/ErrorPages';
 
 function NotFound() {
-  return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-white px-4 text-center">
-      <p className="text-6xl font-extrabold text-[#1a365d] mb-4">404</p>
-      <h1 className="text-xl font-bold text-gray-700 mb-2">Página no encontrada</h1>
-      <p className="text-gray-500 mb-6 text-sm">La página que buscas no existe o fue movida.</p>
-      <a href="/" className="inline-flex items-center gap-2 bg-[#25D366] text-white no-underline px-6 py-3 rounded-full text-sm font-extrabold uppercase transition-all hover:bg-[#1ebe57]">
-        Volver al Inicio
-      </a>
-    </div>
-  );
+  return <NotFoundPage />;
 }
 
 export default function App() {
@@ -97,7 +89,8 @@ export default function App() {
       <Route path="/fracturas-de-radio-distal" element={<FracturasRadioDistal />} />
       <Route path="/fracturas-de-antebrazo" element={<FracturasAntebrazo />} />
 
-      {/* 404 */}
+      {/* Error pages */}
+      <Route path="/500" element={<ServerErrorPage />} />
       <Route path="*" element={<NotFound />} />
     </Routes>
   );
