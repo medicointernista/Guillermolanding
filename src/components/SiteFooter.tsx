@@ -14,22 +14,6 @@ export default function SiteFooter() {
               Medellín, Antioquia, Colombia<br/>
               "Ortopedia con Calidad Humana"
             </p>
-            <div className="mt-3 flex flex-col gap-1.5">
-              <a
-                href="https://wa.me/573244081281?text=Hola%2C%20gracias%20por%20escribirnos%20desde%20nuestro%20sitio%20web.%20El%20Dr.%20Guillermo%20Rodr%C3%ADguez%20y%20su%20equipo%20est%C3%A1n%20para%20ayudarte%2C%20%C2%BFen%20qu%C3%A9%20podemos%20colaborarte%20hoy%3F"
-                target="_blank"
-                rel="noopener"
-                className="inline-flex items-center gap-2 bg-[#25D366] text-white no-underline px-4 py-2 rounded-full text-xs font-bold uppercase tracking-wider transition-all hover:bg-[#1ebe57] self-start"
-              >
-                Agendar por WhatsApp
-              </a>
-              <a
-                href="tel:+573244081281"
-                className="inline-flex items-center gap-2 bg-white/10 border border-white/20 text-white no-underline px-4 py-2 rounded-full text-xs font-bold uppercase tracking-wider transition-all hover:bg-white/20 self-start"
-              >
-                Llamar Ahora
-              </a>
-            </div>
           </div>
 
           {/* Contact + Hours */}
@@ -105,38 +89,6 @@ export default function SiteFooter() {
               <li><Link to="/descargo-de-responsabilidad" className="text-xs text-white/60 no-underline transition-colors hover:text-white">Descargo de Responsabilidad</Link></li>
               <li><Link to="/compromiso-de-etica" className="text-xs text-white/60 no-underline transition-colors hover:text-white">Compromiso de Ética</Link></li>
             </ul>
-          </div>
-        </div>
-
-        {/* Doctoralia CTA */}
-        <div className="border-t border-white/10 pt-6 pb-5 mb-2 opacity-0 animate-fade-up" style={{ animationDelay: '0.28s' }}>
-          <div className="flex flex-col sm:flex-row items-center justify-between gap-4 bg-white/[0.04] border border-white/10 rounded-2xl px-5 py-4">
-            <div className="flex items-center gap-3">
-              <img
-                src="/Logo-Doctoralia.jpg"
-                alt="Doctoralia"
-                className="h-7 w-auto rounded object-contain bg-white px-1.5 py-0.5"
-              />
-              <div>
-                <p className="text-xs font-bold text-white leading-tight">Verificado en Doctoralia</p>
-                <div className="flex items-center gap-1 mt-0.5">
-                  {[1,2,3,4,5].map((s) => (
-                    <svg key={s} width="11" height="11" viewBox="0 0 12 12" fill="#f59e0b">
-                      <path d="M6 1l1.39 2.82L10.5 4.27l-2.25 2.19.53 3.1L6 7.96l-2.78 1.6.53-3.1L1.5 4.27l3.11-.45z"/>
-                    </svg>
-                  ))}
-                  <span className="text-[10px] text-white/60 ml-1">4.8 / 5 · Opiniones reales de pacientes</span>
-                </div>
-              </div>
-            </div>
-            <a
-              href="https://www.doctoralia.com.co/guillermo-rodriguez-restrepo/traumatologo-ortopedista/medellin"
-              target="_blank"
-              rel="noopener"
-              className="inline-flex items-center gap-2 bg-[#00A9E0] text-white no-underline px-5 py-2 rounded-full text-xs font-bold uppercase tracking-wider transition-all hover:bg-[#0090c0] hover:-translate-y-0.5 whitespace-nowrap flex-shrink-0"
-            >
-              Agendar en Doctoralia
-            </a>
           </div>
         </div>
 
