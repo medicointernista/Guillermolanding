@@ -274,6 +274,12 @@ export function ArtrosisRodillas() {
           { href: '/infiltraciones-articulares-o-de-tejidos-blandos-con-antiinflamatorios', label: 'Infiltraciones Articulares' },
           { href: '/ortopedia-geriatrica', label: 'Ortopedia Geriátrica' },
         ]}
+        sources={[
+          { org: 'American Academy of Orthopaedic Surgeons (AAOS)', label: 'Osteoarthritis of the Knee – Clinical Practice Guidelines', href: 'https://www.aaos.org/quality/quality-programs/lower-extremity-programs/osteoarthritis-of-the-knee/' },
+          { org: 'Sociedad Colombiana de Cirugía Ortopédica y Traumatología (SCCOT)', label: 'Guías de práctica clínica en ortopedia y traumatología', href: 'https://www.sccot.org.co/' },
+          { org: 'Osteoarthritis Research Society International (OARSI)', label: 'OARSI Guidelines for the Management of Knee Osteoarthritis', href: 'https://www.oarsi.org/' },
+          { org: 'National Institutes of Health – PubMed', label: 'Platelet-rich plasma in the treatment of knee osteoarthritis: a systematic review', href: 'https://pubmed.ncbi.nlm.nih.gov/' },
+        ]}
       />
     </Layout>
   );

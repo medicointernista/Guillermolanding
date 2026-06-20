@@ -109,6 +109,10 @@ export default function SiteFooter() {
         </div>
 
         <div className="border-t border-white/10 pt-4 opacity-0 animate-fade-up" style={{ animationDelay: '0.3s' }}>
+          <p className="text-[10px] text-white/40 leading-relaxed text-center mb-2 max-w-3xl mx-auto">
+            <span className="font-semibold text-white/60">Aviso legal:</span> La información contenida en este sitio es de carácter informativo y educativo. No constituye consejo médico, diagnóstico ni prescripción. Consulte siempre a un médico especialista ante cualquier síntoma o condición de salud.{' '}
+            <Link to="/descargo-de-responsabilidad" className="underline hover:text-white/60 transition-colors">Descargo de responsabilidad</Link>.
+          </p>
           <div className="text-[10px] text-white/50 text-center">
             <p className="mb-1">
               © 2026 Dr. Guillermo Rodríguez Restrepo. Todos los derechos reservados. · <span className="text-[9px]">Política de Tratamiento de Datos · Términos y Condiciones</span>

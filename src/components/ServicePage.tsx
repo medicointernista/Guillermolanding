@@ -1,6 +1,9 @@
 import { ReactNode } from 'react';
 import { Link } from 'react-router-dom';
 import { ChevronRight } from 'lucide-react';
+import MedicalDisclaimer from './MedicalDisclaimer';
+import CredentialsBadge from './CredentialsBadge';
+import MedicalSources, { type MedicalSource } from './MedicalSources';
 
 const WA_HREF = "https://wa.me/573244081281?text=Hola%2C%20gracias%20por%20escribirnos%20desde%20nuestro%20sitio%20web.%20El%20Dr.%20Guillermo%20Rodr%C3%ADguez%20y%20su%20equipo%20est%C3%A1n%20para%20ayudarte%2C%20%C2%BFen%20qu%C3%A9%20podemos%20colaborarte%20hoy%3F";
 
@@ -36,6 +39,7 @@ interface ServicePageProps {
   drApproach?: string;
   faqs?: FAQ[];
   relatedLinks?: RelatedLink[];
+  sources?: MedicalSource[];
   extraContent?: ReactNode;
 }
 
@@ -69,6 +73,7 @@ export default function ServicePage({
   drApproach,
   faqs,
   relatedLinks,
+  sources,
   extraContent,
 }: ServicePageProps) {
   return (
@@ -132,6 +137,12 @@ export default function ServicePage({
           <span className="text-[#1a365d] font-medium">{badge}</span>
         </div>
       </div>
+
+      {/* Credentials */}
+      <CredentialsBadge />
+
+      {/* Disclaimer */}
+      <MedicalDisclaimer />
 
       {/* Intro */}
       <section className="py-10 sm:py-12 px-4 sm:px-6 bg-white">
@@ -300,6 +311,9 @@ export default function ServicePage({
           </div>
         </div>
       </section>
+
+      {/* Sources */}
+      {sources && sources.length > 0 && <MedicalSources sources={sources} />}
 
       {/* Related links */}
       {relatedLinks && relatedLinks.length > 0 && (
